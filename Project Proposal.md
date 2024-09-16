@@ -57,33 +57,40 @@ On a personal level, we saw this as an incredible learning opportunity. Getting 
 
 ## Open-source Project Description
 #### What is it?
+Seafile is a file synching and sharing service running on Linux.  It uses a web frontend with Nginx/Apache backend.  MySQL is the supported database.  There is a docker deployment to reduce the time to deploy and configuration options.
+For managing authorizations and access and LDAP/AD connection is utilized, which can also leverage Single Sign On
 
 
 #### Contributors 
-
+https://forum.seafile.com
 
 
 
 #### Languages
-
+Seahub is written in Django with the server being seaf-server.
 
 #### Platform
-
+Nginx/Apache backend with a web browser or mobile app for the frontend
 
 #### Documentation Sources
-
+Seafile Admin Manual https://manual.seafile.com/
 
 
 ## License and Contribution Procedure
 #### Licenses
- 
+Seafile iOS client: Apache License v2
+Seafile Android client: GPLv3
+Desktop syncing client (this repository): GPLv2
+Seafile Server core: AGPLv3
+Seahub (Seafile server Web UI): Apache License v2	
+
 
 
 #### Contribution Procedure
-
+The Seafile community forum is location to check about developing and adding to the project Seafile Community Forum https://forum.seafile.com/t/welcome-to-seafile-community-forum/8/2
 
 #### Contributor Agreements
-
+The Seafile community forum is location to check about developing and adding to the project Seafile Community Forum https://forum.seafile.com/t/welcome-to-seafile-community-forum/8/2
 
 
 ## Security-related History
