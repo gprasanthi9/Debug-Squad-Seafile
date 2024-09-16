@@ -20,7 +20,7 @@
 
 
 ## Introduction
-**GitHub Repository:** 
+
 
 **Open-source Software Project:** Seafile
 
