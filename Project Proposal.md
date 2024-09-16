@@ -23,10 +23,10 @@
 
 
 **Open-source Software Project:** Seafile
-
-
+      
 ### Operational Environment
-
+The operational environment for Seafile is a large university research department that includes around 500 researchers and 50 administrative staff members. The department deals with several terabytes of data, including research documents and collaborative projects. The key use cases for Seafile in this setting include secure file sharing for sensitive data, collaboration on research projects with real-time file syncing and version control, and ensuring that critical research data is regularly backed up and accessible from off-campus through secure remote access. The department requires strict access control, end-to-end encryption, robust authentication (integrating with the university's single sign-on system), and comprehensive audit logging to ensure research integrity and meet compliance standards.
+     
 #### Systems Engineering View Diagram 
 <img width="826" alt="image" src="https://github.com/user-attachments/assets/4daa7768-7fcb-4480-a371-bc29d97a0ba3">
 
