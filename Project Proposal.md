@@ -35,29 +35,19 @@ The operational environment for Seafile is a large university research departmen
 
 
 #### Security Features in Seafile
+
 The following are the security features:
 
-1. **End-to-End Encryption**: Ensures client-side encryption so that even server administrators cannot access the data.
-   
-2. **Two-Factor Authentication (2FA)**: Adds an extra security layer with a one-time code for user authentication.
-
-3. **LDAP and SSO Integration**: Allows seamless login using existing university credentials.
-
-4. **Granular Permission Control**: Fine-tuned access control on a per-user or per-folder basis.
-
-5. **Audit Logging and Monitoring**: Tracks all file actions for security audits and compliance purposes.
-
-6. **Data Backup and Redundancy**: Automated backup to ensure recoverability in case of data loss.
-
-7. **Secure Sharing Links**: Password-protected, time-limited links for secure external file sharing.
-
-8. **Server-Side Encryption**: Additional layer of encryption for data stored on the server.
-
-9. **Ransomware Protection**: Versioning system to recover from ransomware attacks by restoring earlier file versions.
-
-10. **Compliance and Data Residency**: Controls to ensure compliance with data residency laws for international collaborations.
+1. **Two-Factor Authentication (2FA):** Adds an extra layer of security for user authentication by requiring a second verification step.
+2. **End-to-End Encryption for File Storage and Transfer:** Protects data by encrypting files before they are uploaded, ensuring secure storage and transfer.
+3. **Fine-Grained Access Controls and Permissions:** Provides detailed control over who can access, modify, or share files.
+4. **SSL/TLS Encryption for All Communications:** Secures data transmissions between users and the server, protecting against eavesdropping and tampering.
+5. **Audit Logging and Activity Monitoring:** Tracks all actions related to file access and modifications, ensuring transparency and accountability.
+6. **Secure Sharing Links with Expiration and Password Protection:** Enhances security for shared files by adding password protection and setting expiration dates.
+7. **Integration with LDAP/Active Directory:** Enables seamless authentication by connecting to existing user directories for centralized access control.
 
 ## Team Motivation
+
 Our team selected Seafile for its robust combination of open-source flexibility and strong security features, which align well with the demands of academic and research environments. The open-source nature of Seafile allows for customization to meet specific institutional needs, while its emphasis on security addresses the critical requirement of protecting sensitive research data.
 Seafile's scalability was a key factor in our decision, as it can efficiently manage the increasing volumes of data typical in research settings. The project's active development community ensures ongoing improvements and support, which is crucial for maintaining a secure and up-to-date system.
 We recognized the potential for significant impact, given Seafile's widespread use in academic institutions. Its ability to integrate with existing IT infrastructure in universities makes it a pragmatic choice for real-world implementation. This project offers our team the opportunity to gain valuable experience with a production-grade file sharing and collaboration platform, enhancing our skills in relevant technologies and development practices.
@@ -102,6 +92,7 @@ On a personal level, we saw this as an incredible learning opportunity. Getting 
 
 
 ## Teamwork Reflection
+
 Our team has worked cohesively, proactively coordinating meetings to select an open-source project that suited everyone’s schedules. We established a regular meeting time, with members willing to hold additional sessions to ensure we met our deadlines. Each member has contributed uniquely, offering ideas and engaging in thoughtful discussions, weighing the pros and cons of potential projects.
 As team lead, Kunle consistently communicated with Dr. Gandhi to arrange meetings when necessary, coordinated group tasks, and ensured prompt contributions from every member. Prashanti set up the GitHub repository and typed the hypothetical operational environment, Monica designed the Systems Engineering View diagram and security features, Sreean documented the perceived threat and security related history, while Erik outlined the open source project description and license and contribution procedure. Kunle also took responsibility for the reflection, team motivation.
 The primary challenge we faced as a team was selecting an open-source project that aligned with the course standards before our initial meeting with Dr. Gandhi. After some adjustments, we chose Seafile as our focus. Since then, we’ve successfully established a communication channel on WhatsApp and are tracking individual tasks and issues within the GitHub project. Our collaborative work on this markdown paper began in a shared Google Doc, which has allowed for smooth initial contributions from all team members.
