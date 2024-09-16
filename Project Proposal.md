@@ -62,7 +62,7 @@ For managing authorizations and access and LDAP/AD connection is utilized, which
 
 
 #### Contributors 
-https://forum.seafile.com
+https://forum.seafile.com 
 
 
 
