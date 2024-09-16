@@ -35,7 +35,27 @@
 
 
 #### Security Features in Seafile
+The following are the security features:
 
+1. **End-to-End Encryption**: Ensures client-side encryption so that even server administrators cannot access the data.
+   
+2. **Two-Factor Authentication (2FA)**: Adds an extra security layer with a one-time code for user authentication.
+
+3. **LDAP and SSO Integration**: Allows seamless login using existing university credentials.
+
+4. **Granular Permission Control**: Fine-tuned access control on a per-user or per-folder basis.
+
+5. **Audit Logging and Monitoring**: Tracks all file actions for security audits and compliance purposes.
+
+6. **Data Backup and Redundancy**: Automated backup to ensure recoverability in case of data loss.
+
+7. **Secure Sharing Links**: Password-protected, time-limited links for secure external file sharing.
+
+8. **Server-Side Encryption**: Additional layer of encryption for data stored on the server.
+
+9. **Ransomware Protection**: Versioning system to recover from ransomware attacks by restoring earlier file versions.
+
+10. **Compliance and Data Residency**: Controls to ensure compliance with data residency laws for international collaborations.
 
 ## Team Motivation
 Our team selected Seafile for its robust combination of open-source flexibility and strong security features, which align well with the demands of academic and research environments. The open-source nature of Seafile allows for customization to meet specific institutional needs, while its emphasis on security addresses the critical requirement of protecting sensitive research data.
