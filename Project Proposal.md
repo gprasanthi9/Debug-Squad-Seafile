@@ -31,8 +31,7 @@ The operational environment for Seafile is a large university research departmen
 <img width="826" alt="image" src="https://github.com/user-attachments/assets/4daa7768-7fcb-4480-a371-bc29d97a0ba3">
 
 
-####  Perceived Threats
-
+###  Perceived Threats
 ## Security Features in Seafile
 
 ### 1. Access Security
