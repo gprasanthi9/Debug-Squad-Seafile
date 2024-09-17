@@ -32,7 +32,7 @@ The operational environment for Seafile is a large university research departmen
 
 
 ##  Perceived Threats
-## Security Features in Seafile
+### Security Features in Seafile
 
 ### 1. Access Security
 #### 1.1. Two-Factor Authentication (2FA)
