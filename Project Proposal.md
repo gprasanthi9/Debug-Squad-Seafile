@@ -30,8 +30,19 @@ The operational environment for Seafile is a large university research departmen
 #### Systems Engineering View Diagram 
 <img width="826" alt="image" src="https://github.com/user-attachments/assets/4daa7768-7fcb-4480-a371-bc29d97a0ba3">
 
+## Perceived Threats
 
-##  Perceived Threats
+1. **Data breaches** exposing confidential information
+2. **Man-in-the-middle attacks** during data transfer
+3. **Insider threats** from privileged users
+4. **Ransomware attacks** encrypting research data
+5. **Data loss** due to hardware failure or human error
+6. **Compliance violations** leading to loss of funding or legal issues
+7. **Account hijacking** through credential theft
+8. **Denial of Service (DoS) attacks** disrupting file access
+9. **Data residency violations** for international collaborations
+
+
 ### Security Features in Seafile
 
 ### 1. Access Security
