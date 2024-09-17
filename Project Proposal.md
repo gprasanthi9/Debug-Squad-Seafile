@@ -144,7 +144,8 @@ Seafile has implemented various security improvements over time:
 **Recent Updates**:
 - Added detailed audit logging for better compliance tracking.
 - Improved virtual file support for safer sync&#8203;:contentReference[oaicite:0]{index=0}.
-- Docker-related fixes, especially for OnlyOffice compatibility&#8203;:contentReference[oaicite:1]{index=1}.
+- Docker-related fixes, especially for [OnlyOffice compatibility](https://github.com/haiwen/seafile/issues/2717)&#8203;:contentReference[oaicite:1]{index=1}.
+
 
 [Seafile Security Advisory](https://www.seafile.com/en/security/)
 
