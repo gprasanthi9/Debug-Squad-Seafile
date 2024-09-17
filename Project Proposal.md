@@ -146,7 +146,7 @@ Seafile has implemented various security improvements over time:
 - Improved virtual file support for safer sync. [Source](https://github.com/haiwen/seafile/issues/2434):contentReference[oaicite:0]{index=0}.
 - Docker-related fixes, especially for [OnlyOffice compatibility](https://github.com/haiwen/seafile/issues/2717)&#8203;:contentReference[oaicite:1]{index=1}.
 
-
+Seafile maintains a security advisory page where they disclose and address discovered vulnerabilities:  
 [Seafile Security Advisory](https://www.seafile.com/en/security/)
 
 
