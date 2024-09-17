@@ -33,56 +33,51 @@ The operational environment for Seafile is a large university research departmen
 
 ####  Perceived Threats
 
+## Security Features in Seafile
 
-#### Security Features in Seafile
+### 1. Access Security
 
-The following are the security features:
-
-# Security Features
-
-## 1. Access Security
-
-### 1.1. Two-Factor Authentication (2FA)
+#### 1.1. Two-Factor Authentication (2FA)
 - Adds an extra layer of security for user authentication
 - Requires a second verification step beyond passwords
 
-### 1.2. Fine-Grained Access Controls
+#### 1.2. Fine-Grained Access Controls
 - Provides detailed control over file access, modification, and sharing
 - Allows for role-based access control (RBAC)
 
-## 2. Data Protection
+### 2. Data Protection
 
-### 2.1. End-to-End Encryption
+#### 2.1. End-to-End Encryption
 - Encrypts files before upload for secure storage
 - Maintains encryption during file transfer
 
-### 2.2. SSL/TLS Encryption
+#### 2.2. SSL/TLS Encryption
 - Secures data transmissions between users and servers
 - Protects against eavesdropping and man-in-the-middle attacks
 
-## 3. Sharing and Collaboration Security
+### 3. Sharing and Collaboration Security
 
-### 3.1. Secure Sharing Links
+#### 3.1. Secure Sharing Links
 - Implements password protection for shared files
 - Allows setting of expiration dates for shared links
 
-### 3.2. Collaboration Controls
+#### 3.2. Collaboration Controls
 - Enables granular permissions for shared workspaces
 - Provides version control and change tracking for collaborative work
 
-## 4. Monitoring and Compliance
+### 4. Monitoring and Compliance
 
-### 4.1. Audit Logging
+#### 4.1. Audit Logging
 - Tracks all actions related to file access and modifications
 - Generates detailed reports for compliance and security analysis
 
-## 5. Infrastructure Security
+### 5. Infrastructure Security
 
-### 5.1. Secure Data Centers
+#### 5.1. Secure Data Centers
 - Utilizes physically secure and geographically distributed data centers
 - Implements redundancy and disaster recovery measures
 
-### 5.2. Regular Security Audits
+#### 5.2. Regular Security Audits
 - Conducts periodic security assessments
 - Identifies and addresses potential vulnerabilities proactively
 
