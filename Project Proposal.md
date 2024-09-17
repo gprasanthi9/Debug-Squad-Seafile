@@ -76,10 +76,6 @@ The following are the security features:
 - Tracks all actions related to file access and modifications
 - Generates detailed reports for compliance and security analysis
 
-### 4.2. Compliance Management
-- Assists in meeting regulatory requirements (e.g., GDPR, HIPAA)
-- Provides data retention and deletion capabilities
-
 ## 5. Infrastructure Security
 
 ### 5.1. Secure Data Centers
