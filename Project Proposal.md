@@ -132,6 +132,21 @@ The Seafile community forum is location to check about developing and adding to 
 
 ## Security-related History
 
+Seafile has implemented various security improvements over time:
+
+- Server-side encryption for data at rest.
+- Two-factor authentication (2FA) for enhanced user security.
+- Improved password-protected sharing links with expiration dates.
+- LDAP integration security enhancements.
+- Stricter password policies to reduce account breaches.
+- Continuous updates and security patches.
+
+**Recent Updates**:
+- Added detailed audit logging for better compliance tracking.
+- Improved virtual file support for safer sync (based on GitHub feedback)&#8203;:contentReference[oaicite:0]{index=0}.
+- Docker-related fixes, especially for OnlyOffice compatibility&#8203;:contentReference[oaicite:1]{index=1}.
+
+[Seafile Security Advisory](https://www.seafile.com/en/security/)
 
 
 
