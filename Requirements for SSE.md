@@ -181,7 +181,7 @@ Seafile implements several security measures:
 Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and Erik.
 
 ### Individual Contributions
-** Team members have been working on various aspects of the project, including:
+**Team members have been working on various aspects of the project, including:**
   - 
   - 
   - 
