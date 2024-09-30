@@ -175,6 +175,8 @@ Seafile implements several security measures:
 3. **Authentication**: Supports various authentication methods including LDAP and 2FA.
 4. **Audit Trail**: Offers system-wide event logging, though documentation could be enhanced.
 
+---
+
 
 ## **Part 3: Reflection and Planning**
 
@@ -189,7 +191,7 @@ Team members have been working on various aspects of the project, including:
 - Analyzing potential security vulnerabilities in Seafile
 
 ### What We Did Well
-* Active Participation: The team shows regular activity and updates to the project repository.
+* Active Participation: Our team has been showing regular updates to the project repository.
 * 
 * 
 
