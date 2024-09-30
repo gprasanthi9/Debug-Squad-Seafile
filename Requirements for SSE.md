@@ -84,8 +84,16 @@ A malicious user attempts to upload a malware-infected file or intercept sensiti
 **Diagram:**  
 Place the diagram here.
 
-**Assessment:**  
-Seafile’s file upload process includes integrated malware scanning to detect and block harmful files before they are uploaded. Files are encrypted with AES-256 encryption during both upload and download, ensuring that even if intercepted, the data remains protected. Furthermore, role-based access control ensures that only authorized users can access specific files. All file upload and download activities are logged, allowing administrators to detect and respond to any suspicious actions promptly.
+### Assessment:
+
+In this scenario, a malicious user is attempting to exploit the file upload and download processes within Seafile. There are two primary modes of attack: uploading malware-infected files or intercepting sensitive data during file transfers.
+
+The first mode of attack involves the malicious user trying to upload a harmful file to the system. To prevent this, Seafile employs file validation and malware scanning, which automatically checks each file for any malicious content before it can be uploaded. This initial defense ensures that no harmful files can enter the system, protecting both users and stored data. Additionally, multi-factor authentication (MFA) ensures that only authorized users with proper credentials can access the file upload feature, further reducing the risk of unauthorized or harmful uploads.
+
+The second mode of attack involves intercepting sensitive data during the file download process. To safeguard against this, Seafile uses AES-256 encryption for all file transfers, ensuring that even if the data is intercepted, it remains unreadable and secure. Role-based access control (RBAC) is implemented to limit access to sensitive files, meaning that only authorized users can download specific files. Furthermore, logging and monitoring of all file activities are in place, allowing administrators to track and respond to any unusual actions or attempts at data theft.
+
+By implementing these security measures, Seafile mitigates the risks of data tampering and theft during file uploads and downloads. The combination of encryption, access controls, and monitoring ensures that files remain secure throughout the process, and any malicious activities can be detected and addressed in real-time.
+
 
 
 
