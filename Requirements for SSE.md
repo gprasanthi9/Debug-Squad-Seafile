@@ -78,7 +78,8 @@ Enter your assessment here.
 
 **Diagram:**  
 
-[][File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
+[File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
+
 
 
 ### Assessment:
