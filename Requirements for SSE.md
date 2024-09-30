@@ -94,11 +94,6 @@ The system also incorporates **file validation** processes to ensure that files 
 
 Furthermore, **logging and monitoring activities** provide visibility into all file actions, enabling administrators to track and detect any abnormal behavior, such as unauthorized data access or suspicious downloads. These logs help prevent **data tampering** by alerting administrators to unauthorized changes.
 
-To add another layer of security, **multi-factor authentication (MFA)** is enforced during the upload and download processes. This ensures that even if an attacker obtains login credentials, they cannot perform file operations without the second authentication factor.
-
-Lastly, the integration of **file version control** ensures that any modifications or deletions can be tracked and reverted, preventing permanent damage from tampering. The system also mitigates data theft through encryption and controlled access, ensuring sensitive data remains protected.
-
-
 
 
 ### **1.5 File Sharing Use Case**
