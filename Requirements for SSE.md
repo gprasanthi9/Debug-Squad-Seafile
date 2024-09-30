@@ -98,6 +98,7 @@ Enter your use case here.
 Enter your misuse case here.
 
 **Diagram:**  
+
 [![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/raw/main/Use-Misuse%20Case%20Diagram/File%20Sharing%20Use-Misuse%20Case.jpg)](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Sharing%20Use-Misuse%20Case.jpg)
 
 **Assessment:**  
