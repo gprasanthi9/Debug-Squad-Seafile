@@ -75,8 +75,6 @@ Enter your assessment here.
 
 ### **1.4 File Upload/Download Use Case**
 
-**Assigned to:** @Sreean-Rikkala
-
 **Use Case:**  
 Users securely upload or download files within the Seafile platform, ensuring data integrity and confidentiality.
 
