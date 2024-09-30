@@ -199,4 +199,4 @@ Team Debug-Squad-Seafile includes Sreean-Rikkala and Erik.
 * 
 
 
-The Project Board can be found here: The Project Board can be found here: [Debug-Squad-Seafile Project Board](https://github.com/users/gprasanthi9/projects/3/views/1)
+The Project Board can be found here: [Debug-Squad-Seafile](https://github.com/users/gprasanthi9/projects/3/views/1)
