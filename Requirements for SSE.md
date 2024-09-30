@@ -27,17 +27,14 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 
 ### **1.1 User Login Use Case**
 
-**Use Case:**  
-Enter your use case here.
+**Use Case:**  Enter your use case here.
 
-**Misuse Case:**  
-Enter your misuse case here.
+**Misuse Case:**  Enter your misuse case here.
 
 **Diagram:**  
 Place the diagram here.
 
-**Assessment:**  
-Enter your assessment here.
+**Assessment:** Enter your assessment here.
 
 
 
@@ -75,11 +72,9 @@ Enter your assessment here.
 
 ### **1.4 File Upload/Download Use Case**
 
-**Use Case:**  
-Users securely upload or download files within the Seafile platform, ensuring data integrity and confidentiality.
+**Use Case:**  Users securely upload or download files within the Seafile platform, ensuring data integrity and confidentiality.
 
-**Misuse Case:**  
-A malicious user attempts to upload a malware-infected file or intercept sensitive data during a download.
+**Misuse Case:**  A malicious user attempts to upload a malware-infected file or intercept sensitive data during a download.
 
 **Diagram:**  
 Place the diagram here.
