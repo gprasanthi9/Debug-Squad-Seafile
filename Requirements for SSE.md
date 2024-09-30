@@ -108,3 +108,19 @@ Enter your misuse case here.
 Enter your assessment here.
 
 ---
+
+
+
+## Part 2: OSS Project Documentation Review
+
+We conducted a thorough review of Seafile's official documentation, focusing on security-related configuration and installation aspects. The following documents were examined:
+
+### Installation Guides
+- [Deploying Seafile under Linux](https://manual.seafile.com/deploy/)
+- [Deploy Seafile under Windows](https://manual.seafile.com/deploy_windows/)
+- [Deploy Seafile Pro Edition under Linux](https://manual.seafile.com/deploy_pro/)
+
+### Security-related Documentation
+- [Security and Auditing](https://manual.seafile.com/security/)
+- [Enabling HTTPS](https://manual.seafile.com/deploy/https_with_nginx/)
+- [User Management Options](https://manual.seafile.com/config/user_options/)
