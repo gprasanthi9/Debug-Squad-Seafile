@@ -77,7 +77,9 @@ Enter your assessment here.
 **Misuse Case:**  A malicious user attempts to upload a malware-infected file or intercept sensitive data during a download.
 
 **Diagram:**  
-Place the diagram here.
+
+[![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
+
 
 ### Assessment:
 
