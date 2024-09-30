@@ -180,10 +180,8 @@ Seafile implements several security measures:
 
 Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and Erik.
 
-## Individual Contributions
-
+### Individual Contributions
 Team members have been working on various aspects of the project, including:
-
 - Creating and updating use-misuse case diagrams
 - Developing the project proposal
 - Detailing Software Security Engineering requirements for Seafile
@@ -199,6 +197,5 @@ Team members have been working on various aspects of the project, including:
 * Consistency in Updates: 
 * Expanded Analysis:
 * 
-
 
 The Project Board can be found here: [Debug-Squad-Seafile](https://github.com/users/gprasanthi9/projects/3/views/1)
