@@ -78,8 +78,9 @@ Enter your assessment here.
 
 **Diagram:**  
 
-![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
-
+<div style="border: 2px solid black; padding: 5px; display: inline-block;">
+    <img src="https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png" alt="File Upload/Download Use-Misuse Case Diagram">
+</div>
 
 
 
