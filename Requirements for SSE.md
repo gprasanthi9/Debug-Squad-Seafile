@@ -175,3 +175,28 @@ Seafile implements several security measures:
 3. **Authentication**: Supports various authentication methods including LDAP and 2FA.
 4. **Audit Trail**: Offers system-wide event logging, though documentation could be enhanced.
 
+
+## **Part 3: Reflection and Planning**
+
+Team Debug-Squad-Seafile includes Sreean-Rikkala and Erik.
+
+## Individual Contributions
+* Team members have been working on various aspects of the project, including:
+  - 
+  - 
+  - 
+  - 
+  - 
+
+## What We Did Well
+* Active Participation: The team shows regular activity and updates to the project repository.
+* 
+* 
+
+## Areas for Improvement
+* Consistency in Updates: 
+* Expanded Analysis:
+* 
+
+
+The Project Board can be found here: The Project Board can be found here: [Debug-Squad-Seafile Project Board](https://github.com/users/gprasanthi9/projects/3/views/1)
