@@ -1,7 +1,5 @@
 # **Software Security Engineering: Requirements for Seafile**
 
----
-
 ## **Part 1: Use/Misuse Case Analysis**
 
 To conduct a thorough security analysis of Seafile, we’ve identified critical system features and their associated actors and enabling systems. Each of these features plays a pivotal role in the system’s functionality, and our analysis includes comprehensive use case and misuse case diagrams. These diagrams outline existing functionalities while incorporating security considerations to address potential vulnerabilities and threats. We've identified five main features as the focal points of our analysis:
@@ -25,7 +23,7 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 
 </span>
 
-
+--
 
 ### **1.1 Login Use Case**
 
@@ -41,7 +39,7 @@ Place the diagram here.
 **Assessment:**  
 Enter your assessment here.
 
----
+
 
 ### **1.2 File Version Control Use Case**
 
@@ -57,7 +55,7 @@ Place the diagram here.
 **Assessment:**  
 Enter your assessment here.
 
----
+
 
 ### **1.3 Data Synchronization Use Case**
 
@@ -73,7 +71,7 @@ Place the diagram here.
 **Assessment:**  
 Enter your assessment here.
 
----
+
 
 ### **1.4 File Upload/Download Use Case**
 
@@ -89,7 +87,7 @@ Place the diagram here.
 **Assessment:**  
 Seafile’s file upload process includes integrated malware scanning to detect and block harmful files before they are uploaded. Files are encrypted with AES-256 encryption during both upload and download, ensuring that even if intercepted, the data remains protected. Furthermore, role-based access control ensures that only authorized users can access specific files. All file upload and download activities are logged, allowing administrators to detect and respond to any suspicious actions promptly.
 
----
+
 
 ### **1.5 Admin Management Use Case**
 
@@ -105,4 +103,4 @@ Place the diagram here.
 **Assessment:**  
 Enter your assessment here.
 
----
+--
