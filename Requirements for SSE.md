@@ -180,7 +180,7 @@ Seafile implements several security measures:
 
 Team Debug-Squad-Seafile includes Sreean-Rikkala and Erik.
 
-## Individual Contributions
+### Individual Contributions
 * Team members have been working on various aspects of the project, including:
   - 
   - 
@@ -188,12 +188,12 @@ Team Debug-Squad-Seafile includes Sreean-Rikkala and Erik.
   - 
   - 
 
-## What We Did Well
+### What We Did Well
 * Active Participation: The team shows regular activity and updates to the project repository.
 * 
 * 
 
-## Areas for Improvement
+### Areas for Improvement
 * Consistency in Updates: 
 * Expanded Analysis:
 * 
