@@ -156,20 +156,11 @@ During our review, we noticed several open issues related to security and system
 
 These issues highlight ongoing challenges in areas such as:
 
-1. CSRF Protection Configuration:
-   - Potential vulnerabilities in CSRF protection implementation
-
-2. Client-Server Communication:
-   - Instabilities in maintaining consistent connections
-
-3. File Upload Integrity:
-   - Instances of file corruption or incomplete transfers
-
-4. User Authentication and Account Management:
-   - Inconsistencies in account creation and email assignments
-
-5. Server Resilience:
-   - Stability issues under incorrect login attempts
+1. CSRF Protection Configuration: Potential vulnerabilities in CSRF protection implementation
+2. Client-Server Communication: Instabilities in maintaining consistent connections
+3. File Upload Integrity: Instances of file corruption or incomplete transfers
+4. User Authentication and Account Management: Inconsistencies in account creation and email assignments
+5. Server Resilience: Stability issues under incorrect login attempts
 
 
 ### Security Features and Practices
