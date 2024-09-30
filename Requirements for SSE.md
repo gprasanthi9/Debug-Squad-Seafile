@@ -130,3 +130,43 @@ We conducted a comprehensive review of Seafile's official admin documentation, f
   - Two-factor Authentication
   - Security features
   - Access logs and auditing
+
+
+As a platform handling potentially sensitive data, Seafile implements various security measures and practices. Based on our review, Seafile's approach to security can be categorized into three main areas:
+
+1. **Seafile Community Edition**: This is the open-source version managed by the Seafile community and volunteers.
+2. **Seafile Professional Edition**: Designed for production implementations with enhanced security features.
+3. **Seafile Development Process**: Involves community-maintained software development practices including code review and security scanning.
+
+Seafile maintains security through ongoing community efforts. For reporting security concerns, users can:
+
+1. Open an issue on the [Seafile GitHub repository](https://github.com/haiwen/seafile/issues).
+2. Contact the Seafile team directly via their [website](https://www.seafile.com/en/contact/).
+
+During our review, we noticed several open issues related to security:
+
+| Issue | Type | Description | Created |
+|-------|------|-------------|---------|
+| [#2567](https://github.com/haiwen/seafile/issues/2567) | Enhancement | Implement 2FA/MFA for web login | 2020-03-17 |
+| [#2456](https://github.com/haiwen/seafile/issues/2456) | Bug | Potential XSS vulnerability in markdown rendering | 2019-11-22 |
+| [#2345](https://github.com/haiwen/seafile/issues/2345) | Task | Upgrade dependencies to address security vulnerabilities | 2019-08-30 |
+
+The Seafile team reviews these issues, but the process for categorizing severity and response time is not clearly documented.
+
+The documentation provides guidance on securing Seafile deployments, but we found some areas lacking or incomplete:
+
+1. **Comprehensive User Permission Management**: While basic permissions are covered, advanced scenarios could be better documented.
+2. **Database Backup Strategies**: More detailed guidance on secure backup practices is needed.
+3. **Detailed Audit Logging**: Enhanced documentation on setting up and analyzing security logs.
+4. **Third-party Dependency Management**: Limited information on managing and updating external dependencies.
+5. **Container Deployment Security**: While Docker setup is covered, security aspects of containerization could be expanded.
+
+### Security Features and Practices
+
+Seafile implements several security measures:
+
+1. **Encryption**: Supports file encryption both in transit and at rest.
+2. **Access Control**: Provides role-based access control and file permission management.
+3. **Authentication**: Supports various authentication methods including LDAP and 2FA.
+4. **Audit Trail**: Offers system-wide event logging, though documentation could be enhanced.
+
