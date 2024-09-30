@@ -83,7 +83,7 @@ Enter your assessment here.
 
 
 
-### Assessment:
+**Assessment:**  
 
 The **file upload and download** feature in Seafile is a vital component, allowing users to manage file transfers securely. However, there are potential risks such as **data tampering** and **data theft**, especially if a malicious user gains unauthorized access to the system.
 
