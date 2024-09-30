@@ -142,24 +142,35 @@ Seafile maintains security through ongoing community efforts. For reporting secu
 
 1. Open an issue on the [Seafile GitHub repository](https://github.com/haiwen/seafile/issues).
 2. Contact the Seafile team directly via their [website](https://www.seafile.com/en/contact/).
+3. Email: support@seafile.com.
 
-During our review, we noticed several open issues related to security:
+During our review, we noticed several open issues related to security and system integrity:
 
 | Issue | Type | Description | Created |
 |-------|------|-------------|---------|
-| [#2567](https://github.com/haiwen/seafile/issues/2567) | Enhancement | Implement 2FA/MFA for web login | 2020-03-17 |
-| [#2456](https://github.com/haiwen/seafile/issues/2456) | Bug | Potential XSS vulnerability in markdown rendering | 2019-11-22 |
-| [#2345](https://github.com/haiwen/seafile/issues/2345) | Task | Upgrade dependencies to address security vulnerabilities | 2019-08-30 |
+| [#2829](https://github.com/haiwen/seafile/issues/2829) | Bug | CSRF_TRUSTED_ORIGINS setting in seahub_settings.py not working as expected | 2024-02-26 |
+| [#2822](https://github.com/haiwen/seafile/issues/2822) | Bug | Seafile Drive Client removes account when server temporarily unavailable | 2024-02-05 |
+| [#2809](https://github.com/haiwen/seafile/issues/2809) | Bug | Docker Seafile 11 Seafdav (Webdav) upload issue: 0 Byte Files | 2023-08-12 |
+| [#2784](https://github.com/haiwen/seafile/issues/2784) | Bug | Users created after v11 have to use <random>@auth.local email address for OCM | 2023-06-19 |
+| [#2773](https://github.com/haiwen/seafile/issues/2773) | Bug | Wrong Login Info Cause Server Down Error | 2023-05-19 |
 
-The Seafile team reviews these issues, but the process for categorizing severity and response time is not clearly documented.
+These issues highlight ongoing challenges in areas such as:
 
-The documentation provides guidance on securing Seafile deployments, but we found some areas lacking or incomplete:
+1. CSRF Protection Configuration:
+   - Potential vulnerabilities in CSRF protection implementation
 
-1. **Comprehensive User Permission Management**: While basic permissions are covered, advanced scenarios could be better documented.
-2. **Database Backup Strategies**: More detailed guidance on secure backup practices is needed.
-3. **Detailed Audit Logging**: Enhanced documentation on setting up and analyzing security logs.
-4. **Third-party Dependency Management**: Limited information on managing and updating external dependencies.
-5. **Container Deployment Security**: While Docker setup is covered, security aspects of containerization could be expanded.
+2. Client-Server Communication:
+   - Instabilities in maintaining consistent connections
+
+3. File Upload Integrity:
+   - Instances of file corruption or incomplete transfers
+
+4. User Authentication and Account Management:
+   - Inconsistencies in account creation and email assignments
+
+5. Server Resilience:
+   - Stability issues under incorrect login attempts
+
 
 ### Security Features and Practices
 
