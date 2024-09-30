@@ -113,14 +113,20 @@ Enter your assessment here.
 
 ## Part 2: OSS Project Documentation Review
 
-We conducted a thorough review of Seafile's official documentation, focusing on security-related configuration and installation aspects. The following documents were examined:
+We conducted a comprehensive review of Seafile's official admin documentation, focusing on security-related configuration and installation aspects. The following key sections were examined:
 
 ### Installation Guides
-- [Deploying Seafile under Linux](https://manual.seafile.com/deploy/)
-- [Deploy Seafile under Windows](https://manual.seafile.com/deploy_windows/)
-- [Deploy Seafile Pro Edition under Linux](https://manual.seafile.com/deploy_pro/)
+- [Seafile Community Setup on Linux](https://manual.seafile.com/deploy/)
+- [Seafile Professional Setup on Linux](https://manual.seafile.com/deploy_pro/)
+- [Seafile Setup with Docker](https://manual.seafile.com/docker/)
 
 ### Security-related Documentation
-- [Security and Auditing](https://manual.seafile.com/security/)
-- [Enabling HTTPS](https://manual.seafile.com/deploy/https_with_nginx/)
-- [User Management Options](https://manual.seafile.com/config/user_options/)
+- [Advanced Setup Options](https://manual.seafile.com/deploy/deploy_with_mysql/)
+  - LDAP/AD Integration
+  - Single Sign-On
+  - Virus Scan (Pro)
+- [Configuration and Customization](https://manual.seafile.com/config/)
+- [Administration](https://manual.seafile.com/maintain/)
+  - Two-factor Authentication
+  - Security features
+  - Access logs and auditing
