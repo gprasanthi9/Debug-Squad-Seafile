@@ -15,17 +15,17 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 3. **File Upload/Download**:  
    This feature provides users with the ability to securely upload and download files, safeguarding data integrity and confidentiality during transfers.
 
-4. **Admin Management**:  
-   Administrators manage system configurations, roles, and permissions, ensuring the system is properly configured and secure from unauthorized access.
+4. **User Login**:  
+   Users authenticate their credentials to gain access to Seafile, ensuring secure access to the system and protecting sensitive information.
 
 5. **File Sharing**:  
-   Users can share files with others securely, controlling who can access shared content and ensuring that sensitive data is protected during sharing.
+   Users can share files securely with others, controlling who can access shared content and ensuring sensitive data is protected during sharing.
 
 </span>
 
 ---
 
-### **1.1 Login Use Case**
+### **1.1 User Login Use Case**
 
 **Use Case:**  
 Enter your use case here.
@@ -89,7 +89,7 @@ Seafile’s file upload process includes integrated malware scanning to detect a
 
 
 
-### **1.5 Admin Management Use Case**
+### **1.5 File Sharing Use Case**
 
 **Use Case:**  
 Enter your use case here.
