@@ -193,7 +193,7 @@ Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and
 Team members have been working on various aspects of the project, including:
 - Ku ans
 - Erik: Worked on the User Login, researched Security issue #2829 and #2773, explored SSE on ChatGPT.
-- Mo ans
+- Monica: Contributed to the File Version Control system by designing use and misuse cases, including core features like uploading new file versions and maintaining version history. Researched security risks and implemented solutions such as file integrity checks, role-based access, and logging suspicious activity. Additionally, worked on documentation to cover both functionality and security aspects.
 - Pr ans
 - Sreean Rikkala: Worked on FIle Upload/Download use and misuse case. Designed the template for the Requirements for SSE.md file, gathered information on open issues and security-related documentation, and contributed to the overall document structure
 
