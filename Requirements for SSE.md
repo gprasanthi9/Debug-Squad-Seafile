@@ -188,7 +188,7 @@ Team members have been working on various aspects of the project, including:
 - Er ans
 - Mo ans
 - Pr ans
-- Sr ans
+- Sreean Rikkala: Designed the template for the Requirements for SSE.md file, gathered information on open issues and security-related documentation, and contributed to the overall document structure
 
 ### What We Did Well
 * Active Participation: Our team has been showing regular updates to the project repository.
