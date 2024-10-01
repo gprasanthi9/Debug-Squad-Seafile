@@ -32,7 +32,7 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 **Misuse Case:**  An script kiddie attacker tries to use either brute force password guess or more target credential stuffing with informaiton from an account breach. 
 
 **Diagram:**  
-![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
+![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/User%20Login%20Use-Misuse%20Case.jpg)
 
 **Assessment:** Under and attack scenario, if credentials are valid it still will be prevented by multi-factor.  With to many login attempts the account can be temporarily locked to slow down attack or account can be locked.  Account lockout is a form of Denial of Service.
 
