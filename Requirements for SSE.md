@@ -41,13 +41,14 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 ### **1.2 File Version Control Use Case**
 
 **Use Case:**  
-Enter your use case here.
+The File Version Control System empowers users to manage file versions efficiently by allowing them to upload new file versions and revert to previous ones when needed. It also maintains a complete history of file versions, ensuring that every modification is tracked. The system verifies user permissions before files are uploaded, ensuring that only authorized users can make changes. This enhances document management by promoting accountability and data protection, allowing teams to recover previous versions, handle upload errors, and avoid accidental loss of important data.
 
 **Misuse Case:**  
-Enter your misuse case here.
+In this Misuse case, a Malicious User attempts to upload a corrupted file or maliciously overwrite existing file versions within the File Version Control System. Such actions could compromise the integrity of data or disrupt the normal workflow of the system. The system mitigates these threats by verifying file permissions and incorporating access control measures, which prevent unauthorized users from tampering with files. It also tracks and monitors file uploads to detect suspicious activities. Alerts are sent to the Admin if any unauthorized behavior is detected, ensuring timely intervention to maintain data security and workflow continuity.
 
 **Diagram:**  
-Place the diagram here.
+<img width="1195" alt="image" src="https://github.com/user-attachments/assets/25c9a82a-68cf-4282-be4a-1c321b7abb85">
+
 
 **Assessment:**  
 Enter your assessment here.
