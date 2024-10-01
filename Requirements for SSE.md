@@ -184,11 +184,11 @@ Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and
 
 ### Individual Contributions
 Team members have been working on various aspects of the project, including:
-- Creating and updating use-misuse case diagrams
-- Developing the project proposal
-- Detailing Software Security Engineering requirements for Seafile
-- Updating the README and other documentation
-- Analyzing potential security vulnerabilities in Seafile
+- Ku ans
+- Er ans
+- Mo ans
+- Pr ans
+- Sr ans
 
 ### What We Did Well
 * Active Participation: Our team has been showing regular updates to the project repository.
