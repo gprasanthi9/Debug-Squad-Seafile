@@ -49,9 +49,10 @@ In this Misuse case, a Malicious User attempts to upload a corrupted file or mal
 **Diagram:**  
 <img width="1195" alt="image" src="https://github.com/user-attachments/assets/25c9a82a-68cf-4282-be4a-1c321b7abb85">
 
-
 **Assessment:**  
-Enter your assessment here.
+The file version control feature in Seafile allows users to manage file versions, ensuring that previous versions are preserved and recoverable. This functionality is essential in mitigating potential risks such as accidental file overwrites or unauthorized modifications. Users can revert to earlier versions of files, safeguarding critical data from accidental deletions or corruption.
+
+To protect the system from misuse, role-based permissions and file integrity checks are enforced. This ensures that only authorized users can upload or modify files, and any corrupted or malicious uploads are detected and blocked. Additionally, the system logs and monitors all file-related activities, enabling administrators to detect suspicious behavior, such as attempts to upload corrupted files by malicious users. Alerts are generated in response to these activities to prevent data compromise or workflow disruption.
 
 
 
