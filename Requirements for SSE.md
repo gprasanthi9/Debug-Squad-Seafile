@@ -168,12 +168,6 @@ These issues highlight ongoing challenges in areas such as:
       CSRF_TRUSTED_ORIGIONS = [“https://seafile.example.com’]
       For issue #2829 it looks like setting the .tls to true was part of the solution.
 2. Client-Server Communication: Instabilities in maintaining consistent connections
-      Incorrect username or password does not display correct message.  Exists a possibility of this being exploited to redirect          unintended page or allow information disclosure from the default error page.  Is it as simple as creating a new page this          is displayed as a result of the error response of the bad username and/or password?
-       Perhaps include this on the login page in the "body" tag
-
-            {% if form.errors %}
-               <p>Your username and password didn't match. Please try again.</p>
-            {% endif %}
 3. File Upload Integrity: Instances of file corruption or incomplete transfers
 4. User Authentication and Account Management: Inconsistencies in account creation and email assignments
 5. Server Resilience: Stability issues under incorrect login attempts
