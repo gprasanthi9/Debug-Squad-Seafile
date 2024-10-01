@@ -59,18 +59,18 @@ To protect the system from misuse, role-based permissions and file integrity che
 ### **1.3 Data Synchronization Use Case**
 
 **Use Case:**  
-Enter your use case here.
+The Data Synchronization feature allows users to keep their Seafile libraries up-to-date across multiple devices. The synchronization process ensures file consistency and integrity across platforms. Key actions include verifying permissions and handling upload errors. The system verifies that the user has proper permissions to perform the sync and manages any errors that occur during the process. After synchronization, the system checks whether the sync was successful and, if so, ensures files are synced across devices. If the sync fails, the system triggers error handling and recovery mechanisms.
 
 **Misuse Case:**  
-Enter your misuse case here.
+A potential attacker may attempt to intercept data during the synchronization process, threatening the confidentiality of the files. This misuse case targets the Seafile Synchronization Service by attempting to intercept or corrupt data in transit. To mitigate this threat, Seafile employs End-to-End Encryption and SSL/TLS Certificate Validation to protect the communication channels and ensure that even if data is intercepted, it remains secure and unreadable to unauthorized actors.
 
 **Diagram:**  
-Place the diagram here.
+<img width="1177" alt="image" src="https://github.com/user-attachments/assets/c8d62b90-4f75-422f-b6b8-e332d053c369">
 
 **Assessment:**  
-Enter your assessment here.
+The data synchronization process in Seafile is essential for ensuring that users' files are consistent across multiple devices. However, this process can be vulnerable to data interception and unauthorized access, particularly when a malicious actor attempts to exploit the synchronization mechanism. To address these risks, Seafile incorporates robust access control mechanisms that ensure only authorized users and devices can initiate or participate in the synchronization process. Additionally, End-to-End Encryption is employed, protecting data from being exposed to unauthorized entities even if intercepted during transmission. This ensures that any intercepted data remains unreadable to attackers.
 
-
+Furthermore, Seafile implements SSL/TLS validation to secure communication channels, making it nearly impossible for attackers to insert themselves into the data exchange during synchronization. The system also incorporates logging and monitoring activities, providing administrators with visibility into all synchronization actions. This feature allows for quick detection of any unusual behavior, such as unauthorized access attempts or data interception. In case of any synchronization errors, the Handle Upload Errors process ensures that the system can recover without compromising the integrity of the files. These combined measures make the data synchronization process both reliable and secure, safeguarding user data against potential threats.
 
 ### **1.4 File Upload/Download Use Case**
 
@@ -193,8 +193,8 @@ Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and
 Team members have been working on various aspects of the project, including:
 - Ku ans
 - Erik: Worked on the User Login, researched Security issue #2829 and #2773, explored SSE on ChatGPT.
-- Monica: Contributed to the File Version Control system by designing use and misuse cases, including core features like uploading new file versions and maintaining version history. Researched security risks and implemented solutions such as file integrity checks, role-based access, and logging suspicious activity. Additionally, worked on documentation to cover both functionality and security aspects.
-- Pr ans
+- Anjani Monica Sai Allada : Contributed to the File Version Control system by designing use and misuse cases, including core features like uploading new file versions and maintaining version history. Researched security risks and implemented solutions such as file integrity checks, role-based access, and logging suspicious activity. Additionally, worked on documentation to cover both functionality and security aspects.
+- Prasanthi Gutta :Worked on Data Synchronization use and misuse case. Created the diagram in draw.io, designed the structure for the synchronization process, identified potential threats, and contributed to security mitigation strategies. Additionally, gathered information on system interactions, open issues, and integrated these into the overall documentation for security and functionality.
 - Sreean Rikkala: Worked on FIle Upload/Download use and misuse case. Designed the template for the Requirements for SSE.md file, gathered information on open issues and security-related documentation, and contributed to the overall document structure
 
 ### What We Did Well
