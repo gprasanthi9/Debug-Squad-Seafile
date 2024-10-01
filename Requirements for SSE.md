@@ -99,10 +99,11 @@ Furthermore, **logging and monitoring activities** provide visibility into all f
 ### **1.5 File Sharing Use Case**
 
 **Use Case:**  
-Enter your use case here.
+In Seafile, the file sharing use case revolves around a user ( a "Researcher") sharing files or folders with others, both within and outside the organization. The process allows for seamless collaboration while maintaining tight control over access and security. Users can define specific permissions, such as read-only or editing rights, for each recipient. Files can be shared with individuals, groups, or external parties through public links, which can be password-protected and set with expiration dates.
+
 
 **Misuse Case:**  
-Enter your misuse case here.
+An impersonator attempted to access file with the link shared. The attacker attempted unathorizes access through various means like password guessing or brute force attack on a weak password, social engineering and malware attack to bypass outdated system.
 
 **Diagram:**  
 
@@ -110,7 +111,11 @@ Enter your misuse case here.
 [![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/raw/main/Use-Misuse%20Case%20Diagram/File%20Sharing%20Use-Misuse%20Case.jpg)](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Sharing%20Use-Misuse%20Case.jpg)
 
 **Assessment:**  
-Enter your assessment here.
+The file-sharing process in Seafile is a key feature that facilitates seamless collaboration among users. However, this process is susceptible to risks such as unauthorized access and data leakage, especially when files are shared externally or publicly. To mitigate these risks, Seafile incorporates stringent access control mechanisms, allowing users to define specific permissions for file-sharing activities. This ensures that only authorized individuals, whether internal or external, can view or modify shared files.
+
+Additionally, Seafile uses End-to-End Encryption for libraries, protecting files from unauthorized access both during storage and transmission. When files are shared, particularly via public links, users can add an extra layer of security by enabling password protection and setting link expiration dates. This ensures that shared files remain secure, even if the sharing link is intercepted or accessed by unintended recipients.
+
+Moreover, Seafile employs SSL/TLS encryption for all file-sharing communication, safeguarding data against potential man-in-the-middle attacks. The system's logging and monitoring tools provide administrators with visibility into all file-sharing actions, allowing them to quickly detect and respond to suspicious activities, such as unauthorized link access or modifications to shared files. In case of any sharing-related issues, the system ensures file integrity by logging errors and logout user with multiple login attempt, reducing the risk of data loss.
 
 ---
 
@@ -191,7 +196,7 @@ Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and
 
 ### Individual Contributions
 Team members have been working on various aspects of the project, including:
-- Ku ans
+- Kunle: Worked on the File sharing use and misuse case. Created diagram in draw.io and gathered information on open issues and security-related documentation. Also handled issue tracking and delivery.
 - Erik: Worked on the User Login, researched Security issue #2829 and #2773, explored SSE on ChatGPT.
 - Anjani Monica Sai Allada : Contributed to the File Version Control system by designing use and misuse cases, including core features like uploading new file versions and maintaining version history. Researched security risks and implemented solutions such as file integrity checks, role-based access, and logging suspicious activity. Additionally, worked on documentation to cover both functionality and security aspects.
 - Prasanthi Gutta :Worked on Data Synchronization use and misuse case. Created the diagram in draw.io, designed the structure for the synchronization process, identified potential threats, and contributed to security mitigation strategies. Additionally, gathered information on system interactions, open issues, and integrated these into the overall documentation for security and functionality.
