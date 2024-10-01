@@ -27,14 +27,14 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 
 ### **1.1 User Login Use Case**
 
-**Use Case:**  Enter your use case here.
+**Use Case:**  User logs in, password is hashed then multi-factor is requested to successfully login.
 
-**Misuse Case:**  Enter your misuse case here.
+**Misuse Case:**  An script kiddie attacker tries to use either brute force password guess or more target credential stuffing with informaiton from an account breach. 
 
 **Diagram:**  
-Place the diagram here.
+![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/User%20Login%20Use%26Misuse%20Case.png)
 
-**Assessment:** Enter your assessment here.
+**Assessment:** Under and attack scenario, if credentials are valid it still will be prevented by multi-factor.  With to many login attempts the account can be temporarily locked to slow down attack or account can be locked.  Account lockout is a form of Denial of Service.
 
 
 
@@ -160,7 +160,18 @@ During our review, we noticed several open issues related to security and system
 These issues highlight ongoing challenges in areas such as:
 
 1. CSRF Protection Configuration: Potential vulnerabilities in CSRF protection implementation
+      From some research this can occur if the secure check occurs out of order.
+      The feedback on the issue #2829 suggests it functions without the proxy.  This was causing some logout issues
+      A related issue #2707 with CSRF verification is noted where the added the line 
+      CSRF_TRUSTED_ORIGIONS = [“https://seafile.example.com’]
+      For issue #2829 it looks like setting the .tls to true was part of the solution.
 2. Client-Server Communication: Instabilities in maintaining consistent connections
+      Incorrect username or password does not display correct message.  Exists a possibility of this being exploited to redirect          unintended page or allow information disclosure from the default error page.  Is it as simple as creating a new page this          is displayed as a result of the error response of the bad username and/or password?
+       Perhaps include this on the login page in the "body" tag
+
+            {% if form.errors %}
+               <p>Your username and password didn't match. Please try again.</p>
+            {% endif %}
 3. File Upload Integrity: Instances of file corruption or incomplete transfers
 4. User Authentication and Account Management: Inconsistencies in account creation and email assignments
 5. Server Resilience: Stability issues under incorrect login attempts
@@ -185,19 +196,20 @@ Team Debug-Squad-Seafile includes Monica, Prashanthi, Kunlee, Sreean-Rikkala and
 ### Individual Contributions
 Team members have been working on various aspects of the project, including:
 - Ku ans
-- Er ans
+- Erik: Worked on the User Login, researched Security issue #2829 and #2773, explored SSE on ChatGPT.
 - Mo ans
 - Pr ans
 - Sreean Rikkala: Worked on FIle Upload/Download use and misuse case. Designed the template for the Requirements for SSE.md file, gathered information on open issues and security-related documentation, and contributed to the overall document structure
 
 ### What We Did Well
 * Active Participation: Our team has been showing regular updates to the project repository.
-* 
+* Team is communicating much better with Whatsapp chat and during Zoom meetings
+* Examined previous class's work to improve whole team understanding
 * 
 
 ### Areas for Improvement
 * Consistency in Updates: 
 * Expanded Analysis:
-* 
+* Synergies in data presentation
 
 The Project Board can be found here: [Debug-Squad-Seafile](https://github.com/users/gprasanthi9/projects/3/views/1)
