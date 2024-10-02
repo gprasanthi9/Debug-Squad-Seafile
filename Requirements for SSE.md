@@ -76,7 +76,8 @@ Furthermore, Seafile implements SSL/TLS validation to secure communication chann
 
 **Diagram:**  
 
-![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
+![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/5af7e64a53db9244d7fad26b6dc94823bfdfed09/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download.jpg)
+
 
 
 
