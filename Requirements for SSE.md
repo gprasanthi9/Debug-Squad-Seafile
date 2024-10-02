@@ -40,11 +40,9 @@ To conduct a thorough security analysis of Seafile, we’ve identified critical 
 
 ### **1.2 File Version Control Use Case**
 
-**Use Case:**  
-The File Version Control System empowers users to manage file versions efficiently by allowing them to upload new file versions and revert to previous ones when needed. It also maintains a complete history of file versions, ensuring that every modification is tracked. The system verifies user permissions before files are uploaded, ensuring that only authorized users can make changes. This enhances document management by promoting accountability and data protection, allowing teams to recover previous versions, handle upload errors, and avoid accidental loss of important data.
+**Use Case:**  The File Version Control System empowers users to manage file versions efficiently by allowing them to upload new file versions and revert to previous ones when needed. It also maintains a complete history of file versions, ensuring that every modification is tracked. The system verifies user permissions before files are uploaded, ensuring that only authorized users can make changes. This enhances document management by promoting accountability and data protection, allowing teams to recover previous versions, handle upload errors, and avoid accidental loss of important data.
 
-**Misuse Case:**  
-In this Misuse case, a Malicious User attempts to upload a corrupted file or maliciously overwrite existing file versions within the File Version Control System. Such actions could compromise the integrity of data or disrupt the normal workflow of the system. The system mitigates these threats by verifying file permissions and incorporating access control measures, which prevent unauthorized users from tampering with files. It also tracks and monitors file uploads to detect suspicious activities. Alerts are sent to the Admin if any unauthorized behavior is detected, ensuring timely intervention to maintain data security and workflow continuity.
+**Misuse Case:**  In this Misuse case, a Malicious User attempts to upload a corrupted file or maliciously overwrite existing file versions within the File Version Control System. Such actions could compromise the integrity of data or disrupt the normal workflow of the system. The system mitigates these threats by verifying file permissions and incorporating access control measures, which prevent unauthorized users from tampering with files. It also tracks and monitors file uploads to detect suspicious activities. Alerts are sent to the Admin if any unauthorized behavior is detected, ensuring timely intervention to maintain data security and workflow continuity.
 
 **Diagram:**  
 <img width="1195" alt="image" src="https://github.com/user-attachments/assets/25c9a82a-68cf-4282-be4a-1c321b7abb85">
@@ -58,11 +56,9 @@ To protect the system from misuse, role-based permissions and file integrity che
 
 ### **1.3 Data Synchronization Use Case**
 
-**Use Case:**  
-The Data Synchronization feature allows users to keep their Seafile libraries up-to-date across multiple devices. The synchronization process ensures file consistency and integrity across platforms. Key actions include verifying permissions and handling upload errors. The system verifies that the user has proper permissions to perform the sync and manages any errors that occur during the process. After synchronization, the system checks whether the sync was successful and, if so, ensures files are synced across devices. If the sync fails, the system triggers error handling and recovery mechanisms.
+**Use Case:**  The Data Synchronization feature allows users to keep their Seafile libraries up-to-date across multiple devices. The synchronization process ensures file consistency and integrity across platforms. Key actions include verifying permissions and handling upload errors. The system verifies that the user has proper permissions to perform the sync and manages any errors that occur during the process. After synchronization, the system checks whether the sync was successful and, if so, ensures files are synced across devices. If the sync fails, the system triggers error handling and recovery mechanisms.
 
-**Misuse Case:**  
-A potential attacker may attempt to intercept data during the synchronization process, threatening the confidentiality of the files. This misuse case targets the Seafile Synchronization Service by attempting to intercept or corrupt data in transit. To mitigate this threat, Seafile employs End-to-End Encryption and SSL/TLS Certificate Validation to protect the communication channels and ensure that even if data is intercepted, it remains secure and unreadable to unauthorized actors.
+**Misuse Case:**  A potential attacker may attempt to intercept data during the synchronization process, threatening the confidentiality of the files. This misuse case targets the Seafile Synchronization Service by attempting to intercept or corrupt data in transit. To mitigate this threat, Seafile employs End-to-End Encryption and SSL/TLS Certificate Validation to protect the communication channels and ensure that even if data is intercepted, it remains secure and unreadable to unauthorized actors.
 
 **Diagram:**  
 <img width="1177" alt="image" src="https://github.com/user-attachments/assets/c8d62b90-4f75-422f-b6b8-e332d053c369">
@@ -81,6 +77,7 @@ Furthermore, Seafile implements SSL/TLS validation to secure communication chann
 **Diagram:**  
 
 ![File Upload/Download Use-Misuse Case Diagram](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Use-Misuse%20Case%20Diagram/File%20Upload%20%26%20Download%20Use%20Case.png)
+
 
 
 
