@@ -52,7 +52,7 @@
 - **Justification (J1):** Aligns with industry-standard security measures.
 - **Interface Rule (IR1):** Seafile adheres to secure file transfer protocols.
 
-**Sub-Claims:**
+**Supporting Arguments:**
 
 1. **Sub-Claim (C2):** Access to file operations is properly controlled.  
    **Evidence:**  
