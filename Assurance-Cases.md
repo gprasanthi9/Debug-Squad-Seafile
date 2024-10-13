@@ -1,6 +1,6 @@
 # Assurance Cases for Software Security Engineering
 
-## Part 1: Top-Level Claims
+##Top-Level Claims
 
 1. [Claim 1]
 2. [Claim 2]
@@ -38,7 +38,7 @@
 **Assessment:**
 [Assessment text]
 
-# Assurance Case: File Upload/Download Security in Seafile
+## Assurance Case: File Upload/Download Security in Seafile
 
 **Top-Level Claim (C1)** - Seafile ensures secure file uploads and downloads
 
