@@ -1,1 +1,155 @@
+# Assurance Cases for Software Security Engineering
 
+## Part 1: Top-Level Claims
+
+1. [Claim 1]
+2. [Claim 2]
+3. File Upload/Download Security (Sreean Rikkala)
+4. [Claim 4]
+5. [Claim 5]
+
+## Part 1: Breadth and Depth of Assurance Arguments
+
+### 1.1 [Claim 1 Name]
+
+**Diagram:**
+[Diagram link]
+
+**Assessment:**
+[Assessment text]
+
+**Sub-Claim 1 and evidcnce and others:**
+
+### 1.2 [Claim 2 Name]
+
+**Diagram:**
+[Diagram link]
+
+**Assessment:**
+[Assessment text]
+
+**Sub-Claim 1 and evidcnce and others:**
+
+### 1.3 File Upload/Download Security (Sreean Rikkala)
+
+**Diagram:**
+[Diagram link]
+
+**Assessment:**
+[Assessment text]
+
+# Assurance Case: File Upload/Download Security in Seafile
+
+**Top-Level Claim (C1)** - Seafile ensures secure file uploads and downloads
+
+**Context (CT1)** - Seafile deployed in enterprise environment
+
+**Assumption (A1)** - Users adhere to security policies
+
+**Strategy (S1)** - Argue over key security aspects of file upload/download process
+
+**Justification (J1)** - Aligns with industry-standard security measures
+
+**Interface Rule (IR1)** - Seafile adheres to secure file transfer protocols
+
+**Sub-Claim (C2)** - Access to file operations is properly controlled
+**Evidence:** E1 - Role-based access control implementation, E2 - Multi-factor authentication logs
+**Rebuttal (R1)** - Unless there's an unauthorized access attempt
+**Sub-Claim (C7)** - Access control mitigates unauthorized access
+**Evidence:** E10 - Failed access attempt logs
+
+**Sub-Claim (C3)** - Data is protected during file upload/download
+**Evidence:** E3 - Encrypt File Transfer feature documentation, E4 - AES-256 encryption implementation
+**Rebuttal (R2)** - Unless there's a data interception attack
+**Sub-Claim (C8)** - Robust encryption prevents data theft
+**Evidence:** E9 - SSL/TLS implementation for secure data transmission
+
+**Sub-Claim (C4)** - File integrity is maintained
+**Rebuttal (R3)** - Unless there's file corruption during upload/download
+**Sub-Claim (C6)** - File validation process documentation
+**Evidence:** E5 - File validation process logs, E6 - File Version Control system logs
+
+**Sub-Claim (C5)** - Seafile actively updates security protocols
+**Evidence:** E7 - Protocol version history and update logs, E8 - Vulnerability response and patching records
+
+**Undercut (UC1)** - Unless new protocol vulnerabilities emerge
+
+### 1.4 [Claim 4 Name]
+
+**Diagram:**
+[Diagram link]
+
+**Assessment:**
+[Assessment text]
+
+**Sub-Claim 1 and evidcnce and others:**
+
+### 1.5 [Claim 5 Name]
+
+**Diagram:**
+[Diagram link]
+
+**Assessment:**
+[Assessment text]
+
+**Sub-Claim 1 and evidcnce and others:**
+
+## Part 2: Evidence Alignment Observations
+
+### 2.1 [Claim 1 Name]
+
+#### 2.1.1 Available Evidence
+1. [Evidence 1]
+2. [Evidence 2]
+
+#### 2.1.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1]
+2. [Missing evidence 2]
+
+### 2.2 [Claim 2 Name]
+
+#### 2.2.1 Available Evidence
+1. [Evidence 1]
+2. [Evidence 2]
+
+#### 2.2.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1]
+2. [Missing evidence 2]
+
+### 2.3 File Upload/Download Security (Sreean Rikkala)
+
+#### 2.3.1 Available Evidence
+1. [Evidence 1]
+2. [Evidence 2]
+
+#### 2.3.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1]
+2. [Missing evidence 2]
+
+### 2.4 [Claim 4 Name]
+
+#### 2.4.1 Available Evidence
+1. [Evidence 1]
+2. [Evidence 2]
+
+#### 2.4.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1]
+2. [Missing evidence 2]
+
+### 2.5 [Claim 5 Name]
+
+#### 2.5.1 Available Evidence
+1. [Evidence 1]
+2. [Evidence 2]
+
+#### 2.5.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1]
+2. [Missing evidence 2]
+
+## Project Board Link
+
+[Project board link]
+
+## Planning & Reflection
+
+[Planning and reflection content]
