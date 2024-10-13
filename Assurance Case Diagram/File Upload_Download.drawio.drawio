@@ -1,0 +1,215 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15" version="24.7.17">
+  <diagram id="2RAkf9iS2bYrb-5zrusB" name="Page-1">
+    <mxGraphModel dx="2482" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-1" value="&lt;h1&gt;Assurance Case:&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;For File Upload/Download&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="20" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.672;exitY=0.983;exitDx=0;exitDy=0;endArrow=block;endFill=1;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412.5" y="100" as="sourcePoint" />
+            <mxPoint x="870" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-41" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="tbIMrllRlCYScKRHbtyk-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-42" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="tbIMrllRlCYScKRHbtyk-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="tbIMrllRlCYScKRHbtyk-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-2" value="&lt;b&gt;Top-Claim C1:&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Seafile ensures secure file uploads and downloads&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="30" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;curved=1;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-8" target="EpLoNu7SxfJ4iQwhgqlz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-8" target="EpLoNu7SxfJ4iQwhgqlz-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-73" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.414;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-8" target="EpLoNu7SxfJ4iQwhgqlz-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-8" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Sub-Claim C1:&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Access to file operations is properly controlled&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-32.5" y="240" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-72" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-10" target="EpLoNu7SxfJ4iQwhgqlz-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-10" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Rebuttal R1&lt;/b&gt;: Unless there&#39;s an unauthorized access attempt&lt;/font&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="485" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-52" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-15" target="tbIMrllRlCYScKRHbtyk-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-15" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Sub-Claim C5&lt;/b&gt;:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Access control mitigates unauthorized access&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-45" y="590" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-18" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Evidence E&lt;/b&gt;1:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Role-based access control implementation&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-19" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Evidence E2&lt;/b&gt;:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Multi-factor authentication logs&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="10" y="840" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-33" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Evidence E8:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;SSL/TLS implementation for secure data transmission&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="295" y="710" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-36" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Interface Rule IR1:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;Seafile adheres to secure file upload/download &amp;nbsp;protocols&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#A9C4EB;size=0.05555555555555555;" parent="1" vertex="1">
+          <mxGeometry x="760" y="140" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;exitX=0.391;exitY=1.041;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-1" target="tbIMrllRlCYScKRHbtyk-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-48" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-1" target="tbIMrllRlCYScKRHbtyk-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-78" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-1" target="tbIMrllRlCYScKRHbtyk-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-92" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-1" target="tbIMrllRlCYScKRHbtyk-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="230" />
+              <mxPoint x="779" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-1" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Strategy S1:&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Argue over key security aspects of file upload/download process&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="287.5" y="140" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-6" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-1" target="EpLoNu7SxfJ4iQwhgqlz-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="310" as="sourcePoint" />
+            <mxPoint x="190" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;curved=1;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-7" target="tbIMrllRlCYScKRHbtyk-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-7" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Sub-Claim C2:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;Data is protected during file upload/download&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="280" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-8" value="&lt;span style=&quot;font-style: normal; font-variant-caps: normal; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Sub-Claim C3:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;File integrity is maintained&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="280" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-26" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-9" target="tbIMrllRlCYScKRHbtyk-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-27" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-9" target="tbIMrllRlCYScKRHbtyk-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-9" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Sub-Claim C4:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Seafile actively updates security protocols&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="745" y="390" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-16" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Evidence E3&lt;/b&gt;:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;SSL/TLS implementation for transfers&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-17" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Evidence E4&lt;/b&gt;:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px; text-align: start;&quot;&gt;&amp;nbsp;AES-256 encryption implementation&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="380" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.191;exitY=0.962;exitDx=0;exitDy=0;entryX=0.404;entryY=0.039;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitPerimeter=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-7" target="tbIMrllRlCYScKRHbtyk-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-68" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-20" target="tbIMrllRlCYScKRHbtyk-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-20" value="&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Evidence E9&lt;/b&gt;:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;File validation process documentation&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Btext-align%3A%20start%3B%26quot%3B%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2011px%3B%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BEvidence%20E4%26lt%3B%2Fb%26gt%3B%3A%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fspan%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Btext-align%3A%20start%3B%26quot%3B%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2011px%3B%26quot%3B%26gt%3BSSL%2FTLS%20implementation%20for%20transfers%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fspan%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22ellipse%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Baspect%3Dfixed%3BfillColor%3D%23ffffff%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22375%22%20y%3D%22410%22%20width%3D%22100%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="610" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-88" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-24" target="tbIMrllRlCYScKRHbtyk-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-24" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;Evidence&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;E5:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Protocol version history and update logs&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="510" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-89" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-25" target="tbIMrllRlCYScKRHbtyk-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-25" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Evidence E6&lt;/b&gt;:&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Vulnerability response and patching records&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="510" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-95" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-31" target="tbIMrllRlCYScKRHbtyk-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-31" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Rebuttal R2&lt;/b&gt;: Unless there&#39;s a data interception attack&lt;/font&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="265" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-54" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-32" target="EpLoNu7SxfJ4iQwhgqlz-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-32" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Sub-Claim C6&lt;/b&gt;: Robust encryption prevents data theft&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="610" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-38" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;&lt;b&gt;Context CT1&lt;/b&gt;: Seafile deployed in enterprise environment&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="605" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-39" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Assumption A1&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;: Users adhere to security policies&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-40" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Justification J1&lt;/b&gt;: Aligns with industry-standard security measures&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-50" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.279;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-7" target="tbIMrllRlCYScKRHbtyk-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-56" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-51" target="EpLoNu7SxfJ4iQwhgqlz-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-51" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Evidence E7&lt;/b&gt;: Failed access attempt logs&lt;/font&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-25" y="700" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-65" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="560" y="755" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-75" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-33" target="tbIMrllRlCYScKRHbtyk-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="820" as="sourcePoint" />
+            <mxPoint x="260" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-59" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="330" y="840" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-82" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-77" target="tbIMrllRlCYScKRHbtyk-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-77" value="&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Rebuttal R3&lt;/b&gt;:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Unless there&#39;s a file corruption during upload/download&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="495" y="390" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-79" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.593;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-83" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-81" target="tbIMrllRlCYScKRHbtyk-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-81" value="&lt;span style=&quot;font-style: normal; font-variant-caps: normal; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Sub-Claim C7:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;File validation process documentation&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="507.5" y="510" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-86" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="745" y="660" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-87" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="875" y="660" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-94" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbIMrllRlCYScKRHbtyk-90" target="tbIMrllRlCYScKRHbtyk-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-90" value="&lt;b&gt;Undercut UC1&lt;/b&gt;:&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;&lt;span style=&quot;text-align: start;&quot;&gt;Unless new protocol vulnerabilities emerge&lt;/span&gt;&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="810" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tbIMrllRlCYScKRHbtyk-93" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-36" target="tbIMrllRlCYScKRHbtyk-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
