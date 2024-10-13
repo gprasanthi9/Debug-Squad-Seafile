@@ -169,12 +169,18 @@
 
 ---
 
-## Project Board Link
-
-[Project board link]
-
----
 
 ## Planning & Reflection
 
-[Planning and reflection content]
+### What We Did Well
+* Active Participation: Our team has been showing regular updates to the project repository.
+* Team is communicating much better with Whatsapp chat and during Zoom meetings
+* Examined previous class's work to improve whole team understanding
+  
+
+### Areas for Improvement
+* Consistency in Updates
+* Expanded Analysis
+* Synergies in data presentation
+
+The Project Board can be found here: [Debug-Squad-Seafile](https://github.com/users/gprasanthi9/projects/3/views/1)
