@@ -42,9 +42,8 @@
 **Assessment:**  
 [Assessment text]
 
----
 
-## Assurance Case: File Upload/Download Security in Seafile
+**Assurance Case: File Upload/Download Security in Seafile**
 
 - **Top-Level Claim (C1):** Seafile ensures secure file uploads and downloads.
 - **Context (CT1):** Seafile deployed in an enterprise environment.
@@ -53,7 +52,7 @@
 - **Justification (J1):** Aligns with industry-standard security measures.
 - **Interface Rule (IR1):** Seafile adheres to secure file transfer protocols.
 
-### Sub-Claims:
+**Sub-Claims:**
 
 1. **Sub-Claim (C2):** Access to file operations is properly controlled.  
    **Evidence:**  
@@ -83,7 +82,7 @@
    - E8: Vulnerability response and patching records.  
    **Undercut (UC1):** Unless new protocol vulnerabilities emerge.
 
----
+
 
 ### 1.4 [Claim 4 Name]
 
@@ -95,7 +94,6 @@
 
 **Sub-Claim 1 and evidence and others:**
 
----
 
 ### 1.5 [Claim 5 Name]
 
