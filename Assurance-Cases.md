@@ -3,7 +3,7 @@
 ## Top-Level Claims
 
 1. [Claim 1]
-2. [Claim 2]
+2. **Secure Login** (Erik Weinmeister)
 3. **File Upload/Download Security** (Sreean Rikkala)
 4. [Claim 4]
 5. [Claim 5]
@@ -22,7 +22,7 @@
 
 
 
-### 1.2 [Claim 2 Name]
+### 1.2 Secure Login (Erik Weinmeister)
 
 **Diagram:**  
 [Diagram link]
