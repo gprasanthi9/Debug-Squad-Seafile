@@ -20,7 +20,7 @@
 
 **Sub-Claim 1 and evidence and others:**
 
----
+
 
 ### 1.2 [Claim 2 Name]
 
@@ -32,7 +32,7 @@
 
 **Sub-Claim 1 and evidence and others:**
 
----
+
 
 ### 1.3 File Upload/Download Security (Sreean Rikkala)
 
