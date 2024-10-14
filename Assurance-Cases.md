@@ -176,13 +176,33 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 ----
 ### 2.3 File Upload/Download Security (Sreean Rikkala)
 
-#### 2.3.1 Available Evidence
-1. [Evidence 1]
-2. [Evidence 2]
+2.3.1 Available Evidence
 
-#### 2.3.2 Unavailable/Insufficient Evidence
-1. [Missing evidence 1]
-2. [Missing evidence 2]
+1. Role-Based Access Control (RBAC):
+   Seafile implements RBAC to manage user privileges for file operations. This is evident in the system's ability to control access based on user roles.
+
+2. Multi-Factor Authentication (MFA):
+   Logs of multi-factor authentication demonstrate the implementation of this additional security layer for user access.
+
+3. SSL/TLS Implementation:
+   Documentation and implementation of SSL/TLS protocols for secure file transfers are available, showing how data is protected during transmission.
+
+4. AES-256 Encryption:
+   Evidence of AES-256 encryption implementation for file content protection is present in Seafile's documentation.
+
+5. File Validation Process:
+   Documentation detailing the file validation process, which helps maintain file integrity during uploads and downloads.
+
+6. Version Control Logs:
+   Seafile's version control system logs provide evidence of file integrity maintenance and change tracking.
+
+2.3.2 Unavailable/Insufficient Evidence
+
+1. Comprehensive Security Audit Logs:
+   While basic logging is implemented, there may be a lack of detailed security audit logs that track all file operations and access attempts comprehensively.
+
+2. Third-Party Security Assessment:
+   There's no evidence of recent third-party security assessments or penetration testing specifically for the file upload/download functionality.
 
 
 
