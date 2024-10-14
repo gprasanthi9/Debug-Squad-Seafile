@@ -2,7 +2,7 @@
 
 ## Top-Level Claims
 
-1. [Claim 1]
+1. **Seafile Shared File Protection** (Kunle Amoo)
 2. **Secure Login** (Erik Weinmeister)
 3. **File Upload/Download Security** (Sreean Rikkala)
 4. [Claim 4]
@@ -10,17 +10,45 @@
 
 ## Part 1: Breadth and Depth of Assurance Arguments
 
-### 1.1 [Claim 1 Name]
-
+### 1.1 Seafile Shared File Protection (Kunle Amoo)
 **Diagram:**  
 [Diagram link]
 
 **Assessment:**  
-[Assessment text]
-
-**Sub-Claim 1 and evidence and others:**
 
 
+Seafile effectively minimizes the risk of unauthorized access to shared files during collaboration by enforcing a robust user authentication and authorization policy. This ensures that only authorized individuals can access and modify sensitive data, reducing the likelihood of a data breach. To further protect users' credentials, Seafile implements **[AES-256 encryption](https://help.seafile.com/security_and_encryption/use_encrypted_libraries/#:~:text=If%20you%20use%20web%20app,be%20found%20at%20Seafile%20Manual)** along with 1000 iterations of the **[SHA256 hash function](https://manual.seafile.com/security/security_features/)**, making it nearly impossible for attackers to hijack passwords through brute force or other common attack methods. Additionally, Seafile enhances its security with two-factor authentication **[2FA](https://manual.seafile.com/maintain/two_factor_authentication/)**, adding an extra layer of protection by requiring users to provide a second verification factor, significantly lowering the risk of unauthorized file access even if passwords are compromised.
+
+
+
+**Assurance Case: File Sharing in Seafile**
+
+- **Top-Level Claim (C1):** Seafile minimizes unauthorized disclosure of files during collaborative activities.
+- **Context (CT1):** Seafile supports file lock.
+
+### Supporting Arguments:
+
+**Sub-Claims and evidence and others:**
+- **Sub-Claim C1:** File access requires user Authentication
+- **Sub-Claim C3:** Users' credentials are hashed 
+- **Sub-Claim C4:** Seafile uses 2FA for file sharing
+- **Sub-Claim C5:** Latest Seafile version supports 2FA
+
+**Rebuttal:**
+   - **R1:** Unless there is no proper access control.
+   - **R2:** Unless The user's credentials are unprotected.
+   - **R3:** Unless The system uses only passwords for authentication.
+  
+**Undermine**
+   - **UM1:** Unless the version does not support 2FA
+    
+**Evidence:**  
+   - E1: Seafile Audit report
+   - E2: Seafile AES-256 encryption Implementation update.
+   - E3: 2FA Code snippet.
+   - E4: Seafile Forum Update.
+       
+  
 
 ### 1.2 Secure Login (Erik Weinmeister)
 
@@ -29,6 +57,7 @@
 
 **Assessment:**  
 [Assessment text]
+
 
 **Sub-Claim 1 and evidence and others:**
 
@@ -109,15 +138,35 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 
 ## Part 2: Evidence Alignment Observations
 
-### 2.1 [Claim 1 Name]
+### 2.1 Seafile Shared File Protection
 
 #### 2.1.1 Available Evidence
-1. [Evidence 1]
-2. [Evidence 2]
-
+1. - E1: [Seafile Audit report](https://manual.seafile.com/security/auditing/)
+     Seafile offers four audit logs in system admin panel in the Pro Edition:
+       - Login log
+       - File access log (including access to shared files)
+       - File update log
+       - Permission change log
+      
+2.   - E2: [Seafile AES-256 encryption Implementation update](https://manual.seafile.com/security/security_features/).
+         - Seafile data is encrypted by the file key with AES 256/CBC. It uses PBKDF2 algorithm with [SHA256 Hash](https://manual.seafile.com/security/security_features/) to derive key/iv pair from the file key.
+             After encryption, the data is uploaded to the server.
+       
+3. - E3: [2FA Code snippet](https://github.com/search?q=repo%3Ahaiwen%2Fseafile+2FA&type=code).
+       - Beginning with Seafile version 6.0, Two-Factor Authentication (2FA) was introduced to strengthen account security.
+         Administrators can enable this feature in two ways: either by selecting the appropriate checkbox under the 'Password' section of the system settings page,
+         or by adding the following configuration to the seahub_settings.py file and restarting the service:
+         ENABLE_TWO_FACTOR_AUTH = True
+         TWO_FACTOR_DEVICE_REMEMBER_DAYS = 30  # optional, default is 90 days
+         Once enabled, a 'Two-Factor Authentication' section will appear in the user's profile page,
+         allowing users to scan a QR code with the Google Authenticator app on their smartphones for added security. 
+   
+4. - E4: [Seafile Forum Update] The available information in the [Forum](https://forum.seafile.com/t/seafile-8-0-x-with-webdav-and-2fa/17716).
+     - shows that Seafile latest version supports 2FA to prentent unauthorized access to the shared files  
+   
 #### 2.1.2 Unavailable/Insufficient Evidence
-1. [Missing evidence 1]
-2. [Missing evidence 2]
+1. All the evidences for this claim are available
+
 
 
 
