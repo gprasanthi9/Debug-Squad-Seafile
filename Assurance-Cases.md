@@ -119,7 +119,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 1. [Missing evidence 1]
 2. [Missing evidence 2]
 
----
+
 
 ### 2.2 [Claim 2 Name]
 
@@ -131,7 +131,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 1. [Missing evidence 1]
 2. [Missing evidence 2]
 
----
+
 
 ### 2.3 File Upload/Download Security (Sreean Rikkala)
 
@@ -143,7 +143,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 1. [Missing evidence 1]
 2. [Missing evidence 2]
 
----
+
 
 ### 2.4 [Claim 4 Name]
 
@@ -155,7 +155,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 1. [Missing evidence 1]
 2. [Missing evidence 2]
 
----
+
 
 ### 2.5 [Claim 5 Name]
 
