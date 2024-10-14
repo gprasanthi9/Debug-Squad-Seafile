@@ -63,42 +63,44 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 
 **Assurance Case: File Upload/Download Security in Seafile**
 
-- **Top-Level Claim (C1):** Seafile ensures secure file uploads and downloads.
-- **Context (CT1):** Seafile deployed in an enterprise environment.
-- **Assumption (A1):** Users adhere to security policies.
-- **Strategy (S1):** Argue over key security aspects of file upload/download process.
-- **Justification (J1):** Aligns with industry-standard security measures.
-- **Interface Rule (IR1):** Seafile adheres to secure file transfer protocols.
+- **Top-Level Claim (C1):** Seafile ensures secure file uploads and downloads
+- **Context (CT1):** Seafile deployed in enterprise environment
+- **Assumption (A1):** Users adhere to security policies
+- **Strategy (S1):** Argue over key security aspects of file upload/download process
+- **Justification (J1):** Aligns with industry-standard security measures
+- **Interface Rule (IR1):** Seafile adheres to secure file upload/download protocols
 
 **Supporting Arguments:**
+1. **Sub-Claim (C1):** Access to file operations is properly controlled  
+   **Evidence:**  
+   - E1: Role-based access control implementation  
+   - E2: Multi-factor authentication logs  
+   **Rebuttal (R1):** Unless there's an unauthorized access attempt  
+   **Sub-Claim (C5):** Access control mitigates unauthorized access  
+   **Evidence:**  
+   - E7: Failed access attempt logs
 
-1. **Sub-Claim (C2):** Access to file operations is properly controlled.  
+2. **Sub-Claim (C2):** Data is protected during file upload/download  
    **Evidence:**  
-   - E1: Role-based access control implementation.  
-   - E2: Multi-factor authentication logs.  
-   **Rebuttal (R1):** Unless there's an unauthorized access attempt.
+   - E3: SSL/TLS implementation for transfers  
+   - E4: AES-256 encryption implementation  
+   **Rebuttal (R2):** Unless there's a data interception attack  
+   **Sub-Claim (C6):** Robust encryption prevents data theft  
+   **Evidence:**  
+   - E8: SSL/TLS implementation for secure data transmission
 
-2. **Sub-Claim (C3):** Data is protected during file upload/download.  
+3. **Sub-Claim (C3):** File integrity is maintained  
+   **Rebuttal (R3):** Unless there's a file corruption during upload/download  
+   **Sub-Claim (C7):** File validation ensures data integrity  
    **Evidence:**  
-   - E3: Encrypt File Transfer feature documentation.  
-   - E4: AES-256 encryption implementation.  
-   **Rebuttal (R2):** Unless there's a data interception attack.  
-   **Sub-Claim (C8):** Robust encryption prevents data theft.  
-   **Evidence:**  
-   - E9: SSL/TLS implementation for secure data transmission.
+   - E9: File validation process documentation
 
-3. **Sub-Claim (C4):** File integrity is maintained.  
-   **Rebuttal (R3):** Unless there's file corruption during upload/download.  
-   **Sub-Claim (C6):** File validation process documentation.  
+4. **Sub-Claim (C4):** Seafile actively updates security protocols  
    **Evidence:**  
-   - E5: File validation process logs.  
-   - E6: File Version Control system logs.
+   - E5: Protocol version history and update logs  
+   - E6: Vulnerability response and patching records
 
-4. **Sub-Claim (C5):** Seafile actively updates security protocols.  
-   **Evidence:**  
-   - E7: Protocol version history and update logs.  
-   - E8: Vulnerability response and patching records.  
-   **Undercut (UC1):** Unless new protocol vulnerabilities emerge.
+**Undercut (UC1):** Unless new protocol vulnerabilities emerge
 
 
 
