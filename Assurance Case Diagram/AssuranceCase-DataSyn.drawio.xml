@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="aVXHtN-XST6ECnjQu5UB">
+    <mxGraphModel dx="2375" dy="2464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-1" value="&lt;h1&gt;Assurance Case&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="-40" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-5" target="HzWAqeQkNhOtxUmoA0pg-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-5" target="HzWAqeQkNhOtxUmoA0pg-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="160" />
+              <mxPoint x="400" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-4" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-5" target="HzWAqeQkNhOtxUmoA0pg-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Top-Claim C1:&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;The system ensures secure synchronization of data between all Seafile clients&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" parent="1" vertex="1">
+          <mxGeometry x="260" y="-50" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Context: CT1&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;Data synchronization occurs between distributed clients over a secure network&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="605" y="-30" width="205" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-11" target="HzWAqeQkNhOtxUmoA0pg-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-10" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-11" target="HzWAqeQkNhOtxUmoA0pg-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-11" value="&lt;b&gt;Sub-Claim C2:&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;Data is encrypted during transmission between clients.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="310" y="190" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-12" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-13" target="HzWAqeQkNhOtxUmoA0pg-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-13" value="Rebuttal R2:&amp;nbsp;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Unless the encryption protocol is outdated&lt;/font&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="1" vertex="1">
+          <mxGeometry x="200" y="350" width="175" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-14" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-15" target="HzWAqeQkNhOtxUmoA0pg-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzWAqeQkNhOtxUmoA0pg-15" target="XxfXGBBztzJRm6LOYlqm-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-15" value="Rebuttal R3:&amp;nbsp;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Unless user credentials are compromised&lt;/font&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="1" vertex="1">
+          <mxGeometry x="470" y="350" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-17" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-18" target="HzWAqeQkNhOtxUmoA0pg-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="HzWAqeQkNhOtxUmoA0pg-18" target="XxfXGBBztzJRm6LOYlqm-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-18" value="&lt;b&gt;Sub-Claim C3:&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;Only authenticated users can initiate synchronization&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+          <mxGeometry x="190" y="480" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-19" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-20" target="HzWAqeQkNhOtxUmoA0pg-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-20" value="&lt;b&gt;Sub-Claim C4:&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;The system detects and logs synchronization errors in real-time&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+          <mxGeometry x="470" y="480" width="192.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-21" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="710" as="sourcePoint" />
+            <mxPoint x="240" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-23" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-24" target="HzWAqeQkNhOtxUmoA0pg-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-24" value="&lt;b&gt;Evidence E2:&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Authentication logs showing successful logins&lt;/font&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="630" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-26" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="140" y="810" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-27" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-28" target="HzWAqeQkNhOtxUmoA0pg-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-28" value="&lt;b&gt;Evidence E3:&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Error monitoring logs during synchronization&lt;/font&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="580" y="630" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzWAqeQkNhOtxUmoA0pg-30" target="XxfXGBBztzJRm6LOYlqm-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-30" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Undermine UM1:&amp;nbsp;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; text-align: start;&quot;&gt;&lt;font style=&quot;&quot;&gt;Unless network failures prevent error detection&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#A9C4EB;" parent="1" vertex="1">
+          <mxGeometry x="580" y="830" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HzWAqeQkNhOtxUmoA0pg-37" value="&lt;b&gt;Inference Rule IR1:&lt;/b&gt;&amp;nbsp;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;If data is encrypted using TLS, it cannot be tampered with during transmission&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#A9C4EB;size=0.05555555555555555;" parent="1" vertex="1">
+          <mxGeometry x="680" y="175" width="225" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HdqS9L7KS2-seJHo1WDL-1" value="&lt;font style=&quot;&quot;&gt;&lt;strong style=&quot;font-size: 14px; caret-color: rgb(0, 0, 0); text-align: start;&quot;&gt;Evidence E1&lt;br&gt;&lt;/strong&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;TLS encryption protocol documentation&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="10" y="175" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="HdqS9L7KS2-seJHo1WDL-20" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="HzWAqeQkNhOtxUmoA0pg-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="250" as="sourcePoint" />
+            <mxPoint x="150" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdqS9L7KS2-seJHo1WDL-21" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HdqS9L7KS2-seJHo1WDL-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="340" as="sourcePoint" />
+            <mxPoint x="55" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdqS9L7KS2-seJHo1WDL-23" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="HdqS9L7KS2-seJHo1WDL-1" target="HdqS9L7KS2-seJHo1WDL-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="340" as="sourcePoint" />
+            <mxPoint x="55" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HdqS9L7KS2-seJHo1WDL-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="XxfXGBBztzJRm6LOYlqm-1" target="XxfXGBBztzJRm6LOYlqm-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-1" value="&lt;b&gt;Sub-Claim C5&lt;/b&gt;:&lt;div&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;User credentials are securely stored&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="650" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="XxfXGBBztzJRm6LOYlqm-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-7" value="&lt;b&gt;Evidence E4:&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;Hashed and salted passwords stored in the database&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="330" y="815" width="135" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-9" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1000" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XxfXGBBztzJRm6LOYlqm-12" target="XxfXGBBztzJRm6LOYlqm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-12" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); text-align: start;&quot;&gt;&lt;b&gt;Sub-Claim C6&lt;/b&gt;&lt;/span&gt;&lt;strong style=&quot;caret-color: rgb(0, 0, 0); text-align: start;&quot;&gt;: &lt;/strong&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;The system implements MFA to mitigate credential compromise risk&lt;/font&gt;&lt;/span&gt;&lt;strong style=&quot;caret-color: rgb(0, 0, 0); text-align: start;&quot;&gt;s&lt;/strong&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="730" y="480" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XxfXGBBztzJRm6LOYlqm-14" target="XxfXGBBztzJRm6LOYlqm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-14" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; text-align: start;&quot;&gt;&lt;b&gt;Evidence E5:&lt;/b&gt;&lt;br&gt;&amp;nbsp;MFA logs showing successful MFA authentication&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="870" y="650" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1010" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XxfXGBBztzJRm6LOYlqm-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="980" y="830" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
