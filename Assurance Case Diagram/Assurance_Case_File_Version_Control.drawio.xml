@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17" pages="2">
+  <diagram id="2RAkf9iS2bYrb-5zrusB" name="Page-1">
+    <mxGraphModel dx="2911" dy="2245" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-1" value="&lt;h1 style=&quot;text-align: center;&quot;&gt;Assurance Case for Seafile File Version Control System&lt;br&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;This diagram presents an assurance case for a file version control system, focusing on ensuring file integrity, preventing unauthorized access, and maintaining proper version tracking. The assurance case is supported by claims, rebuttals, and evidence from system logs, audit reports, and functionality tests to verify that the version control mechanisms are functioning securely and effectively.&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="-100" width="360" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;curved=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-2" value="&lt;b&gt;Top-Claim C1:&lt;/b&gt;&amp;nbsp;&lt;div&gt;File version control ensures file integrity and proper version tracking.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="530" y="-105" width="297.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-3" value="&lt;b&gt;Context CT1:&lt;/b&gt;&amp;nbsp;&lt;div&gt;The system supports version control.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="1470" y="-90" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-5" target="EpLoNu7SxfJ4iQwhgqlz-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-5" value="&lt;b&gt;Rebuttal R1:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Unless file versioning is bypassed.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="205" y="150" width="227.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-12" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-8" target="EpLoNu7SxfJ4iQwhgqlz-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-13" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-8" target="EpLoNu7SxfJ4iQwhgqlz-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-8" value="&lt;b&gt;Sub-Claim C2:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Version history is stored correctly.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="198.13" y="300" width="241.25" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-16" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-10" target="EpLoNu7SxfJ4iQwhgqlz-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-10" value="&lt;b&gt;Rebuttal R2:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Unless file corruption occurs during upload.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="40" y="450" width="245" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-17" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-11" target="EpLoNu7SxfJ4iQwhgqlz-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-11" value="&lt;b&gt;Rebuttal R3:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Unless unauthorized uploads occur.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="320" y="450" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-20" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.663;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-14" target="EpLoNu7SxfJ4iQwhgqlz-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-21" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-14" target="EpLoNu7SxfJ4iQwhgqlz-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-14" value="&lt;b&gt;Sub-Claim C3:&lt;/b&gt;&lt;div&gt;&amp;nbsp;File integrity is maintained across versions.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="47.5" y="620" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-27" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-15" target="EpLoNu7SxfJ4iQwhgqlz-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-15" value="&lt;b&gt;Sub-Claim C4:&lt;br&gt;&lt;/b&gt;Logs and audits ensure no tampering" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="335" y="620" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-23" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-18" target="EpLoNu7SxfJ4iQwhgqlz-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-18" value="&lt;b&gt;Evidence E1:&amp;nbsp;&lt;/b&gt;&lt;div&gt;System logs confirming file version integrity.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-47.5" y="825" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-25" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-19" target="EpLoNu7SxfJ4iQwhgqlz-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-19" value="&lt;b&gt;Evidence E2:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Version history audit report.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="825" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="10" y="1100" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1100" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-29" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-26" target="EpLoNu7SxfJ4iQwhgqlz-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-26" value="&lt;b&gt;Evidence E3:&lt;/b&gt;&lt;br&gt;Audit procedure compliance document" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="832.5" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-31" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-28" target="EpLoNu7SxfJ4iQwhgqlz-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-28" value="&lt;b&gt;Undermine UM1:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Unless logs are tampered with&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#A9C4EB;" parent="1" vertex="1">
+          <mxGeometry x="322.5" y="1060" width="235" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-35" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-30" target="EpLoNu7SxfJ4iQwhgqlz-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-30" value="&lt;b&gt;Sub-Claim C5:&lt;br&gt;&lt;/b&gt;File versioning prevents unauthorized uploads" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="302.5" y="1240" width="277.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-32" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-33" target="EpLoNu7SxfJ4iQwhgqlz-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-33" value="&lt;b&gt;Evidence E4:&lt;/b&gt;&lt;br&gt;System tests validating version control functionality" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="351.25" y="1410" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-34" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="426.25" y="1680" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-36" value="&lt;b&gt;Inference Rule IR1:&lt;/b&gt;&amp;nbsp;&lt;div&gt;If version history and integrity are correct, the file is secure.&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#A9C4EB;size=0.05555555555555555;" parent="1" vertex="1">
+          <mxGeometry x="557.5" y="150" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-41" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-38" target="EpLoNu7SxfJ4iQwhgqlz-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-38" value="&lt;b&gt;Undercut UC1:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Unless unauthorized file access bypasses versioning controls.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#F19C99;" parent="1" vertex="1">
+          <mxGeometry x="580" y="300" width="301.25" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-40" value="&lt;b&gt;Sub-Claim C6:&amp;nbsp;&lt;/b&gt;&lt;div&gt;The file system prevents unauthorized access.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="588.44" y="450" width="284.37" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-43" value="&lt;b&gt;Rebuttal R4:&lt;/b&gt;&lt;div&gt;&amp;nbsp;Unless the network causes version corruption.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="300" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-44" value="&lt;b&gt;Sub-Claim C7:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Network connectivity ensures version upload consistency.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="990" y="150" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-45" value="&lt;b&gt;Evidence E5:&amp;nbsp;&lt;/b&gt;&lt;div&gt;System monitoring network logs to confirm connectivity.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="930" y="290" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-46" value="&lt;b&gt;Sub-Claim C8:&lt;/b&gt;&lt;div&gt;&amp;nbsp;User permissions are validated before file uploads.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1390" y="150" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-47" value="&lt;b&gt;Rebuttal R5:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Unless user permissions are insufficient for uploads.&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="300" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cet2pcSQKr5XtE3sqBss-8" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-44" target="EpLoNu7SxfJ4iQwhgqlz-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="240" as="sourcePoint" />
+            <mxPoint x="1080" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1030" y="230" />
+              <mxPoint x="1030" y="290" />
+              <mxPoint x="970" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cet2pcSQKr5XtE3sqBss-11" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-46" target="EpLoNu7SxfJ4iQwhgqlz-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300" y="375" as="sourcePoint" />
+            <mxPoint x="1300" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cet2pcSQKr5XtE3sqBss-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490" y="80" as="sourcePoint" />
+            <mxPoint x="1270" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cet2pcSQKr5XtE3sqBss-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="868" y="-50" as="sourcePoint" />
+            <mxPoint x="1345" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cet2pcSQKr5XtE3sqBss-21" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.326;entryY=-0.004;entryDx=0;entryDy=0;endArrow=block;endFill=1;entryPerimeter=0;exitX=0.443;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-36" target="EpLoNu7SxfJ4iQwhgqlz-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="678" y="230" as="sourcePoint" />
+            <mxPoint x="678.08" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cet2pcSQKr5XtE3sqBss-24" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.581;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-44" target="EpLoNu7SxfJ4iQwhgqlz-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="250" as="sourcePoint" />
+            <mxPoint x="1161" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xqYC5bnLwHa9uV42ZXWf" name="Page-2">
+    <mxGraphModel dx="1306" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
