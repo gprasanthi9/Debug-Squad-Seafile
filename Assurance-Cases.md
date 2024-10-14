@@ -84,13 +84,16 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 
 
 
-### 1.4 **File Version Control** (Anjani Monica Sai Allada)
+### 1.4   **File Version Control** (Anjani Monica Sai Allada)
+
  
 <img width="1108" alt="image" src="https://github.com/user-attachments/assets/e03d1cc9-68fe-4787-b6d0-ff870a9b9006">
+
 
 **Assessment:**  
 
 The assurance case focuses on ensuring that the file version control system maintains file integrity, prevents unauthorized access, and ensures that proper version history is recorded. These claims pertain to the critical properties of security within a file version control system, which are essential for safeguarding against unauthorized file modifications and ensuring reliable access to previous versions.
+
 
 **Supporting Arguments:**
 
