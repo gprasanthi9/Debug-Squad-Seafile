@@ -85,8 +85,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 
 
 ### 1.4 **File Version Control** (Anjani Monica Sai Allada)
-
-**Diagram:**  
+ 
 <img width="1108" alt="image" src="https://github.com/user-attachments/assets/e03d1cc9-68fe-4787-b6d0-ff870a9b9006">
 
 **Assessment:**  
@@ -101,25 +100,25 @@ The assurance case focuses on ensuring that the file version control system main
    **Evidence:** System logs confirming file version integrity.
    Logs provide a comprehensive trail of file changes, ensuring that any unauthorized or accidental changes are detectable.
 
-   **Sub-Claim (C2):** Version History is Stored Correctly
+2. **Sub-Claim (C2):** Version History is Stored Correctly
    Proper versioning and access controls prevent any misrepresentation or loss of the file history.
 
    **Evidence:** Version history audit reports.
    These reports validate the accuracy and completeness of the file version history.
 
-   **Sub-Claim (C3):** Logs and Audits Ensure No Tampering
+3. **Sub-Claim (C3):** Logs and Audits Ensure No Tampering
    Ensuring audit trails and logs have not been altered is critical in maintaining trust in the system.
 
    **Evidence:** Audit procedure compliance documents.
    Compliance documents serve as proof that the logging mechanism is trustworthy and tamper-proof.
 
-   **Sub-Claim (C4):** Network Connectivity Ensures Version Upload Consistency
+4. **Sub-Claim (C4):** Network Connectivity Ensures Version Upload Consistency
    A stable and secure network ensures file versions are uploaded without corruption or errors.
 
    **Evidence:** System monitoring network logs confirming connectivity.
    Logs demonstrate the network’s reliability during uploads, ensuring no data loss occurs during version updates.
 
-   **Sub-Claim (C5):** User Permissions Are Validated Before Uploads
+5. **Sub-Claim (C5):** User Permissions Are Validated Before Uploads
    Uploading new file versions is restricted to authorized users, ensuring security controls prevent unauthorized file changes.
 
    **Evidence:** System checks validating user permissions.
