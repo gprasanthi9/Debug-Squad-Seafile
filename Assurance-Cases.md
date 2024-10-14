@@ -28,9 +28,27 @@
 [Diagram link]
 
 **Assessment:**  
-[Assessment text]
+Secure logins are provided with username and passwords. If users follow password policy they have the first level of protection.  If that is compromised the second layer of multi factor authentication via a key fob is providing protection.  In the case a user surrenders the password and the key fob, they are to report it.  When this is reported remote login is disabled and a password change is enacted.  The other avenue of a password spraying attack that would lead to mutiple prompts to the user for MFA, can lead to MFA fatigue.  This is when the user gets so many requests they just approve them.  The multiple failures in the logs from the spray attack will see a failure and should be looking for successes to trigger a account lockout, which will send an alert.
 
-**Sub-Claim 1 and evidence and others:**
+Assurance Case: File Upload/Download Security in Seafile
+- **Top-Level Claim (C1):** Seafile Secure Login.
+- **Context (CT1):** Seafile users are normal (non-technical).
+- **Rebuttal (R1):** Unless User is not following password policy
+**Supporting Arguments:**
+1.	**Sub-Claim (C2):** MFA prevents password compromise.
+Evidence:
+-	R2: Unless the user loses key fob and also shared the password.
+-	R3: Unless the user is experiencing MFA fatigue and verifies every prompt
+2.	**Sub-Claim (C3):** User reported key fob loss.
+Evidence:
+-	E1: Remote login Disabled.
+-	E2: Password change.
+
+3.	**Sub-Claim (C4):** User is trained to only provide MFA when the know it is in response to their action
+- Evidence (E3):  Multiple simultaneous failures from logs
+- Undermine (UM1): Unless log was only looking for failures
+4.	**Sub-Claim (C5):** Multiple failures disable account.
+- Evidence (E4):  Alerts for locked account
 
 
 
