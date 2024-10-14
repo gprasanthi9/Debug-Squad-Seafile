@@ -112,45 +112,71 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 
 **Sub-Claim 1 and evidence and others:**
 
+----
+### 1.5 Data Synchronization  (Gutta Prasanthi)
+<img width="1097" alt="image" src="https://github.com/user-attachments/assets/494196b9-d4c0-404d-b288-b820677ff5f3">
 
-### 1.5 [Claim 5 Name]
-
-**Diagram:**  
-[Diagram link]
 
 **Assessment:**  
-[Assessment text]
-
-**Sub-Claim 1 and evidence and others:**
-
----
+The Assurance Case for secure data synchronization in Seafile demonstrates a well-structured approach to ensuring data security through encryption (TLS), authentication, and error logging. The available evidence supports key claims, such as the use of TLS for data encryption and the implementation of multi-factor authentication (MFA) to mitigate credential compromise risks. However, there are gaps in evidence, particularly in areas like regular verification of encryption updates, testing of synchronization error detection under various conditions, and user credential management processes. Addressing these gaps would further strengthen the assurance of data security and resilience against potential threats.
 
 ## Part 2: Evidence Alignment Observations
 
-### 2.1 [Claim 1 Name]
+### 2.1 [Claim 1 ] :The system ensures secure synchronization of data between all Seafile clients
 
 #### 2.1.1 Available Evidence
-1. [Evidence 1]
-2. [Evidence 2]
+1. [Evidence 1] :TLS encryption protocol documentation
 
 #### 2.1.2 Unavailable/Insufficient Evidence
-1. [Missing evidence 1]
-2. [Missing evidence 2]
+1. [Missing evidence 1] :Evidence showing verification of TLS updates to avoid outdated protocols.
+2. [Missing evidence 2] :User feedback logs or penetration testing results to verify secure synchronization.
 
-
-
-### 2.2 [Claim 2 Name]
+### 2.2 [Claim 2 ] :Data is encrypted during transmission between clients
 
 #### 2.2.1 Available Evidence
-1. [Evidence 1]
-2. [Evidence 2]
+1. [Evidence 1] :TLS encryption protocol documentation
 
 #### 2.2.2 Unavailable/Insufficient Evidence
-1. [Missing evidence 1]
-2. [Missing evidence 2]
+1. [Missing evidence 1] :Evidence ensuring the encryption protocol is regularly updated and complies with modern standards.
+2. [Missing evidence 2] :Evidence on encryption standards being sufficient to withstand known vulnerabilities.
 
+### 2.3 [Sub-Claim 3 ] : Only authenticated users can initiate synchronization
 
+#### 2.3.1 Available Evidence
+1. [Evidence E2] :Authentication logs showing successful logins
 
+#### 2.3.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1] :Reports or verification of multi-factor authentication being mandatory for access.
+2. [Missing evidence 2] :Evidence of user authentication failures and how they are managed.
+
+### 2.4 [Sub-Claim 4 ] : The system detects and logs synchronization errors in real-time
+
+#### 2.4.1 Available Evidence
+1. [Evidence E3] : Error monitoring logs during synchronization
+
+#### 2.4.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1] : Testing reports on real-time detection of synchronization errors under stress.
+2. [Missing evidence 2] : Reports on how error logs help in debugging synchronization issues.
+
+### 2.5 [Sub-Claim 5 ] : User credentials are securely stored
+
+#### 2.5.1 Available Evidence
+1. [Evidence E4] :Hashed and salted passwords stored in the database
+
+#### 2.5.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1] :Evidence on frequency and process of password rehashing.
+2. [Missing evidence 2] :Evidence on how compromised accounts are managed and notified.
+
+### 2.6 [Sub-Claim 6 ] : The system implements MFA to mitigate credential compromise risks
+
+#### 2.6.1 Available Evidence
+1. [Evidence E5] :MFA logs showing successful MFA authentication
+
+#### 2.6.2 Unavailable/Insufficient Evidence
+1. [Missing evidence 1] :Verification of MFA setup across all user accounts and clients.
+2. [Missing evidence 2] :Reports on how MFA failures are handled and logged.
+
+----
 ### 2.3 File Upload/Download Security (Sreean Rikkala)
 
 #### 2.3.1 Available Evidence
@@ -194,6 +220,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 * Active Participation: Our team has been showing regular updates to the project repository.
 * Team is communicating much better with Whatsapp chat and during Zoom meetings
 * Examined previous class's work to improve whole team understanding
+* Demonstrated a clear division of tasks, improving overall productivity
   
 
 ### Areas for Improvement
