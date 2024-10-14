@@ -55,10 +55,7 @@ Evidence:
 ### 1.3 File Upload/Download Security (Sreean Rikkala)
 
 **Diagram:**  
-<figure>
-  <img src="https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/73f30bfaf0a3645ddc305a6b4634c7492e502c6e/Assurance%20Case%20Diagram/File%20Upload%26Download.drawio.svg" alt="Assurance Case: File Upload/Download Security in Seafile">
-  <figcaption>Figure 1: Assurance Case Diagram for File Upload/Download Security in Seafile</figcaption>
-</figure>
+![Assurance Case: File Upload/Download Security in Seafile](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/73f30bfaf0a3645ddc305a6b4634c7492e502c6e/Assurance%20Case%20Diagram/File%20Upload%26Download.drawio.svg)
 
 **Assessment:**  
 Seafile keeps file uploads and downloads secure using **[AES-256 encryption](https://manual.seafile.com/security_features/encryption.html)** to protect data during transfer, and **[SSL/TLS protocols](https://manual.seafile.com/security_features/security_features.html)** to secure communication, preventing interception. It also uses **[role-based access control (RBAC)](https://manual.seafile.com/security_features/roles_permissions.html)** to ensure only authorized users can manage files. To avoid corruption, Seafile performs **[file integrity checks](https://manual.seafile.com/maintain/seafile_fsck.html)**, validating files and repairing any issues during transfer.
