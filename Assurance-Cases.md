@@ -237,19 +237,20 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 2. Third-Party Security Assessment:
    There's no evidence of recent third-party security assessments or penetration testing specifically for the file upload/download functionality.
 
-
-
-### 2.4 [Claim 4 Name]
+### 2.4 File Version Control (Anjani Monica Sai Allada)
 
 #### 2.4.1 Available Evidence
-1. [Evidence 1]
-2. [Evidence 2]
+
+1. **Version Control Logs**: Logs from the Seafile version control system provide evidence of tracking file versions, recording changes made and by whom, ensuring accountability and traceability.
+2. **Audit Logs**: Seafile’s audit logs detail versioning events, showing file updates, modifications, and deletions, helping ensure file integrity across versions.
+3. **File Integrity Validation**: Documentation confirms the process of file validation during versioning to maintain consistency and detect tampering or corruption during upload.
+4. **Encryption of File Versions**: AES-256 encryption is used to secure each version of the file, ensuring data protection and integrity during version control operations.
+5. **Access Control for Versioning**: Role-based access control (RBAC) ensures that only authorized users can modify or access specific file versions, providing an additional security layer.
 
 #### 2.4.2 Unavailable/Insufficient Evidence
-1. [Missing evidence 1]
-2. [Missing evidence 2]
 
-
+1. **Detailed Comparison Between File Versions**: While version control logs exist, there may be insufficient evidence showing detailed comparisons between versions, such as exact content changes.
+2. **Third-Party Security Audit**: There is no evidence of third-party security reviews or penetration testing specific to the version control process, which could identify potential vulnerabilities in version management.
 
 ### 2.5 [Claim 5 Name]
 
