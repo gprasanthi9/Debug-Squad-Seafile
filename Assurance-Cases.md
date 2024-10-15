@@ -204,8 +204,11 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 #### 2.1.2 Unavailable/Insufficient Evidence
 1. All the evidences for this claim are available
 
+
 ### 2.2
 erik your evidence found and not found
+
+
 
 ### 2.3 File Upload/Download Security
 
