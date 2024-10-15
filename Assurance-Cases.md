@@ -12,7 +12,7 @@
 
 ### 1.1 Seafile Shared File Protection 
 **Diagram:**  
-[Diagram link](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/Kunle/Assurance%20Case%20Diagram/Assurance%20Case_File%20Share.jpg)
+![Diagram link](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/Kunle/Assurance%20Case%20Diagram/Assurance%20Case_File%20Share.jpg)
 
 **Assessment:**  
 
