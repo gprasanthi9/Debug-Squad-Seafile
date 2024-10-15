@@ -204,7 +204,7 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 2. [Missing evidence 2] :Reports on how MFA failures are handled and logged.
 
 ----
-### 2.3 File Upload/Download Security (Sreean Rikkala)
+### 2.3 File Upload/Download Security
 
 2.3.1 Available Evidence
 
@@ -236,7 +236,7 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 
 ----
 
-### 2.4 File Version Control (Anjani Monica Sai Allada)
+### 2.4 File Version Control
 
 #### 2.4.1 Available Evidence
 
