@@ -23,8 +23,7 @@
 
 ----
 ### 1.2 Secure Login (Erik Weinmeister)
-
-**Diagram:**  
+ 
 ![Assurance Case: File Upload/Download Security in Seafile](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Assurance%20Case%20Diagram/LoginAssuranceCaseV2.jpg)
 
 **Assessment:**  
@@ -53,7 +52,6 @@ Evidence:
 ----
 ### 1.3 File Upload/Download Security (Sreean Rikkala)
 
-**Diagram:**  
 ![Assurance Case: File Upload/Download Security in Seafile](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/bd048497ef19f401f23cff9937ea8d13e6a5ef47/Assurance%20Case%20Diagram/File%20Upload%26Download.drawio.png)
 
 **Assessment:**  
