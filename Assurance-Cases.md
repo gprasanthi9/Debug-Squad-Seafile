@@ -21,7 +21,7 @@
 **Sub-Claim 1 and evidence and others:**
 
 
-
+----
 ### 1.2 Secure Login (Erik Weinmeister)
 
 **Diagram:**  
@@ -50,8 +50,7 @@ Evidence:
 4.	**Sub-Claim (C5):** Multiple failures disable account.
 - Evidence (E4):  Alerts for locked account
 
-
-
+----
 ### 1.3 File Upload/Download Security (Sreean Rikkala)
 
 **Diagram:**  
@@ -254,6 +253,7 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 1. **Detailed Comparison Between File Versions**: While version control logs exist, there may be insufficient evidence showing detailed comparisons between versions, such as exact content changes.
 2. **Third-Party Security Audit**: There is no evidence of third-party security reviews or penetration testing specific to the version control process, which could identify potential vulnerabilities in version management.
 
+----
 ### 2.5 [Claim 5 Name]
 
 #### 2.5.1 Available Evidence
