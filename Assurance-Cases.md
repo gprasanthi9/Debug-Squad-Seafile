@@ -25,7 +25,7 @@
 ### 1.2 Secure Login (Erik Weinmeister)
 
 **Diagram:**  
-[Diagram link]
+![Assurance Case: File Upload/Download Security in Seafile](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/Assurance%20Case%20Diagram/LoginAssuranceCaseV2.jpg)
 
 **Assessment:**  
 Secure logins are provided with username and passwords. If users follow password policy they have the first level of protection.  If that is compromised the second layer of multi factor authentication via a key fob is providing protection.  In the case a user surrenders the password and the key fob, they are to report it.  When this is reported remote login is disabled and a password change is enacted.  The other avenue of a password spraying attack that would lead to mutiple prompts to the user for MFA, can lead to MFA fatigue.  This is when the user gets so many requests they just approve them.  The multiple failures in the logs from the spray attack will see a failure and should be looking for successes to trigger a account lockout, which will send an alert.
