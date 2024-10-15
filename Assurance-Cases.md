@@ -5,7 +5,7 @@
 1. [Claim 1]
 2. **Secure Login** (Erik Weinmeister)
 3. **File Upload/Download Security** (Sreean Rikkala)
-4. [Claim 4]
+4. **File Version Control** (Anjani Monica Sai Allada)
 5. [Claim 5]
 
 ## Part 1: Breadth and Depth of Assurance Arguments
@@ -99,15 +99,48 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 - **Undercut (UC1):** Unless new protocol vulnerabilities emerge
 
 
-### 1.4 [Claim 4 Name]
+### 1.4   **File Version Control** (Anjani Monica Sai Allada)
 
-**Diagram:**  
-[Diagram link]
+ 
+<img width="1108" alt="image" src="https://github.com/user-attachments/assets/e03d1cc9-68fe-4787-b6d0-ff870a9b9006">
+
 
 **Assessment:**  
-[Assessment text]
 
-**Sub-Claim 1 and evidence and others:**
+The assurance case focuses on ensuring that the file version control system maintains file integrity, prevents unauthorized access, and ensures that proper version history is recorded. These claims pertain to the critical properties of security within a file version control system, which are essential for safeguarding against unauthorized file modifications and ensuring reliable access to previous versions.
+
+
+**Supporting Arguments:**
+
+1. **Sub-Claim (C1):** File Integrity is Maintained Across Versions.  
+   This claim asserts that file integrity is ensured as the system tracks and logs changes to files.
+
+   **Evidence:** System logs confirming file version integrity.
+   Logs provide a comprehensive trail of file changes, ensuring that any unauthorized or accidental changes are detectable.
+
+2. **Sub-Claim (C2):** Version History is Stored Correctly
+   Proper versioning and access controls prevent any misrepresentation or loss of the file history.
+
+   **Evidence:** Version history audit reports.
+   These reports validate the accuracy and completeness of the file version history.
+
+3. **Sub-Claim (C3):** Logs and Audits Ensure No Tampering
+   Ensuring audit trails and logs have not been altered is critical in maintaining trust in the system.
+
+   **Evidence:** Audit procedure compliance documents.
+   Compliance documents serve as proof that the logging mechanism is trustworthy and tamper-proof.
+
+4. **Sub-Claim (C4):** Network Connectivity Ensures Version Upload Consistency
+   A stable and secure network ensures file versions are uploaded without corruption or errors.
+
+   **Evidence:** System monitoring network logs confirming connectivity.
+   Logs demonstrate the network’s reliability during uploads, ensuring no data loss occurs during version updates.
+
+5. **Sub-Claim (C5):** User Permissions Are Validated Before Uploads
+   Uploading new file versions is restricted to authorized users, ensuring security controls prevent unauthorized file changes.
+
+   **Evidence:** System checks validating user permissions.
+   Permissions systems and checks prevent unauthorized users from altering or uploading versions.
 
 ----
 ### 1.5 Data Synchronization  (Gutta Prasanthi)
