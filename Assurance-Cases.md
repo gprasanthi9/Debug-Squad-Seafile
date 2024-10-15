@@ -268,15 +268,19 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 ## Planning & Reflection
 
 ### What We Did Well
-* Active Participation: Our team has been showing regular updates to the project repository.
-* Team is communicating much better with Whatsapp chat and during Zoom meetings
-* Examined previous class's work to improve whole team understanding
-* Demonstrated a clear division of tasks, improving overall productivity
-  
+
+* Proactive Issue Management: We've begun raising new issues on GitHub, enhancing our project tracking and problem-solving efficiency.
+* Enhanced Communication: Utilization of WhatsApp for quick updates and regular Zoom meetings has significantly improved team coordination.
+* Comprehensive Research: Thorough examination of previous class work and Seafile documentation to deepen our understanding of the project.
+* Effective Task Distribution: Clear assignment of responsibilities among team members, leading to more focused and productive work.
+* Continuous Integration: Regular commits and updates to our project repository, maintaining an up-to-date codebase.
 
 ### Areas for Improvement
-* Consistency in Updates
-* Expanded Analysis
-* Synergies in data presentation
+
+* Timely Deliverables: We need to work on submitting all parts of our assignments by agreed-upon internal deadlines.
+* Collaborative Problem-Solving: Enhance our approach to jointly tackling complex issues, leveraging each team member's strengths.
+* Documentation Quality: Improve the consistency and detail in our documentation, especially for complex security concepts.
+* Code Review Process: Implement a more structured peer review system for our documentation contributions.
+
 
 The Project Board can be found here: [Debug-Squad-Seafile](https://github.com/users/gprasanthi9/projects/3/views/1)
