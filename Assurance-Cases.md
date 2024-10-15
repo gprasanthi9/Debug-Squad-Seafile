@@ -98,7 +98,7 @@ Seafile keeps file uploads and downloads secure using **[AES-256 encryption](htt
 
 - **Undercut (UC1):** Unless new protocol vulnerabilities emerge
 
-
+----
 ### 1.4   **File Version Control** (Anjani Monica Sai Allada)
 
  
@@ -236,6 +236,8 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
 
 2. Third-Party Security Assessment:
    There's no evidence of recent third-party security assessments or penetration testing specifically for the file upload/download functionality.
+
+----
 
 ### 2.4 File Version Control (Anjani Monica Sai Allada)
 
