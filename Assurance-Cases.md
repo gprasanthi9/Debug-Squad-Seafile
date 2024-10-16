@@ -6,7 +6,7 @@
 2. **Secure Login** (Erik Weinmeister)
 3. **File Upload/Download Security** (Sreean Rikkala)
 4. **File Version Control** (Anjani Monica Sai Allada)
-5. [Claim 5]
+5. **Data Synchronization** (Gutta Prasanthi)
 
 ## Part 1: Breadth and Depth of Assurance Arguments
 
