@@ -226,14 +226,6 @@ The Assurance Case for secure data synchronization in Seafile demonstrates a wel
    
 4. - E4: [Seafile Forum Update] The available information in the [Forum](https://forum.seafile.com/t/seafile-8-0-x-with-webdav-and-2fa/17716).
      - shows that Seafile latest version supports 2FA to prentent unauthorized access to the shared files  
-   
-#### 2.1.2 Unavailable/Insufficient Evidence
-1. All the evidences for this claim are available
-
-
-### 2.2
-erik your evidence found and not found
-
 
 
 ### 2.3 File Upload/Download Security
@@ -318,9 +310,8 @@ erik your evidence found and not found
 ### Areas for Improvement
 
 * Timely Deliverables: We need to work on submitting all parts of our assignments by agreed-upon internal deadlines.
-* Collaborative Problem-Solving: Enhance our approach to jointly tackling complex issues, leveraging each team member's strengths.
 * Documentation Quality: Improve the consistency and detail in our documentation, especially for complex security concepts.
-* Code Review Process: Implement a more structured peer review system for our documentation contributions.
+* Review Process: Implement a more structured peer review system for our documentation contributions.
 
 
 The Project Board can be found here: [Debug-Squad-Seafile](https://github.com/users/gprasanthi9/projects/3/views/1)
