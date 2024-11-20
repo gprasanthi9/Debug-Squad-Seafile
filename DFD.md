@@ -8,8 +8,7 @@ The DFD we created:
 ![Seafile DFD](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/Seafile-dfd.jpeg) 
 
 
-For more details, check out the **Threat Modeling Report**:  
-[Seafile Threat Report](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/SeafileDFDReport.htm)
+For details, check out the **Threat Modeling Report**:  [Seafile Threat Report](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/SeafileDFDReport.htm)
 
 ---
 
