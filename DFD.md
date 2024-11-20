@@ -25,7 +25,6 @@ From our threat modeling, we identified three main areas of focus:
 #### 2. Data Protection
 - **39 threats** require further investigation.
 - Protecting data in transit and at rest is essential.
-- Using encryption protocols like **HTTPS**, **SFTP**, and **SSH** was highlighted.
 
 #### 3. Service Availability
 - **6 threats** are yet to be mitigated.
@@ -37,6 +36,37 @@ We also identified areas that need improvement:
 - **Cross-Site Scripting** protections need to be enhanced.
 - **SQL Injection** prevention measures must be strengthened.
 - Controls for resource consumption should be implemented to prevent DoS attacks.
+
+## Key Security Findings
+
+### Security Implementation Status
+| Protection Layer    | Status             | Priority   |
+|---------------------|--------------------|------------|
+| CSRF Mitigation     | In Progress        | Critical   |
+| Data Encryption     | Implemented        | Essential  |
+| Access Control      | Partial            | High       |
+| Audit Logging       | Needs Enhancement  | High       |
+
+---
+
+### Protocol Implementation
+| Security Protocol | Status    | Coverage           |
+|--------------------|-----------|--------------------|
+| HTTPS             | Active    | Web Interface      |
+| SFTP              | Active    | File Transfer      |
+| SSH               | Active    | Administration     |
+| TLS               | Active    | Data in Transit    |
+
+---
+
+### Threat Analysis Overview
+```mermaid
+pie
+    title "Threat Assessment Distribution"
+    "Mitigated" : 21
+    "Under Investigation" : 39
+    "Not Started" : 6
+    "Not Applicable" : 9
 
 ---
 
