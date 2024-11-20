@@ -10,6 +10,7 @@ The DFD we created:
 
 For details, check out the **Threat Modeling Report**:  [Seafile Threat Report](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/SeafileDFDReport.htm)
 
+##### This link will render the report in HTML, but requires you to leave the site: [HTML Seafile Threat Report](https://htmlpreview.github.io/?https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/SeafileDFDReport.htm)
 ---
 
 ### Observations
