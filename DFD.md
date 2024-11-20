@@ -62,7 +62,7 @@ We also identified areas that need improvement:
 ```mermaid
 %%{init: {'theme': 'neutral'}}%%
 pie
-    title Threat Assessment Distribution
+    title "Threat Assessment Distribution"
     "Mitigated" : 21
     "Under Investigation" : 39
     "Not Started" : 6
