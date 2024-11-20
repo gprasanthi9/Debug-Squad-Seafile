@@ -70,7 +70,7 @@ Overall, our analysis highlighted key vulnerabilities and mitigation strategies 
 ### Reflection
 Working on this project, we realized the importance of understanding how data flows within a system and how vulnerabilities can arise at any point. Collaboration was key in identifying these issues and proposing actionable solutions. Misunderstandings about trust boundaries were resolved through brainstorming and documentation.
 
-Moving forward, we plan to document all security requirements comprehensively.
+Moving forward, we plan to document all security requirements comprehensively based on new findings.
 
 
 Explore our project board for more details:  [Project Board](https://github.com/users/gprasanthi9/projects/3/views/1)
