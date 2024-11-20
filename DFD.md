@@ -59,13 +59,18 @@ We also identified areas that need improvement:
 | TLS               | Active    | Data in Transit    |
 
 
-pie
-    title "Threat Assessment Distribution"
-    "Mitigated" : 21
-    "Under Investigation" : 39
-    "Not Started" : 6
-    "Not Applicable" : 9
-
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
 
 ---
 
