@@ -34,7 +34,7 @@ From our threat modeling, we identified three main areas of focus:
 
 #### 4. Security Gaps
 We also identified areas that need improvement:
-- **Cross-Site Scripting (XSS)** protections need to be enhanced.
+- **Cross-Site Scripting** protections need to be enhanced.
 - **SQL Injection** prevention measures must be strengthened.
 - Controls for resource consumption should be implemented to prevent DoS attacks.
 
