@@ -8,6 +8,7 @@ As a team, we analyzed the core data flows and interactions within the Seafile e
 You can find the DFD we created here:  
 ![Seafile DFD](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/Seafile-dfd.jpeg) 
 
+
 For more details, check out the **Threat Modeling Report**:  
 [Seafile Threat Report](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/SeafileDFDReport.htm)
 
@@ -50,5 +51,4 @@ Working on this project, we realized the importance of understanding how data fl
 Moving forward, we plan to document all security requirements comprehensively.
 
 
-Explore our project board for more details:  
-[Project Board](https://github.com/users/gprasanthi9/projects/3/views/1)
+Explore our project board for more details:  [Project Board](https://github.com/users/gprasanthi9/projects/3/views/1)
