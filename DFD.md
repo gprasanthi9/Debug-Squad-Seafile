@@ -38,7 +38,7 @@ We also identified areas that need improvement:
 - Controls for resource consumption should be implemented to prevent DoS attacks.
 
 ---
-## Key Security Findings
+### Key Security Findings
 
 #### Security Implementation Status
 | Protection Layer    | Status             | Priority   |
