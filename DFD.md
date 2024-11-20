@@ -60,7 +60,7 @@ We also identified areas that need improvement:
 
 ### Threat Analysis Overview
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'backgroundColor': '#ffffff' }}}%%
 pie
     title "Threat Assessment Distribution"
     "Mitigated" : 21
