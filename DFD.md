@@ -49,7 +49,7 @@ We also identified areas that need improvement:
 | Audit Logging       | Needs Enhancement  | High       |
 
 
-### Protocol Implementation
+#### Protocol Implementation
 | Security Protocol | Status    | Coverage           |
 |--------------------|-----------|--------------------|
 | HTTPS             | Active    | Web Interface      |
@@ -58,7 +58,7 @@ We also identified areas that need improvement:
 | TLS               | Active    | Data in Transit    |
 
 
-### Threat Analysis Overview
+#### Threat Analysis Overview
 ```mermaid
 pie
     title Threat Assessment Distribution
