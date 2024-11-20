@@ -49,15 +49,6 @@ We also identified areas that need improvement:
 | Audit Logging       | Needs Enhancement  | High       |
 
 
-#### Protocol Implementation
-| Security Protocol | Status    | Coverage           |
-|--------------------|-----------|--------------------|
-| HTTPS             | Active    | Web Interface      |
-| SFTP              | Active    | File Transfer      |
-| SSH               | Active    | Administration     |
-| TLS               | Active    | Data in Transit    |
-
-
 #### Threat Analysis Overview
 ```mermaid
 pie
