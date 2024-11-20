@@ -58,6 +58,15 @@ We also identified areas that need improvement:
 | SSH               | Active    | Administration     |
 | TLS               | Active    | Data in Transit    |
 
+### Threat Analysis Overview
+```mermaid
+pie
+    title Threat Assessment Distribution
+    "Mitigated" : 21
+    "Under Investigation" : 39
+    "Not Started" : 6
+    "Not Applicable" : 9
+
 ---
 
 ### Summary
