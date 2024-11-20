@@ -58,15 +58,15 @@ We also identified areas that need improvement:
 | TLS               | Active    | Data in Transit    |
 
 
-### Threat Analysis Overview
+#### Threat Analysis Overview
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'backgroundColor': '#ffffff' }}}%%
 pie
-    title "Threat Assessment Distribution"
+    title Threat Assessment Distribution
     "Mitigated" : 21
     "Under Investigation" : 39
     "Not Started" : 6
     "Not Applicable" : 9
+
 ```
 
 ---
