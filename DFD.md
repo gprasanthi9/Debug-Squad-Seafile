@@ -60,16 +60,6 @@ We also identified areas that need improvement:
 
 ---
 
-### Threat Analysis Overview
-```mermaid
-pie
-    title "Threat Assessment Distribution"
-    "Mitigated" : 21
-    "Under Investigation" : 39
-    "Not Started" : 6
-    "Not Applicable" : 9
----
-
 ### Summary
 Overall, our analysis highlighted key vulnerabilities and mitigation strategies for the Seafile system. While progress has been made in areas like authentication and data protection, further investigation and effort are needed to address unresolved threats and security gaps. With a strong focus on implementing encryption protocols, enhancing service availability, and mitigating XSS and SQL injection threats, Seafile can significantly improve its overall security posture.
 
