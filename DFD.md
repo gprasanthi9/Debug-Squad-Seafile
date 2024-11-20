@@ -2,7 +2,6 @@
 
 ## Threat Modeling
 
-### Introduction
 As a team, we analyzed the core data flows and interactions within the Seafile environment to understand the system's strengths and potential weaknesses. Our **Data Flow Diagram** shows how critical components like the External Web Service, Sea Hub, Seafile Server, and Nginx Database communicate with each other. We focused on identifying threats in key areas like authentication, data protection, and service availability.
 
 The DFD we created:  
