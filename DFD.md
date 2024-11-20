@@ -58,6 +58,7 @@ We also identified areas that need improvement:
 | SSH               | Active    | Administration     |
 | TLS               | Active    | Data in Transit    |
 
+
 ### Threat Analysis Overview
 ```mermaid
 pie
