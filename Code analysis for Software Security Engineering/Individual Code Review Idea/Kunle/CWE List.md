@@ -3,8 +3,8 @@ Date: December 4, 2024
 Project: Seafile Server
 --------------------------------------
 
-1. IMPROPER AUTHENTICATION (CWE-287)
-Location: server/user-mgr.c
+1. IMPROPER AUTHENTICATION (CWE-287)<br>
+Location: server/user-mgr.c<br>
 Location link: https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L355 <br> 
 Risk Level: High<br>
 Found In Code: ldap_verify_user_password (CcnetUserManager *manager, const char *password)<br>
@@ -14,8 +14,8 @@ Details:<br>
 - Insufficient session validation
 - Poor password verification mechanisms
 
-2. SQL INJECTION (CWE-89)
-Location: server/repo-mgr.c, server/share-mgr.c
+2. SQL INJECTION (CWE-89)<br>
+Location: server/repo-mgr.c, server/share-mgr.c<br>
 Location link: https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802<br>
 Risk Level: Critical<br>
 Found In Code: <br>
@@ -27,8 +27,8 @@ Details:<br>
 - User input used directly in queries
 - Multiple instances across codebase
 
-3. HARD-CODED CREDENTIALS (CWE-798)
-Location: server/seaf-db.c
+3. HARD-CODED CREDENTIALS (CWE-798)<br>
+Location: server/seaf-db.c<br>
 Location link: https://github.com/haiwen/seafile-server/blob/master/common/seaf-db.c#L864<br>
 Risk Level: High<br>
 Found In Code: if (!mysql_real_connect(db_conn, db->host, db->user, db->password,<br>
@@ -38,8 +38,8 @@ Details:<br>
 - Insecure credential storage
 - Poor secrets management
 
-4. INFORMATION EXPOSURE (CWE-200)
-Location: common/password-hash.c
+4. INFORMATION EXPOSURE (CWE-200)<br>
+Location: common/password-hash.c<br>
 Location link: https://github.com/haiwen/seafile-server/blob/master/common/password-hash.<br>c#L144
 Risk Level: Medium<br>
 Found In Code: seaf_message ("password hash algorithms: %s, params: %s\n ", params->algo, params->params_str)<br>
@@ -49,8 +49,8 @@ Details:<br>
 - Algorithm information leakage
 - Debug information exposure
 
-5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
-Location: server/user-mgr.c
+5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)<br>
+Location: server/user-mgr.c<br>
 Location link: https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802<br>
 Risk Level: High<br>
 Found In Code: hash_password_pbkdf2_sha256 (const char *passwd,<br>
