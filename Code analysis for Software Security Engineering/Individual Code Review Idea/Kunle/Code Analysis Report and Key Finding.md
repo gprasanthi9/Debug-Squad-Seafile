@@ -25,11 +25,10 @@ The specific weakness in the code snippet `ldap_verify_user_password` is the pot
 
 ### Suggested Solution:
 The security of the `ldap_verify_user_password` function can be improved by using a single line of code to escape special characters in the user DN.  
-
-Example:  
+  
 ```c
 ldap_simple_bind_s(ldap, ldap_escape(manager->user_dn), password);
-
+```
 ldap_escape is a hypothetical function that escapes special characters in the user DN to prevent LDAP injection attacks. It is recommended that escaping should be implement or use an existing function that performs this escaping.
 
 ### Deep Explanation of the Security Issue:
@@ -83,7 +82,7 @@ ldap_escape is a hypothetical function that escapes special characters in the us
 int ldap_verify_user_password(CcnetUserManager *manager, const char *password) {
     return ldap_simple_bind_s(ldap_init(LDAP_SERVER, LDAP_PORT), manager->username, password) == LDAP_SUCCESS ? 0 : -1;
 }
-
+```
 ### Key Notes on This Suggested Refactor:
 
 - **Connection Setup:** This version condenses the connection setup, LDAP bind, and result handling into a single line.
@@ -123,7 +122,7 @@ int ldap_verify_user_password(CcnetUserManager *manager, const char *password) {
 
 ```c
 sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &stmt, NULL);
-
+```
 
 ### Key Notes on This Suggested Refactor:
 
@@ -170,7 +169,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
       fprintf(stderr, "MySQL connection failed: %s\n", mysql_error(db_conn));
       exit(EXIT_FAILURE);
   }
-
+```
 ### Injection Risk:
 
 - If `db->host`, `db->user`, or `db->password` are derived from untrusted input, there could be a risk of SQL injection. While `mysql_real_connect` is a low-level API, ensure these values are properly sanitized and validated before being passed to the function.
@@ -221,7 +220,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
 
 ```c
 seaf_message("Password hash algorithm used.\n");
-
+```
 A password hash algorithm is being used without exposing the specific details. If you need to log more detailed information for debugging purposes, consider using a secure logging mechanism that ensures the logs are protected and access is restricted.
 
 ### 5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
@@ -264,17 +263,17 @@ Using a modern cryptographic library such as **libsodium**, the function can be 
 
 ```c
 crypto_pwhash_str(*db_passwd, passwd, strlen(passwd), crypto_pwhash_OPSLIMIT_INTERACTIVE, crypto_pwhash_MEMLIMIT_INTERACTIVE);
+```
+  **Explanation of the proposed Refactor:**
 
-      Explanation of the proposed Refactor:
-
-    Built-in Salt:
+   Built-in Salt:
         crypto_pwhash_str automatically generates a random, unique salt for each password hash, which is securely included in the output.
 
-    Secure Iterations and Memory Limits:
+   Secure Iterations and Memory Limits:
         The function uses the recommended interactive parameters (crypto_pwhash_OPSLIMIT_INTERACTIVE and crypto_pwhash_MEMLIMIT_INTERACTIVE) to ensure a balance between security and performance.
 
-    Simplified API:
+   Simplified API:
         The crypto_pwhash_str function simplifies the process of hashing passwords by encapsulating best practices like salting and iterative hashing.
 
-    Error Handling:
+   Error Handling:
         The function returns -1 on failure, allowing for error handling (not shown in this single-line refactor).
