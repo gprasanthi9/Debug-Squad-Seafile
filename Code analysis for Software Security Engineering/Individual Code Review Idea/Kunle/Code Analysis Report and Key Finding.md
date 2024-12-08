@@ -169,7 +169,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
       fprintf(stderr, "MySQL connection failed: %s\n", mysql_error(db_conn));
       exit(EXIT_FAILURE);
   }
-```
+
 ### Injection Risk:
 
 - If `db->host`, `db->user`, or `db->password` are derived from untrusted input, there could be a risk of SQL injection. While `mysql_real_connect` is a low-level API, ensure these values are properly sanitized and validated before being passed to the function.
@@ -215,11 +215,12 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
 
 ### To prevent the weakness of logging sensitive information:
 
-	Sensitive data like password hashes or their parameters should not be logged. 
-	Here's a revised version of your code that omits logging sensitive information:
+Sensitive data like password hashes or their parameters should not be logged. 
+Here's a revised version of your code that omits logging sensitive information:
 
 ```c
 seaf_message("Password hash algorithm used.\n");
+
 ```
 A password hash algorithm is being used without exposing the specific details. If you need to log more detailed information for debugging purposes, consider using a secure logging mechanism that ensures the logs are protected and access is restricted.
 
