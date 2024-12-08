@@ -32,51 +32,51 @@ ldap_simple_bind_s(ldap, ldap_escape(manager->user_dn), password);
 ldap_escape is a hypothetical function that escapes special characters in the user DN to prevent LDAP injection attacks. It is recommended that escaping should be implement or use an existing function that performs this escaping.
 
 ### Deep Explanation of the Security Issue:
-#### 1. Plaintext Password Handling:
+#### A. Plaintext Password Handling:
 - **Risk:** If the password is being passed in plaintext (as it appears from the function signature), there's a risk of it being exposed in memory, logs, or over the network.  
 - **Mitigation:** Ensure the password is handled securely by using encryption mechanisms (e.g., hashing the password) before transmitting it. If it's being compared against an LDAP directory, ensure that the password is transmitted over a secure connection (e.g., using LDAPS or StartTLS to prevent password interception).
 
-#### 2. Transmission Over Unencrypted Channel:
+#### B. Transmission Over Unencrypted Channel:
 - **Risk:** If this LDAP verification is being performed over an unencrypted channel (i.e., using standard LDAP over port 389), the password could be intercepted during transmission.  
 - **Mitigation:** Use LDAPS (LDAP over SSL/TLS, typically port 636) or initiate StartTLS (to upgrade a plain LDAP connection to a secure one) to ensure that passwords and sensitive information are encrypted in transit.
 
-### 3. No Rate Limiting or Brute Force Protection:
+### C. No Rate Limiting or Brute Force Protection:
 
 - **Risk:** If the `ldap_verify_user_password` function doesn't implement rate limiting or brute-force protection, an attacker could try to guess the password through repeated attempts.
 - **Mitigation:** Implement rate limiting, CAPTCHA, or account lockout policies after a certain number of failed login attempts to prevent brute-force attacks.
 
-### 4. No Input Validation or Sanitization:
+### D. No Input Validation or Sanitization:
 
 - **Risk:** If the password parameter is not validated, it could be susceptible to injection attacks or buffer overflow vulnerabilities. For instance, if the password input is not properly sanitized, special characters might cause issues when interacting with the LDAP server.
 - **Mitigation:** Ensure input is validated, and buffer overflow protections are in place. The password should be passed in a secure manner, avoiding direct interaction with low-level string manipulation functions that might lead to vulnerabilities.
 
-### 5. Password Storage and Comparison:
+### E. Password Storage and Comparison:
 
 - **Risk:** If the password is stored in plaintext or using weak hashing algorithms, it could be exposed if there is a breach of the system where it's stored.
 - **Mitigation:** Ensure that passwords are hashed using a strong, cryptographically secure algorithm (e.g., bcrypt, scrypt, Argon2) before they are stored in the system. Additionally, use salts to prevent rainbow table attacks.
 
-### 6. Logging of Sensitive Data:
+### F. Logging of Sensitive Data:
 
 - **Risk:** If the function logs any failed or successful attempts along with the password, sensitive data could be exposed in the logs.
 - **Mitigation:** Ensure that passwords are never logged, even in error logs. Log only information like the status of the authentication attempt (success or failure) without including sensitive details like the password or the user identifier.
 
-### 7. Error Handling:
+### G. Error Handling:
 
 - **Risk:** If the error handling isn't done correctly, the system might leak too much information. For example, if incorrect passwords lead to overly detailed error messages, they could potentially reveal whether the user exists or not.
 - **Mitigation:** Implement generic error messages that do not disclose whether the username or password was incorrect, in order to avoid information leakage that could help an attacker enumerate valid usernames.
 
-### 8. Weak or Insecure Password Policies:
+### H. Weak or Insecure Password Policies:
 
 - **Risk:** If the `ldap_verify_user_password` function doesn't enforce strong password policies (e.g., minimum length, complexity requirements), it could lead to weak passwords being accepted.
 - **Mitigation:** Implement a strong password policy that enforces complex, unique passwords with a minimum length. This can help mitigate brute-force and dictionary attacks.
 
-### 9. LDAP Server Misconfiguration:
+### I. LDAP Server Misconfiguration:
 
 - **Risk:** If the LDAP server is not properly configured (e.g., with weak access controls or poor security settings), the password verification could be susceptible to various attacks, including unauthorized access or privilege escalation.
 - **Mitigation:** Ensure that the LDAP server is properly configured with appropriate access controls, secure connections, and regularly updated security patches.
 
 
-### Suggested Refactor:
+### Proposed Refactor:
 
 ```c
 int ldap_verify_user_password(CcnetUserManager *manager, const char *password) {
@@ -92,7 +92,7 @@ int ldap_verify_user_password(CcnetUserManager *manager, const char *password) {
 
 
 
-### 2. SQL INJECTION (CWE-89)
+## 2. SQL INJECTION (CWE-89)
 
 - **Location:** `server/repo-mgr.c`, `server/share-mgr.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802)
@@ -107,7 +107,7 @@ int ldap_verify_user_password(CcnetUserManager *manager, const char *password) {
 
 ### SECURITY ISSUE WITH THE CODE:
 
-#### Security Weakness:
+### Security Weakness:
 
 - **SQL Injection Vulnerability:**  
   Directly embedding user-controlled input (`prefix`) into an SQL query string without sanitization makes this code susceptible to SQL injection attacks. An attacker could inject malicious SQL code through the `prefix` parameter.
@@ -135,7 +135,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
 - **Single-Line Simplification:**  
   The code refactor avoids manual string manipulation, directly utilizing the database library's secure API.
 
-### 3. HARD-CODED CREDENTIALS (CWE-798)
+## 3. HARD-CODED CREDENTIALS (CWE-798)
 
 - **Location:** `server/seaf-db.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/seaf-db.c#L864)
@@ -169,7 +169,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
       fprintf(stderr, "MySQL connection failed: %s\n", mysql_error(db_conn));
       exit(EXIT_FAILURE);
   }
-
+```
 ### Injection Risk:
 
 - If `db->host`, `db->user`, or `db->password` are derived from untrusted input, there could be a risk of SQL injection. While `mysql_real_connect` is a low-level API, ensure these values are properly sanitized and validated before being passed to the function.
@@ -183,7 +183,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
 
 - Avoid logging or displaying database credentials (username/password) in any error messages, logs, or stack traces. Ensure that such information is not exposed to unauthorized users.
 
-### 4. INFORMATION EXPOSURE (CWE-200)
+## 4. INFORMATION EXPOSURE (CWE-200)
 
 - **Location:** `common/password-hash.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/password-hash.c#L144)
@@ -224,7 +224,7 @@ seaf_message("Password hash algorithm used.\n");
 ```
 A password hash algorithm is being used without exposing the specific details. If you need to log more detailed information for debugging purposes, consider using a secure logging mechanism that ensures the logs are protected and access is restricted.
 
-### 5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
+## 5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
 
 - **Location:** `server/user-mgr.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802)
