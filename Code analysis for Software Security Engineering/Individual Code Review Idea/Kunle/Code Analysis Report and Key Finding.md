@@ -169,7 +169,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
       fprintf(stderr, "MySQL connection failed: %s\n", mysql_error(db_conn));
       exit(EXIT_FAILURE);
   }
-```
+
 ### Injection Risk:
 
 - If `db->host`, `db->user`, or `db->password` are derived from untrusted input, there could be a risk of SQL injection. While `mysql_real_connect` is a low-level API, ensure these values are properly sanitized and validated before being passed to the function.
