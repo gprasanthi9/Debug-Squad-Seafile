@@ -40,7 +40,7 @@ Details:<br>
 
 4. INFORMATION EXPOSURE (CWE-200)<br>
 Location: common/password-hash.c<br>
-Location link: https://github.com/haiwen/seafile-server/edit/master/common/password-hash.c
+Location link: https://github.com/haiwen/seafile-server/edit/master/common/password-hash.c <br>
 Risk Level: Medium<br>
 Found In Code: seaf_message ("password hash algorithms: %s, params: %s\n ", params->algo, params->params_str)<br>
 Details:<br>
