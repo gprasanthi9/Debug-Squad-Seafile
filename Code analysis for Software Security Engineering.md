@@ -37,6 +37,42 @@ Our configuration incorporated the following key elements:
 | --xml-version=2 | Enhanced detail level | Detailed vulnerability reporting |
 | --template | Custom output formatting | Specific issue tracking |
 
+## Automated Code Review Script
+
+To further streamline the process, we developed a custom script to identify vulnerabilities associated with critical CWEs. The script performed automated searches for specific patterns indicative of security weaknesses.
+
+### Script Highlights
+
+```bash
+#!/bin/bash
+
+# Define the source directory
+SOURCE_DIR="$HOME/IdeaProjects/seafile-server/seafile-server"
+
+# Output directory for results
+OUTPUT_DIR="$HOME/IdeaProjects/seafile-server/vuln-analysis-results"
+mkdir -p $OUTPUT_DIR
+
+# Example: Search for CWE-287 (Improper Authentication)
+grep -r -E "(auth|login|authenticate)" $SOURCE_DIR > $OUTPUT_DIR/cwe-287.txt
+
+# Example: Search for CWE-89 (SQL Injection)
+grep -r -E "(SELECT|INSERT|UPDATE|DELETE)" $SOURCE_DIR > $OUTPUT_DIR/cwe-89.txt
+
+# Generate a summary of findings
+VERDICT_FILE="$OUTPUT_DIR/vulnerability-verdict.txt"
+echo "--- Vulnerability Analysis Verdict ---" > $VERDICT_FILE
+for FILE in $OUTPUT_DIR/*.txt; do
+  CWE=$(basename $FILE .txt)
+  if [ -s $FILE ]; then
+    echo "$CWE: Potential issues found. Review $FILE for details." >> $VERDICT_FILE
+  else
+    echo "$CWE: No significant issues detected." >> $VERDICT_FILE
+  fi
+done
+echo "Analysis completed. Check $VERDICT_FILE for results."
+
+
 ### Advanced Analysis Methods
 
 Our team enhanced the initial findings using:
