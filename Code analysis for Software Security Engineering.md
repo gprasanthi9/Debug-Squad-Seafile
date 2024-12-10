@@ -279,7 +279,7 @@ crypto_pwhash_str(*db_passwd, passwd, strlen(passwd), crypto_pwhash_OPSLIMIT_INT
         crypto_pwhash_str automatically generates a random, unique salt for each password hash, which is securely included in the output.
 
    - **Secure Iterations and Memory Limits:**
-        The function uses the recommended interactive parameters (crypto_pwhash_OPSLIMIT_INTERACTIVE and crypto_pwhash_MEMLIMIT_INTERACTIVE) to ensure a balance between security and performance.
+        The function uses the recommended interactive parameters `(crypto_pwhash_OPSLIMIT_INTERACTIVE and crypto_pwhash_MEMLIMIT_INTERACTIVE)` to ensure a balance between security and performance.
 
   - **Simplified API:**
         The crypto_pwhash_str function simplifies the process of hashing passwords by encapsulating best practices like salting and iterative hashing.
@@ -290,6 +290,47 @@ crypto_pwhash_str(*db_passwd, passwd, strlen(passwd), crypto_pwhash_OPSLIMIT_INT
 
     # PART 2:
 
+### CWE-287: Improper Authentication  
+Improper authentication in Seafile-server manifests in the `ldap_verify_user_password` function, which lacks mechanisms to protect against brute force attacks, uses weak LDAP authentication, and insufficiently validates sessions. The vulnerability opens the system to potential LDAP injection attacks, allowing unauthorized access to user accounts. By failing to encrypt LDAP communications or sanitize inputs, the system risks exposing user credentials and sensitive data. Mitigating these issues with robust encryption, input validation, and brute force defenses will help ensure that authentication processes are secure and resilient against threats.
 
+
+
+### CWE-89: SQL Injection  
+The Seafile-server codebase suffers from SQL injection vulnerabilities, as evidenced in functions that construct SQL queries through direct string concatenation. This allows attackers to manipulate SQL commands by injecting malicious inputs, potentially compromising the integrity and confidentiality of the database. Exploiting this weakness can result in unauthorized access, data theft, or destruction. The use of parameterized queries and prepared statements can neutralize these attacks by isolating user inputs from executable SQL commands, thereby fortifying database security.
+
+
+
+### CWE-798: Hard-Coded Credentials  
+Hard-coded credentials in `seaf-db.c` present a high risk of exposing sensitive information such as database usernames and passwords. If attackers gain access to the source code, they can use these credentials to compromise the system’s backend. Storing credentials in a secrets manager or environment variables provides a more secure alternative. Additionally, implementing encrypted database connections and avoiding the logging of sensitive details can further protect against unauthorized access.
+
+
+
+### CWE-200: Information Exposure  
+Logging practices in `password-hash.c` inadvertently expose sensitive details, such as hash algorithms and their parameters, to unauthorized users. This information can be leveraged by attackers to reverse-engineer password hashes or exploit vulnerabilities in outdated algorithms. Restricting the logging of sensitive details and adhering to privacy standards will reduce the risk of information leakage. Enhancing log management processes ensures compliance with security regulations and minimizes the risk of exploitation.
+
+
+
+### CWE-522: Insufficient Credential Protection  
+Insufficient credential protection arises from weak password hashing and storage mechanisms, which fail to utilize modern cryptographic standards like salting and iterative hashing. Without these measures, stored passwords are vulnerable to brute force and rainbow table attacks. By adopting robust cryptographic libraries and practices, such as securely erasing sensitive data from memory after use, Seafile-server can achieve stronger protection for user credentials, mitigating the risk of account compromise and unauthorized access.
+
+
+
+
+## REFLECTION
+Initially, our group believed that GitHub would have good modules for analyzing C code, which led to the first challenge: the default CodeQL module was not able to process the Seafile code effectively. This prompted us to explore other tools listed in the documentation to find a suitable, free solution. After some research, we identified DevSkim as a viable tool for the task. However, this introduced the second challenge: understanding how to install and run DevSkim properly.
+
+After successfully loading the DevSkim module and running it against the code, we encountered the third challenge. Initially, it seemed as though the scan had not run or produced any results. Through group discussions and by explaining my steps, we realized that either the scan had not completed or the results were in an unexpected location. After resolving this issue, we were able to retrieve the scan results.
+
+DevSkim identified 905 errors in total, but upon further inspection, there were only five unique errors, none of which were particularly significant. This outcome brought forth another challenge for me: understanding C at a deeper level to evaluate the security implications of the identified issues. It became clear that to assess the code effectively, a stronger grasp of C programming nuances is essential.
+
+We also considered utilizing tools such as FlawFinder and JetBrains for analyzing the Seafile source code. However, FlawFinder proved to be challenging when applied to the Seafile source code, as it generated numerous errors that were difficult for us to interpret. This difficulty likely stemmed from our limited experience with the tool.
+
+Seafile has diverse codebases, including those for Windows, Linux, mobile apps, client, and server components. To make efficient use of our limited time, we decided to focus specifically on the Seafile-server codebase, which serves as the foundation for Seafile's SeaHub.
+
+Jetbrains performed reasonably well, enabling us to map some of the reported issues to corresponding MITRE CWEs. To address the challenges faced during the analysis, the group employed a combination of automated tools like JetBrains and manual reviews conducted by team members with varying levels of expertise in Python and scripting. Additionally, we leveraged ChatGPT to assist in mapping identified vulnerabilities to their associated CWEs.
+
+This process highlighted several key lessons: the importance of language familiarity, the challenges posed by decentralized infrastructure, and the persistence of coding practices that require adaptation. The analysis provided valuable insights into the limitations of automated tools, the necessity of proper configuration, and the critical need for in-depth programming knowledge to evaluate security vulnerabilities effectively.
+
+Ultimately, the findings from this code review—including prioritized CWEs and their associated risks, which laid the groundwork for planning necessary improvements to the Seafile-server codebase to enhance its overall security posture.
 
 
