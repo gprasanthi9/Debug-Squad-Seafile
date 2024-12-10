@@ -7,10 +7,9 @@
 **Focus:** Seafile-server  
 **Repository:** [Seafile-server GitHub](https://github.com/haiwen/seafile-server)  
 
----
 
 ## Part 1: Code Review
----
+
 ### Methodology
 
 Our security analysis began with a comprehensive code review utilizing automated tools and manual inspection. The primary focus was on identifying potential security vulnerabilities within the Seafile server codebase.
