@@ -7,12 +7,22 @@
 **Repository:** [Seafile-server GitHub](https://github.com/haiwen/seafile-server)  
 
 ---
-### Analysis Methodology
+### Methodology
 
-#### Initial Configuration
-We implemented a thorough CPPCheck analysis with the following configuration:
+Our security analysis began with a comprehensive code review utilizing automated tools and manual inspection. The primary focus was on identifying potential security vulnerabilities within the Seafile server codebase.
+
+#### Configuration and Implementation
+
+We initiated our analysis using CPPCheck with the following configuration:
+
 ```bash
+# Primary Analysis Configuration
 cppcheck --enable=all --xml --xml-version=2 /path/to/seafile-server 2> seafile_analysis.xml
+
+# Extended Security Scan
+cppcheck --enable=warning,style,information,performance,portability \
+         --template='{file}:{line}:{severity}:{message}' \
+         seafile-server/
 ```
 
 ### 1. IMPROPER AUTHENTICATION (CWE-287)
