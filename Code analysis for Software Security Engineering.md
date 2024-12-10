@@ -19,7 +19,7 @@ We initiated our analysis using CPPCheck with the following configuration:
 
 ```bash
 # Primary Analysis Configuration
-cppcheck --enable=all --xml --xml-version=2 /path/to/seafile-server 2> seafile_analysis.xml
+cppcheck --enable=all --xml --xml-version=2 /path/to/seafile-server 2> Analysis_data.xml
 
 # Extended Security Scan
 cppcheck --enable=warning,style,information,performance,portability \
