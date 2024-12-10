@@ -50,7 +50,7 @@ Our team enhanced the initial findings using:
 The execution process generated structured output files:
 * Primary scan results: `analysis_output.xml`
 * Detailed security analysis: Stored in designated output directory
-* Template-based reports: Generated for specific vulnerability categories
+
 
 ### 1. IMPROPER AUTHENTICATION (CWE-287)
 **Location:** `server/user-mgr.c`  
