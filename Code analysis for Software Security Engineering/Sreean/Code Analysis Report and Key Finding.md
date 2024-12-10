@@ -2,7 +2,7 @@
 **Date:** December 8, 2024  
 **Project:** Seafile Server  
 **Focus:** Seafile-server  
-**Repository:** Seafile-server GitHub  
+**Repository:** [Seafile-server GitHub](https://github.com/haiwen/seafile-server)  
 
 ## Tools and Methodology
 
