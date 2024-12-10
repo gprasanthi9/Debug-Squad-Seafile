@@ -71,7 +71,7 @@ for FILE in $OUTPUT_DIR/*.txt; do
   fi
 done
 echo "Analysis completed. Check $VERDICT_FILE for results."
-
+```
 
 ### Advanced Analysis Methods
 
