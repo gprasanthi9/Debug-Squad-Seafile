@@ -314,6 +314,27 @@ Logging practices in `password-hash.c` inadvertently expose sensitive details, s
 Insufficient credential protection arises from weak password hashing and storage mechanisms, which fail to utilize modern cryptographic standards like salting and iterative hashing. Without these measures, stored passwords are vulnerable to brute force and rainbow table attacks. By adopting robust cryptographic libraries and practices, such as securely erasing sensitive data from memory after use, Seafile-server can achieve stronger protection for user credentials, mitigating the risk of account compromise and unauthorized access.
 
 
+### Tool Arsenal
+```
+PRIMARY TOOLS
+└── DevSkim
+    ├── Static Analysis
+    └── Vulnerability Detection
+
+JETBRAINS SUITE
+├── IntelliJ IDEA
+│   ├── Checkstyle Plugin
+│   ├── SonarLint Integration
+│   ├── Security Hotspots Detection
+│   └── Taint Vulnerability Analysis
+├── Quodana Plugin
+└── Built-in Code Inspection
+
+GITHUB SECURITY
+├── CodeQL Analysis
+├── Code Security Scan
+└── Automated Vulnerability Detection
+```
 
 
 ## REFLECTION
