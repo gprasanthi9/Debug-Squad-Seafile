@@ -1,0 +1,866 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:accesslog = os.path.join(runtime_dir, 'access.log')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:    conf[CONF_SEAHUB_OUTLOG] = os.path.join(runtime_dir, 'access.log')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:# Evaluate this file near the top of your script to gain access to
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:        # and for example Cygwin uses it to access remote file shares
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:$progname: You should recreate aclocal.m4 with macros from $PACKAGE $VERSION
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:$progname: You should recreate aclocal.m4 with macros from $PACKAGE $VERSION
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:$progname: You should recreate aclocal.m4 with macros from revision $package_revision
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:# FAIL_CMD may read-access the current command in variable CMD!
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    "error accessing file \"%s\": %s",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:     # Solaris ld rejects as of 11.4. Refer to Oracle bug 22985199.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:# gives unlimited permission to copy, distribute and modify it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:gives unlimited permission to copy, distribute and modify it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:gives unlimited permission to copy, distribute and modify it."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    List inner pub repos, which can be access by everyone.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        repo.user_perm = check_permission(repo.props.repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    List org inner pub repos, which can be access by all org members.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        repo.user_perm = check_permission(repo.props.repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def check_permission(repo_id, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    Check whether user has permission to access repo.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        ret = seafserv_threaded_rpc.check_permission(repo_id, user)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        repo.user_perm = check_permission(repo.props.repo_id, user)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        repo.user_perm = check_permission(repo.props.repo_id, user)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:# access token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def web_get_access_token(repo_id, obj_id, op, username, use_onetime=1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        ret = seafserv_rpc.web_get_access_token(repo_id, obj_id, op, username, use_onetime)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/__init__.py:from .service import send_command, check_quota, web_get_access_token, \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/__init__.py:from .service import get_binding_peerids, is_valid_filename, check_permission,\
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_fileserver_access_token(self, repo_id, obj_id, op, username, use_onetime=True):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        """Generate token for access file/dir in fileserver
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Return: the access token in string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.web_get_access_token(repo_id, obj_id, op, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def query_fileserver_access_token(self, token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        token: the access token in string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Return: the WebAccess object (lib/webaccess.vala)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.web_query_access_token(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        token: obtained by get_fileserver_access_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def share_repo(self, repo_id, from_username, to_username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                               to_username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_share_permission(self, repo_id, from_username, to_username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.set_share_permission(repo_id, from_username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                          to_username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def share_subdir_to_user(self, repo_id, path, owner, share_user, permission, passwd=''):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                          share_user, permission, passwd)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                          share_user, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                                       share_user, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def group_share_repo(self, repo_id, group_id, username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                      username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_group_repo(self, repo_id, group_id, username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                      username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def share_subdir_to_group(self, repo_id, path, owner, share_group, permission, passwd=''):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                           share_group, permission, passwd)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                           share_group, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                                        share_group, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_group_repo_permission(self, group_id, repo_id, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.set_group_repo_permission(group_id, repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                               permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def add_inner_pub_repo(self, repo_id, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.set_inner_pub_repo(repo_id, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    # permission checks
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def check_permission(self, repo_id, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Check repo share permissions. Only check user share, group share and inner-pub
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.check_permission(repo_id, user)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def check_permission_by_path(self, repo_id, path, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Check both repo share permission and sub-folder access permissions.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        In CE, this function is equivalent to check_permission.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.check_permission_by_path(repo_id, path, user)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Check if the permission of the repo is syncable.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Check if the permission of the dir is downloadable.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        permission check should be done before calling this function.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      exercising permissions granted by this License.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:   6. Trademarks. This License does not grant permission to use the trade
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      risks associated with Your exercise of permissions under this License.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:   See the License for the specific language governing permissions and
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_repo_set_access_property(repo_id, role):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    repo_set_access_property = seafile_repo_set_access_property
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_repo_query_access_property(repo_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    repo_query_access_property = seafile_repo_query_access_property
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_add_share(repo_id, from_email, to_email, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def share_subdir_to_user(repo_id, path, owner, share_user, permission, passwd):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def update_share_subdir_perm_for_user(repo_id, path, owner, share_user, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def set_share_permission(repo_id, from_email, to_email, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def share_subdir_to_group(repo_id, path, owner, share_group, permission, passwd):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def update_share_subdir_perm_for_group(repo_id, path, owner, share_group, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def set_group_repo_permission(group_id, repo_id, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # repo permission checking
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def check_permission(repo_id, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # folder permission check
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def check_permission_by_path(repo_id, path, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def add_org_group_repo(repo_id, org_id, group_id, owner, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def set_org_group_repo_permission(org_id, group_id, repo_id, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def set_inner_pub_repo(repo_id, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def set_org_inner_pub_repo(org_id, repo_id, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # token for web access to repo
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_web_get_access_token(repo_id, obj_id, op, username, use_onetime=1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    web_get_access_token = seafile_web_get_access_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_web_query_access_token(token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    web_query_access_token = seafile_web_query_access_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:@%:@ gives unlimited permission to copy, distribute and modify it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:gives unlimited permission to copy, distribute and modify it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:gives unlimited permission to copy, distribute and modify it."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:@%:@ gives unlimited permission to copy, distribute and modify it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:gives unlimited permission to copy, distribute and modify it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:gives unlimited permission to copy, distribute and modify it."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/requests:                        'aclocal.m4',
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/requests:                        'aclocal.m4',
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_repo_set_access_property (const char *repo_id, const char *ap,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_repo_query_access_property (const char *repo_id, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_web_get_access_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_web_query_access_token (const char *token, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                              const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                                           const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                   const char *to_email, const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                               const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                                            const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                          const char *user_name, const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_check_permission (const char *repo_id, const char *user, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_check_permission_by_path (const char *repo_id, const char *path,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                            const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_set_share_permission (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                              const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_set_group_repo_permission (int group_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                                   const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.h:    /* Used to access fs and block sotre.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.h:     * So always use repo_id to access commit store.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_get_repo_list/test_get_repo_list.py:                  'permission', 'user', 'group_id']
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_get_repo_list/test_get_repo_list.py:    elif (attr == 'permission'):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:#the argument obj_id of get_fileserver_access_token shouldn't be NULL.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:#the argument obj_id of get_fileserver_access_token shouldn't be NULL.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'update', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'update', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:#the argument obj_id of get_fileserver_access_token shouldn't be NULL.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    token = api.get_fileserver_access_token(v_repo_id, obj_id, 'upload', USER2, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    token = api.get_fileserver_access_token(v_repo_id, obj_id, 'update', USER2, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/utils.py:def assert_repo_with_permission(r1, r2, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/utils.py:    assert r2.permission == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	token, err := rpcclient.Call("seafile_web_get_access_token", options.repoID, objID, "upload", options.username, false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:		log.Fatal("Failed to get web access token\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	accessToken, _ := token.(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	url := fmt.Sprintf("%s:8082/upload-api/%s", options.server, accessToken)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:			// headers["Authorization"] = []string{"Token " + accessToken.(string)}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_structure_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_structure_repo_perm.py:def test_repo_perm_in_structure (repo, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_structure_repo_perm.py:    # USER2 in child group (id2) has permission to access repo in parent group (id1) #
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_structure_repo_perm.py:    assert api.group_share_repo(repo.id, id1, USER, permission) != -1
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_structure_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_structure_repo_perm.py:    assert api.check_permission(repo.id, USER2) == None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:from tests.utils import assert_repo_with_permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_share_repo_to_user(repo, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER) == 'rw'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) is None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.share_repo(repo.id, USER, USER2, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert_repo_with_permission(repo, repos, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert_repo_with_permission(repo, repos, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert users[0].perm == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) is None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_share_repo_to_group(repo, group, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER) == 'rw'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) is None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.group_share_repo(repo.id, group.id, USER, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert_repo_with_permission(repo, repos, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert_repo_with_permission(repo, repos2, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.set_group_repo(repo.id, group.id, USER, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) is None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_share_dir_to_user(repo, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id_1 =  api.share_subdir_to_user(repo.id, '/dir1', USER, USER2, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id_2 =  api.share_subdir_to_user(repo.id, '/dir2', USER, USER2, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id_1, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id_2, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert vir_repo_2.permission == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_share_dir_to_group(repo, group, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id_1 = api.share_subdir_to_group(repo.id, '/dir1', USER, group.id, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id_2 = api.share_subdir_to_group(repo.id, '/dir2', USER, group.id, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id_1, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id_2, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id_1, USER2) is None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id_2, USER2) is None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission_to_share, permission_to_set', [('r', 'rw'), ('rw', 'r')])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_set_share_permission(repo,  permission_to_share, permission_to_set):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.share_repo(repo.id, USER, USER2, permission_to_share)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission_to_share
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.set_share_permission(repo.id, USER, USER2, permission_to_set)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission_to_set
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission_to_share, permission_to_set', [('r', 'rw'), ('rw', 'r')])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def set_group_repo_permission(repo,  group, permission_to_share, permission_to_set):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == None
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.set_group_repo(repo.id, group.id, USER, permission_to_share)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission_to_share
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.set_group_repo_permission(group.id, repo.id, permission_to_set)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(repo.id, USER2) == permission_to_set
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission_to_share, permission_to_update', [('r', 'rw'), ('rw', 'r')])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_update_share_subdir_perm_for_user(repo, permission_to_share, permission_to_update):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id =  api.share_subdir_to_user(repo.id, '/dir1', USER, USER2, permission_to_share)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id, USER2) == permission_to_share
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.update_share_subdir_perm_for_user(repo.id, '/dir1', USER, USER2, permission_to_update)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id, USER2) == permission_to_update
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission_to_share, permission_to_update', [('r', 'rw'), ('rw', 'r')])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_update_share_subdir_perm_for_group(repo, group, permission_to_update, permission_to_share):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id = api.share_subdir_to_group(repo.id, '/dir1', USER, group.id, permission_to_share)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id, USER2) == permission_to_share
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.update_share_subdir_perm_for_group(repo.id, '/dir1', USER, group.id, permission_to_update)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_repo_id, USER2) == permission_to_update
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_get_shared_users_by_repo(repo, group, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.share_repo(repo.id, USER, USER2, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    api.set_group_repo(repo.id, group.id, ADMIN_USER, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:@pytest.mark.parametrize('permission', ['r', 'rw'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:def test_subdir_permission_in_virtual_repo(repo, group, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id_1 = api.share_subdir_to_user(repo.id, '/dir1', USER, USER2, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_subdir_repo_id_1, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    v_repo_id_2 = api.share_subdir_to_group(repo.id, '/dir2', USER, group.id, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_share_and_perm/test_shared_repo_perm.py:    assert api.check_permission(v_subdir_repo_id_2, USER2) == permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.h:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:            "permission CHAR(15), INDEX (repo_id), "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:            "permission CHAR(15))";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    /*         "permission VARCHAR(15))"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                              const char *permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "to_email, permission) VALUES (?, ?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "string", to_email_l, "string", permission) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                           const char *permission, const char *path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "UPDATE SharedRepo SET permission=? WHERE repo_id IN "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                   5, "string", permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:seaf_share_manager_set_permission (SeafShareManager *mgr, const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                   const char *permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "UPDATE SharedRepo SET permission=? WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                   4, "string", permission, "string", repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    const char *permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    permission = seaf_db_row_get_column_text (row, 3);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                         "permission", permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                "to_email, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                "from_email, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                "to_email, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                "from_email, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT to_email, permission, repo_id FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT group_id, permission, repo_id FROM RepoGroup WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "SELECT v.path, s.permission FROM SharedRepo s, VirtualRepo v WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = g_strdup_printf ("SELECT v.path, s.permission "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:seaf_share_manager_check_permission (SeafShareManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "SELECT permission FROM SharedRepo WHERE repo_id=? AND to_email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:              "from_email, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:              "from_email, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT repo_id, to_email, permission FROM OrgSharedRepo WHERE org_id=? AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT repo_id, to_email, permission FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:#include "access-file.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_zip_cb (evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    info = seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_zip_link_cb (evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    SeafileWebAccess *webaccess = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    webaccess = seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (!webaccess) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    repo_id = seafile_web_access_get_repo_id (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    data = seafile_web_access_get_obj_id (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    operation = seafile_web_access_get_op (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    user = seafile_web_access_get_username (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error = "Operation does not match access token.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (webaccess)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (webaccess != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_v2_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (http_tx_manager_check_file_access (repo_id, token, cookie, dec_path, "download", ip_addr, user_agent, &user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error_str = "No permission to access file\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_blks_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    SeafileWebAccess *webaccess = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    webaccess = seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (!webaccess) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    repo_id = seafile_web_access_get_repo_id (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    id = seafile_web_access_get_obj_id (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    operation = seafile_web_access_get_op (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    user = seafile_web_access_get_username (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (webaccess != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_link_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_dir_link_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:access_file_init (evhtp_t *htp)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    evhtp_set_regex_cb (htp, "^/files/.*", access_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    evhtp_set_regex_cb (htp, "^/blks/.*", access_blks_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    evhtp_set_regex_cb (htp, "^/zip/.*", access_zip_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    evhtp_set_regex_cb (htp, "^/f/.*", access_link_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    //evhtp_set_regex_cb (htp, "^/d/.*", access_dir_link_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    evhtp_set_regex_cb (htp, "^/repos/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}/files/.*", access_v2_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Check password @magic to access contents of @repo_id.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Set @passwd for @user to access contents of @repo_id.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * to access @repo_id.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    repo_id = seafile_web_access_get_repo_id (info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    data = seafile_web_access_get_obj_id (info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    operation = seafile_web_access_get_op (info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    obj->user = g_strdup (seafile_web_access_get_username (info));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h: * Returns an access token for the given access info.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h:seaf_web_at_manager_get_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h: * Returns access info for the given token.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h:seaf_web_at_manager_query_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.h:http_tx_manager_check_file_access (const char *repo_id, const char *token, const char *cookie,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "group_id INTEGER, user_name VARCHAR(255), permission CHAR(15), "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "permission CHAR(15), UNIQUE INDEX (repo_id))"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "access_property CHAR(10), UNIQUE INDEX(repo_id))"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "group_id INTEGER, user_name TEXT, permission CHAR(15))";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "permission CHAR(15))";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "access_property CHAR(10))";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         "group_id INTEGER, user_name VARCHAR(255), permission VARCHAR(15), " */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         "permission VARCHAR(15))"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         "access_property VARCHAR(10))"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/* Web access permission. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_set_access_property (SeafRepoManager *mgr, const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (seaf_repo_manager_query_access_property (mgr, repo_id) == NULL) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "INSERT INTO WebAP (repo_id, access_property) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "UPDATE WebAP SET access_property=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_warning ("DB error when set access property for repo %s, %s.\n", repo_id, ap);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_query_access_property (SeafRepoManager *mgr, const char *repo_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql =  "SELECT access_property FROM WebAP WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_warning ("DB error when get access property for repo %s.\n", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                  const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "INSERT INTO RepoGroup (repo_id, group_id, user_name, permission) VALUES (?, ?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "string", owner, "string", permission) < 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    const char *permission = seaf_db_row_get_column_text(row, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_strlcpy (perm->permission, permission, sizeof(perm->permission));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT group_id, permission FROM RepoGroup WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "UPDATE RepoGroup SET permission=? WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    3, "string", permission, "string", repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                 const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "UPDATE RepoGroup SET permission=? WHERE repo_id IN "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    5, "string", permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    const char *permission = seaf_db_row_get_column_text (row, 4);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                          "permission", permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "group_id, user_name, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "group_id, user_name, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      const char *permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "UPDATE InnerPubRepo SET permission='%s' "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "WHERE repo_id='%s'", permission, repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "INSERT INTO InnerPubRepo (repo_id, permission) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "('%s', '%s')", repo_id, permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                        "REPLACE INTO InnerPubRepo (repo_id, permission) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                        2, "string", repo_id, "string", permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    const char *repo_id, *vrepo_id, *owner, *permission, *commit_id;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    permission = seaf_db_row_get_column_text (row, 3);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                          "permission", permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "owner_id, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "owner_id, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT permission FROM InnerPubRepo WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT to_email, permission, v.repo_id "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT group_id, permission, v.repo_id "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:              "group_id, user_name, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:              "group_id, owner, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                          "group_id, %s, permission, commit_id, s.size, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:    if (g_access (temp_file_path, R_OK) != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:/*         if (g_access (temp_file_path, R_OK) != 0) { */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:        if (g_access (temp_file_path, R_OK) != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:    if (g_access (temp_file_path, R_OK) != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:/*         if (g_access (temp_file_path, R_OK) != 0) { */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:check_access_token (const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    SeafileWebAccess *webaccess;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    webaccess = (SeafileWebAccess *)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (!webaccess) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    _repo_id = seafile_web_access_get_repo_id (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    op = seafile_web_access_get_op (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        *err_msg = "Operation does not match access token.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    *user = g_strdup (seafile_web_access_get_username (webaccess));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    _obj_id  = seafile_web_access_get_obj_id (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (check_access_token (token, url_op, &repo_id, &parent_dir, &user, &token_type, &err_msg) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    info = http_tx_manager_query_access_token (token, "upload");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:noinst_HEADERS = web-accesstoken-mgr.h  seafile-session.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	access-file.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	web-accesstoken-mgr.c  seafile-session.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	access-file.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.h:access_file_init (evhtp_t *htp);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.h:                              const char *permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.h:                                            const char *permission, const char *path);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.h:seaf_share_manager_set_permission (SeafShareManager *mgr, const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.h:                                   const char *permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.h:seaf_share_manager_check_permission (SeafShareManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to start web access check manager.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    url = g_strdup_printf("%s/check-share-link-access/?type=%s", seaf->seahub_url, type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:parse_file_access_info (const char *rsp_content, int rsp_size)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        seaf_warning ("Failed to parse response when check file access in Seahub: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        seaf_warning ("Failed to find user in json when check file access in Seahub.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:http_tx_manager_check_file_access (const char *repo_id, const char *token, const char *cookie,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    url = g_strdup_printf("%s/repos/%s/check-access/", seaf->seahub_url, repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    *user = parse_file_access_info (rsp_content, rsp_size);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:check_group_permission_by_user (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    char *permission = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    g_string_printf (sql, "SELECT permission FROM RepoGroup WHERE repo_id = ? AND group_id IN (");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:                                       check_repo_share_perm_cb, &permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        seaf_warning ("DB error when get repo share permission for repo %s.\n", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:check_repo_share_permission (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    char *permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    permission = seaf_share_manager_check_permission (seaf->share_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    if (permission != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    permission = check_group_permission_by_user (mgr, repo_id, user_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    if (permission != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:check_virtual_repo_permission (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    char *permission = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    /* If I'm the owner of origin repo, I have full access to sub-repos. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        permission = g_strdup("rw");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    permission = check_perm_on_parent_repo (origin_repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    if (permission) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    permission = check_repo_share_permission (mgr, origin_repo_id, user);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c: * Comprehensive repo access permission checker.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c: * Returns read/write permission.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:seaf_repo_manager_check_permission (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    char *permission = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:        permission = check_virtual_repo_permission (mgr, repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:            permission = g_strdup("rw");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:            permission = check_repo_share_permission (mgr, repo_id, user);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    return permission;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    perm = seaf_repo_manager_check_permission (mgr, repo_id, user, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:                          "permission", perm,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    GHashTable		*access_token_hash; /* token -> access info */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:free_access_info (AccessInfo *info)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    mgr->priv->access_token_hash = g_hash_table_new_full (g_str_hash, g_str_equal,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                                                    (GDestroyNotify)free_access_info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    g_hash_table_foreach_remove (manager->priv->access_token_hash,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:seaf_web_at_manager_get_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    SeafileWebAccess *webaccess;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    t = gen_new_token (mgr->priv->access_token_hash);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    g_hash_table_insert (mgr->priv->access_token_hash, g_strdup(t), info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            webaccess = g_object_new (SEAFILE_TYPE_WEB_ACCESS,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                                                 t, webaccess, error) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                g_hash_table_remove (mgr->priv->access_token_hash, t);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            g_object_unref (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:seaf_web_at_manager_query_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    SeafileWebAccess *webaccess;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    info = g_hash_table_lookup (mgr->priv->access_token_hash, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            webaccess = g_object_new (SEAFILE_TYPE_WEB_ACCESS,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                g_hash_table_remove (mgr->priv->access_token_hash, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            return webaccess;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/permission-mgr.c:#include "permission-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/permission-mgr.c:        g_critical ("[Permission mgr] Failed to open permission db\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_repo_set_access_property,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_repo_set_access_property",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_repo_query_access_property,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_repo_query_access_property",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_set_share_permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "set_share_permission",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_set_group_repo_permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "set_group_repo_permission",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* token for web access to repo */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_web_get_access_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_web_get_access_token",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_web_query_access_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_web_query_access_token",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* repo permission */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_check_permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "check_permission",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* folder permission */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_check_permission_by_path,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "check_permission_by_path",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c:         * we need to access this commit in order to restore it
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c:        seaf_message ("Database is MySQL/Postgre/Oracle, use online GC.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/verify.c:         * we need to access this commit in order to restore it
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.h:    /* Used to access fs and block sotre.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.h:     * So always use repo_id to access commit store.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:    /* Used to access fs and block sotre.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:     * So always use repo_id to access commit store.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                  const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:    char permission[16];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                       const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                      const char *permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h: * Comprehensive repo permission checker.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h: * It checks if @user have permission to access @repo_id.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_check_permission (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:/* Web access permission. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_set_access_property (SeafRepoManager *mgr, const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_query_access_property (SeafRepoManager *mgr, const char *repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                                 const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:#include "access-file.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_t perm_cache_lock; /* repo_id:username -> permission */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:// PermInfo caches the results from the last permission check for accessing a repo.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:// The cached result is updated on the next call to get_check_permission_cb function, or when the cache expires.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:// The result is only cached if the permission check passed.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:const char *OP_PERM_CHECK_REGEX = "^/repo/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}/permission-check/.*";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c://accessible repos
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:const char *GET_ACCESSIBLE_REPO_LIST_REGEX = "/accessible-repos";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:check_permission (HttpServer *htp_server, const char *repo_id, const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *perm = seaf_repo_manager_check_permission (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:get_check_permission_cb (evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /* We shall actually check the permission from database, don't rely on
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username, op, TRUE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *permission = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                         "permission", &permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    json_object_set_new (obj, "permission", json_string (permission));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *permission = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *permission_prev = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                             "permission", &permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            g_free (permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            g_object_get (srepo_tmp, "permission", &permission_prev,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            if (g_strcmp0 (permission, "rw") == 0 && g_strcmp0 (permission_prev, "r") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            g_free (permission_prev);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free (permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:get_accessible_repo_list_cb (evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            json_object_set_new (obj, "permission", json_string ("rw"));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        seaf_warning ("DB error when get accessible repo list.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                        OP_PERM_CHECK_REGEX, get_check_permission_cb,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                        GET_ACCESSIBLE_REPO_LIST_REGEX, get_accessible_repo_list_cb,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /* Web access file */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    access_file_init (priv->evhtp);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:    /* Allow seafdav to access seahub_settings.py */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    /* No permission check here, since both group staff and seahub staff
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-backend-fs.c:    if (g_access (block_path, F_OK) == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:         * we need to access this commit in order to restore it
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_repo_set_access_property (const char *repo_id, const char *ap, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:        g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_BAD_ARGS, "Wrong access property");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    ret = seaf_repo_manager_set_access_property (seaf->repo_mgr, repo_id, ap);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_repo_query_access_property (const char *repo_id, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    ret = seaf_repo_manager_query_access_property (seaf->repo_mgr, repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_web_get_access_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    token = seaf_web_at_manager_get_access_token (seaf->web_at_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_web_query_access_token (const char *token, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    SeafileWebAccess *webaccess = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    webaccess = seaf_web_at_manager_query_access_token (seaf->web_at_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (webaccess)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:        return (GObject *)webaccess;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                   const char *to_email, const char *permission, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!repo_id || !from_email || !to_email || !permission) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                        to_email, permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                              const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                        share_user, permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                           const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                      permission, real_path);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Failed to update share subdir permission for user");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                          const char *user_name, const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (group_id <= 0 || !user_name || !repo_id || !permission) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                            permission, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                               const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                            owner, permission, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                            const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                           permission, real_path);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Failed to update share subdir permission for group");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                            const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                              repo_id, permission) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                          "permission", "",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_check_permission (const char *repo_id, const char *user, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return seaf_repo_manager_check_permission (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_check_permission_by_path (const char *repo_id, const char *path,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return seafile_check_permission (repo_id, user, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_set_share_permission (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                              const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!repo_id || !from_email || !to_email || !permission) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return seaf_share_manager_set_permission (seaf->share_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                              permission);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_set_group_repo_permission (int group_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                   const char *permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!repo_id || !permission) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!is_permission_valid (permission)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Invalid permission parameter");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                  permission,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:        char *perm = seaf_repo_manager_check_permission (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        ccnet_warning ("Failed to update user folder permission\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func accessCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, err := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	repoID := accessInfo.repoID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op := accessInfo.op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user := accessInfo.user
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	objID := accessInfo.objID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func accessV2CB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	url := fmt.Sprintf("%s/repos/%s/check-access/", option.SeahubURL, repoID)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to encode access token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			msg := "No permission to access file\n"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("failed to get access token info: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to decode access token info: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func accessBlksCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, err := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	repoID := accessInfo.repoID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op := accessInfo.op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user := accessInfo.user
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	id := accessInfo.objID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func accessZipCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, err := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	repoID := accessInfo.repoID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op := accessInfo.op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user := accessInfo.user
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	data := accessInfo.objID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, appErr := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	repoID := accessInfo.repoID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op := accessInfo.op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user := accessInfo.user
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	id := accessInfo.objID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("no parent_dir in access token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm.tokenType = accessInfo.op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:type webaccessInfo struct {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func parseWebaccessInfo(token string) (*webaccessInfo, *appError) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	webaccess, err := rpcclient.Call("seafile_web_query_access_token", token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to get web access token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if webaccess == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	webaccessMap, ok := webaccess.(map[string]interface{})
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo := new(webaccessInfo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	repoID, ok := webaccessMap["repo-id"].(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo.repoID = repoID
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	id, ok := webaccessMap["obj-id"].(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo.objID = id
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op, ok := webaccessMap["op"].(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo.op = op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user, ok := webaccessMap["username"].(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo.user = user
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	return accessInfo, nil
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	url := fmt.Sprintf("%s?type=%s", option.SeahubURL+"/check-share-link-access/", opType)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to encode access token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func accessLinkCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func accessDirLinkCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fsmgr/fsmgr.go:// Add fs cache, on the one hand to avoid repeated creation and destruction of repeatedly accessed objects,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/files/{.*}/{.*}", appHandler(accessCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/blks/{.*}/{.*}", appHandler(accessBlksCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/zip/{.*}", appHandler(accessZipCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/f/{.*}{slash:\\/?}", appHandler(accessLinkCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	//r.Handle("/d/{.*}", appHandler(accessDirLinkCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/repos/{repoid:[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}}/files/{filepath:.*}", appHandler(accessV2CB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/repo/{repoid:[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}}/permission-check{slash:\\/?}",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		appHandler(permissionCheckCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/accessible-repos{slash:\\/?}", appHandler(getAccessibleRepoListCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/objstore/objstore.go:// It is low-level package used by commitmgr, fsmgr, blockmgr packages to access storage.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/objstore/objstore.go:// ObjectStore is a container to access storage backend
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:func permissionCheckCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:// share: manages personal shares and provide high level permission check functions.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:// CheckPerm get user's repo permission
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlBuilder.WriteString("SELECT permission FROM RepoGroup WHERE repo_id = ? AND group_id IN (")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		err := fmt.Errorf("Failed to get group permission by user %s: %v", userName, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		err := fmt.Errorf("Failed to get group permission for user %s: %v", userName, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := "SELECT permission FROM SharedRepo WHERE repo_id=? AND to_email=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			err := fmt.Errorf("Failed to check shared repo permission: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := "SELECT permission FROM InnerPubRepo WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			err := fmt.Errorf("Failed to check inner public repo permission: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		log.Errorf("Failed to get shared repo permission: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		log.Errorf("Failed to get group permission by user %s: %v", userName, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			log.Errorf("Failed to get inner pulic repo permission by repo id %s: %v", repoID, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := "SELECT v.path, s.permission FROM SharedRepo s, VirtualRepo v WHERE " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := fmt.Sprintf("SELECT v.path, s.permission "+
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	Permission   string `json:"permission"`
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		"owner_id, permission, commit_id, i.name, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			"permission, commit_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			"permission, commit_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			"user_name, permission, commit_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:			"owner, permission, commit_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/README.markdown:This is the core component of Seafile server. It provides RPC to the web front-end (Seahub) to access files, and provides HTTP APIs to the desktop clients for syncing files.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingInclude" severity="information" msg="Include file: &quot;web-accesstoken-mgr.h&quot; not found." verbose="Include file: &quot;web-accesstoken-mgr.h&quot; not found.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="1" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="12" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="15" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="17" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="18" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="19" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="21" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="22" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="24" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="30" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_GINT64_FORMAT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_GINT64_FORMAT is a macro then please configure it." file0="server/access-file.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="601" column="47"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="8" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="9" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/access-file.c" line="10" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/permission-mgr.c" line="3" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/permission-mgr.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/permission-mgr.h" line="6" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedVariable" severity="style" msg="Unused variable: sql" verbose="Unused variable: sql" cwe="563" file0="server/permission-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/permission-mgr.c" line="44" column="17"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="3" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="7" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="11" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="13" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="15" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="variableScope" severity="style" msg="The scope of the variable &apos;token&apos; can be reduced." verbose="The scope of the variable &apos;token&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="111" column="11"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="variableScope" severity="style" msg="The scope of the variable &apos;webaccess&apos; can be reduced." verbose="The scope of the variable &apos;webaccess&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="215" column="23"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>webaccess</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constVariablePointer" severity="style" msg="Variable &apos;info&apos; can be declared as pointer to const" verbose="Variable &apos;info&apos; can be declared as pointer to const" cwe="398" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="73" column="17" info="Variable &apos;info&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedStructMember" severity="style" msg="struct member &apos;WebATPriv::cache&apos; is never used." verbose="struct member &apos;WebATPriv::cache&apos; is never used." cwe="563" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="26" column="22"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedVariable" severity="style" msg="Unused variable: webaccess" verbose="Unused variable: webaccess" cwe="563" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="138" column="23"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>webaccess</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;http_tx_manager_check_file_access&apos; is never used." verbose="The function &apos;http_tx_manager_check_file_access&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>http_tx_manager_check_file_access</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/permission-mgr.c" line="18" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/permission-mgr.c" line="27" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="55" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="100" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.gitignore:aclocal.m4
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.gitignore:lib/webaccess.c
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS RepoGroup (repo_id CHAR(37), group_id INTEGER, user_name TEXT, permission CHAR(15));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS InnerPubRepo (repo_id CHAR(37) PRIMARY KEY, permission CHAR(15));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS OrgGroupRepo (org_id INTEGER, repo_id CHAR(37), group_id INTEGER, owner VARCHAR(255), permission CHAR(15));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS OrgInnerPubRepo (org_id INTEGER, repo_id CHAR(37), permission CHAR(15), PRIMARY KEY (org_id, repo_id));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS WebAP (repo_id CHAR(37) PRIMARY KEY, access_property CHAR(10));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS FolderUserPerm (repo_id CHAR(36) NOT NULL, path TEXT NOT NULL, permission CHAR(15), user VARCHAR(255) NOT NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS FolderGroupPerm (repo_id CHAR(36) NOT NULL, path TEXT NOT NULL, permission CHAR(15), group_id INTEGER NOT NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS SharedRepo (repo_id CHAR(37) , from_email VARCHAR(255), to_email VARCHAR(255), permission CHAR(15));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS OrgSharedRepo (org_id INTEGER, repo_id CHAR(37) , from_email VARCHAR(255), to_email VARCHAR(255), permission CHAR(15));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  permission CHAR(15),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  access_property CHAR(10),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.github/workflows/golangci-lint.yml:permissions:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.github/workflows/golangci-lint.yml:  # Optional: allow read access to pull request. Use with `only-new-issues` option.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.h:is_permission_valid (const char *perm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/dir.vala:		// _id is for fast access from c code. id is for
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/job-mgr.c:    /* the done callback should only access this field */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/file.vala:    // _id is for fast access from c code. id is for
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/repo.vala:    // _id is for fast access from c code. id is for
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/repo.vala:    // Used to access fs objects
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/repo.vala:    public string permission { get; set; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/libseafile.pc.in:Description: Client library for accessing seafile service.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/Makefile.am:	task.vala branch.vala crypt.vala webaccess.vala seahub.vala copy-task.vala ccnetobj.vala search-result.vala
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    DWORD access = 0;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    access |= GENERIC_READ;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        access |= GENERIC_WRITE;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:                          access,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    DWORD access = 0;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    access |= GENERIC_READ;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        access |= GENERIC_WRITE;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:                          access,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    return (access (path, F_OK) == 0);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c: * since it accesses the static global socket.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:is_permission_valid (const char *perm)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/commit.vala:    // _id is for fast access from c code. id is for
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/dirent.vala:    // _id is for fast access from c code. id is for
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/dirent.vala:	public string permission { set; get; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltversion.m4:# unlimited permission to copy and/or distribute it, with or without
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:# unlimited permission to copy and/or distribute it, with or without
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal doesn't pull ltoptions.m4, ltsugar.m4, or ltversion.m4
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:gives unlimited permission to copy, distribute and modify it."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl The call to [A][M_PROG_GCJ] is quoted like that to stop aclocal
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:# Regexp to match symbols that can be accessed directly from C.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:# unlimited permission to copy and/or distribute it, with or without
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:# This is to help aclocal find these macros, as it can't see m4_define.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltoptions.m4:dnl aclocal-1.4 backwards compatibility:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltsugar.m4:# unlimited permission to copy and/or distribute it, with or without
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/ltsugar.m4:# This is to help aclocal find these macros, as it can't see m4_define.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/glib-gettext.m4:dnl We go to great lengths to make sure that aclocal won't 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/glib-gettext.m4:dnl when running aclocal in the glib directory.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/glib-gettext.m4:dnl Now the definitions that aclocal will find
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# lt~obsolete.m4 -- aclocal satisfying obsolete definitions.    -*-Autoconf-*-
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# unlimited permission to copy and/or distribute it, with or without
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# These exist entirely to fool aclocal when bootstrapping libtool.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# The trouble is, aclocal is a bit thick.  It'll see the old AC_DEFUN
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# in /usr/share/aclocal/libtool.m4 and remember it, then when it sees us
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# included after everything else.  This provides aclocal with the
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# We use AC_DEFUN over AU_DEFUN for compatibility with aclocal-1.6.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/lt~obsolete.m4:# This is to help aclocal find these macros, as it can't see m4_define.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for weak or missing access control mechanisms
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(permission|access|acl)" $SOURCE_DIR > $OUTPUT_DIR/cwe-284.txt
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/objects/pack/pack-0922ffe849e753b938afc79b1de7b8e77095b6ce.pack matches
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/index matches
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/packed-refs:9cfe32800a8437d49bb071e4d5a3ac6446b4d144 refs/remotes/origin/permission-622
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:permission to link with OpenSSL library.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:grants you additional permission to convey the resulting work.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Developers that use our General Public Licenses protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License which gives you legal permission to copy, distribute and/or modify the software.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:A secondary benefit of defending all users' freedom is that improvements made in alternate versions of the program, if they receive widespread use, become available for other developers to incorporate. Many developers of free software are heartened and encouraged by the resulting cooperation. However, in the case of software used on network servers, this result may fail to come about. The GNU General Public License permits making a modified version and letting the public access it on a server without ever releasing its source code to the public.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:The GNU Affero General Public License is designed specifically to ensure that, in such cases, the modified source code becomes available to the community. It requires the operator of a network server to provide the source code of the modified version running there to the users of that server. Therefore, public use of a modified version, on a publicly accessible server, gives the public access to the source code of the modified version.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:To "modify" a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a "modified version" of the earlier work or a work "based on" the earlier work.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:To "propagate" a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an "aggregate" if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:b) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:d) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:"Additional permissions" are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:When you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:In the following three paragraphs, a "patent license" is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To "grant" such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:If you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. "Knowingly relying" means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient's use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Notwithstanding any other provision of this License, if you modify the Program, your modified version must prominently offer all users interacting with it remotely through a computer network (if your version supports such interaction) an opportunity to receive the Corresponding Source of your version by providing access to the Corresponding Source from a network server at no charge, through some standard or customary means of facilitating copying of software. This Corresponding Source shall include the Corresponding Source for any work covered by version 3 of the GNU General Public License that is incorporated pursuant to the following paragraph.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Notwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the work with which it is combined will remain governed by version 3 of the GNU General Public License.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:: ${ACLOCAL=aclocal}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:aclocalinclude="$aclocalinclude -I m4"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:    aclocalinclude="$aclocalinclude -I /mingw32/share/aclocal"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:    aclocalinclude="$aclocalinclude -I /opt/local/share/aclocal"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:echo "Creating $dr/aclocal.m4 ..."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:test -r $dr/aclocal.m4 || touch $dr/aclocal.m4
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:echo "Making $dr/aclocal.m4 writable ..."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:test -r $dr/aclocal.m4 && chmod u+w $dr/aclocal.m4
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:echo "Running $ACLOCAL $aclocalinclude ..."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:$ACLOCAL $aclocalinclude

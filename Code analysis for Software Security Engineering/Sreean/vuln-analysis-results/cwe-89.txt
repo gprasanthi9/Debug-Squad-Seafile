@@ -1,0 +1,556 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:    snprintf (sql, sizeof(sql), "SELECT repo_id FROM Repo WHERE repo_id = '%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:              "SELECT origin_repo FROM VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:    snprintf (sql, 256, "SELECT repo_id FROM Repo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:        snprintf (sql, 256, "SELECT repo_id FROM Repo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:        snprintf (sql, 256, "SELECT repo_id FROM Repo LIMIT %d, %d", start, limit);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:    snprintf (sql, 256, "SELECT repo_id FROM RepoOwner WHERE owner_id='%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:              "SELECT 1 FROM VirtualRepo WHERE repo_id = '%s'", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                  "SELECT repo_id from SharedRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "INSERT INTO SharedRepo (repo_id, from_email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "UPDATE SharedRepo SET permission=? WHERE repo_id IN "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:          "(SELECT repo_id FROM VirtualRepo WHERE origin_repo=? AND path=?) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "UPDATE SharedRepo SET permission=? WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:            sql = "SELECT sh.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:            sql = "SELECT sh.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:            sql = "SELECT sh.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:            sql = "SELECT sh.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "SELECT to_email FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT to_email, permission, repo_id FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT group_id, permission, repo_id FROM RepoGroup WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "SELECT v.path, s.permission FROM SharedRepo s, VirtualRepo v WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = g_strdup_printf ("SELECT v.path, s.permission "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                       "DELETE FROM SharedRepo WHERE repo_id = ? AND from_email ="
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "DELETE FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "(SELECT repo_id FROM VirtualRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                       "DELETE FROM SharedRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "SELECT permission FROM SharedRepo WHERE repo_id=? AND to_email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                             "SELECT v.path FROM VirtualRepo v, SharedRepo s "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                         "SELECT v.path FROM VirtualRepo v, RepoGroup r "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                    "SELECT repo_id FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                        "SELECT repo_id FROM RepoGroup WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:        sql = "SELECT sh.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:        sql = "SELECT sh.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "DELETE FROM RepoGroup WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:                                 "(SELECT repo_id FROM VirtualRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    sql = "SELECT 1 FROM SharedRepo WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:        sql = "SELECT 1 FROM RepoGroup WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT repo_id, to_email, permission FROM OrgSharedRepo WHERE org_id=? AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/share-mgr.c:    char *sql = "SELECT repo_id, to_email, permission FROM SharedRepo WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.h:#define HTTP_REPO_DELETED 444
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:    sql = "SELECT head_id FROM RepoSize WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:        sql = "INSERT INTO RepoSize (repo_id, size, head_id) VALUES (?, ?, ?)";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:        sql = "UPDATE RepoSize SET size = ?, head_id = ? WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:                                               "SELECT 1 FROM RepoFileCount WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:                                 "UPDATE RepoFileCount SET file_count=? WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:                                 "INSERT INTO RepoFileCount (repo_id,file_count) VALUES (?,?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:            "s.repo_id=? FOR UPDATE";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/size-sched.c:            if (diff_entry->status == DIFF_STATUS_DELETED){            
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "SELECT repo_id FROM RepoTrash WHERE del_time <= ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (seaf_db_statement_query (db, "INSERT INTO Repo (repo_id) VALUES (?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                           "SELECT repo_id FROM GarbageRepos "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                           "INSERT INTO GarbageRepos (repo_id) VALUES (?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "INSERT INTO RepoTrash (repo_id, repo_name, head_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (seaf_db_statement_query (db, "DELETE FROM Repo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (db, "DELETE FROM RepoOwner WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (db, "DELETE FROM SharedRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (db, "DELETE FROM RepoGroup WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_db_statement_query (db, "DELETE FROM InnerPubRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoUserToken WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoValidSince WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoSize WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoInfo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT commit_id FROM Branch WHERE name=? AND repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (seaf_db_statement_query (mgr->seaf->db, "DELETE FROM Repo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM RepoOwner WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM SharedRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM RepoGroup WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_db_statement_query (mgr->seaf->db, "DELETE FROM InnerPubRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE t.*, i.* FROM RepoUserToken t, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoHistoryLimit WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoValidSince WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoSize WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM RepoInfo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "DELETE FROM VirtualRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                     "SELECT repo_id FROM Repo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT r.repo_id, s.size, b.commit_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT r.repo_id, s.\"size\", b.commit_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                           "SELECT repo_id FROM RepoHead WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          "UPDATE RepoHead SET branch_name=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          "INSERT INTO RepoHead (repo_id, branch_name) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "DELETE FROM RepoHead WHERE branch_name = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT 1 FROM RepoInfo WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "UPDATE RepoInfo SET name=?, update_time=?, version=?, is_encrypted=?, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "INSERT INTO RepoInfo (repo_id, name, update_time, version, is_encrypted, last_modifier) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "INSERT INTO RepoUserToken (repo_id, email, token) VALUES (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "INSERT INTO RepoTokenPeerInfo (token, peer_id, peer_ip, peer_name, sync_time, client_ver)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "UPDATE RepoTokenPeerInfo SET "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                     "SELECT token FROM RepoTokenPeerInfo WHERE token=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "DELETE t.*, i.* FROM RepoUserToken t, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT u.repo_id, o.owner_id, u.email, u.token, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT u.repo_id, o.owner_id, u.email, u.token, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    template = "SELECT u.token "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        rc = seaf_db_statement_query (mgr->seaf->db, "DELETE u.*, p.* "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        g_string_append_printf (sql, "DELETE FROM RepoUserToken WHERE email = '%s' AND token IN (", email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        g_string_append_printf (sql, "DELETE FROM RepoTokenPeerInfo WHERE peer_id = '%s' AND token IN (", peer_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    template = "SELECT u.token "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    rc = seaf_db_statement_query (mgr->seaf->db, "DELETE u.*, p.* "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT email FROM RepoUserToken "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT size FROM RepoSize WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                           "SELECT repo_id FROM RepoHistoryLimit "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          "UPDATE RepoHistoryLimit SET days=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          "INSERT INTO RepoHistoryLimit (repo_id, days) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT days FROM RepoHistoryLimit WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                           "SELECT repo_id FROM RepoValidSince WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          "UPDATE RepoValidSince SET timestamp=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          "INSERT INTO RepoValidSince (repo_id, timestamp) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT timestamp FROM RepoValidSince WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                 "SELECT repo_id FROM RepoOwner WHERE repo_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "UPDATE RepoOwner SET owner_id='%s' WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "INSERT INTO RepoOwner (repo_id, owner_id) VALUES ('%s', '%s')",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM SharedRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM RepoGroup WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_db_statement_query (mgr->seaf->db, "DELETE FROM InnerPubRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_db_statement_query (mgr->seaf->db, "DELETE FROM VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT owner_id FROM RepoOwner WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    snprintf (sql, sizeof(sql), "SELECT Repo.repo_id FROM Repo LEFT JOIN "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT o.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT o.repo_id, s.\"size\", b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                "o.repo_id NOT IN (SELECT v.repo_id FROM VirtualRepo v) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT o.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT o.repo_id, s.\"size\", b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                "o.repo_id NOT IN (SELECT v.repo_id FROM VirtualRepo v) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT i.repo_id, s.\"size\", b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                "i.repo_id NOT IN (SELECT v.repo_id FROM VirtualRepo v) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            sql = "SELECT i.repo_id, s.\"size\", b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                "i.repo_id NOT IN (SELECT v.repo_id FROM VirtualRepo v) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT i.repo_id, s.\"size\", b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            "i.repo_id IN (SELECT r.repo_id FROM Repo r) AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            "i.repo_id NOT IN (SELECT v.repo_id FROM VirtualRepo v) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    snprintf (sql, 256, "SELECT repo_id FROM Repo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            g_string_append (sql, "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            g_string_append (sql, "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            g_string_append (sql, "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            g_string_append (sql, "SELECT i.repo_id, s.size, b.commit_id, i.name, i.update_time, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "SELECT COUNT(repo_id) FROM Repo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT repo_id FROM RepoOwner WHERE owner_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                            "SELECT repo_id, repo_name, head_id, owner_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                            "SELECT repo_id, repo_name, head_id, owner_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                        "SELECT repo_id, repo_name, head_id, owner_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT repo_id, repo_name, head_id, owner_id, size, del_time FROM RepoTrash "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoFileCount WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoTrash WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "DELETE FROM RepoInfo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                "SELECT 1 FROM Repo WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   "INSERT INTO Repo(repo_id) VALUES (?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                "SELECT 1 FROM RepoOwner WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   "INSERT INTO RepoOwner (repo_id, owner_id) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                "SELECT 1 FROM Branch WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   "INSERT INTO Branch (name, repo_id, commit_id) VALUES ('master', ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                "SELECT 1 FROM RepoHead WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   "INSERT INTO RepoHead (repo_id, branch_name) VALUES (?, 'master')",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                "SELECT 1 FROM RepoSize WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   "INSERT INTO RepoSize (repo_id, size, head_id) VALUES (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                "SELECT 1 FROM RepoInfo WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   "INSERT INTO RepoInfo (repo_id, name, update_time, version, is_encrypted, last_modifier) VALUES (?, ?, ?, ?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                               "DELETE FROM RepoTrash WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "INSERT INTO WebAP (repo_id, access_property) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "UPDATE WebAP SET access_property=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql =  "SELECT access_property FROM WebAP WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "INSERT INTO RepoGroup (repo_id, group_id, user_name, permission) VALUES (?, ?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "DELETE FROM RepoGroup WHERE group_id=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql =  "SELECT group_id FROM RepoGroup WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT group_id, permission FROM RepoGroup WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "UPDATE RepoGroup SET permission=? WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "UPDATE RepoGroup SET permission=? WHERE repo_id IN "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "(SELECT repo_id FROM VirtualRepo WHERE origin_repo=? AND path=?) "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql =  "SELECT repo_id FROM RepoGroup WHERE group_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT RepoGroup.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT RepoGroup.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT user_name FROM RepoGroup WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        rc = seaf_db_statement_query (db, "DELETE FROM RepoGroup WHERE group_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "DELETE FROM RepoGroup WHERE group_id=? AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                 "SELECT repo_id FROM InnerPubRepo WHERE repo_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "UPDATE InnerPubRepo SET permission='%s' "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "INSERT INTO InnerPubRepo (repo_id, permission) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "DELETE FROM InnerPubRepo WHERE repo_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                     "SELECT repo_id FROM InnerPubRepo WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT InnerPubRepo.repo_id, VirtualRepo.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    snprintf (sql, 256, "SELECT COUNT(*) FROM InnerPubRepo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT InnerPubRepo.repo_id, VirtualRepo.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT permission FROM InnerPubRepo WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT to_email, permission, v.repo_id "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT group_id, permission, v.repo_id "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT SUM(file_count) FROM RepoFileCount f "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT SUM(\"size\") FROM RepoSize s "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT SUM(size) FROM RepoSize s "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "SELECT gc_id FROM GCID WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "SELECT gc_id FROM LastGCID WHERE repo_id = ? AND client_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "SELECT 1 FROM LastGCID WHERE repo_id = ? AND client_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT 1 FROM LastGCID WHERE repo_id = ? AND client_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "UPDATE LastGCID SET gc_id = ? WHERE repo_id = ? AND client_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "INSERT INTO LastGCID (repo_id, client_id, gc_id) VALUES (?, ?, ?)";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "DELETE FROM LastGCID WHERE repo_id = ? AND client_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       "INSERT INTO WebUploadTempFiles "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       "DELETE FROM WebUploadTempFiles WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT tmp_file_path FROM WebUploadTempFiles "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                 "SELECT tmp_file_path FROM WebUploadTempFiles "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "SELECT owner_id from RepoTrash WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT RepoGroup.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        sql = "SELECT OrgGroupRepo.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_string_printf (sql, "SELECT g.repo_id, v.repo_id, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_string_printf (sql, "SELECT v.repo_id, path, 0 FROM VirtualRepo v, %s s WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_string_printf (sql, "SELECT v.repo_id, path, r.group_id FROM VirtualRepo v, %s r WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "UPDATE RepoInfo SET status=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "(SELECT repo_id FROM VirtualRepo WHERE origin_repo=?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *sql = "SELECT status FROM RepoInfo WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:    entry = g_object_new (SEAFILE_TYPE_DELETED_ENTRY,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:        ret = g_list_append (ret, g_object_new (SEAFILE_TYPE_DELETED_ENTRY,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:    ret = g_list_append (ret, g_object_new (SEAFILE_TYPE_DELETED_ENTRY,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                       "INSERT INTO VirtualRepo (repo_id, origin_repo, path, base_commit) VALUES (?, ?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    char *sql = "SELECT repo_id FROM VirtualRepo WHERE origin_repo = ? AND path = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    sql = "SELECT repo_id, origin_repo, path, base_commit FROM VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    char *sql = "SELECT 1 FROM VirtualRepo WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:        sql = "SELECT RepoOwner.repo_id FROM RepoOwner, VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:        sql = "SELECT repo_id FROM VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    sql = "SELECT RepoOwner.repo_id FROM RepoOwner, VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    sql = "SELECT repo_id FROM VirtualRepo WHERE origin_repo=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    sql = "SELECT repo_id, origin_repo, path, base_commit "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                             "UPDATE VirtualRepo SET base_commit=?, path=? WHERE repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "GET, POST, PUT, PATCH, DELETE, OPTIONS", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/*                                                "GET, POST, PUT, PATCH, DELETE, OPTIONS", 1, 1)); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "GET, POST, PUT, PATCH, DELETE, OPTIONS", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "GET, POST, PUT, PATCH, DELETE, OPTIONS", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/*                                                "GET, POST, PUT, PATCH, DELETE, OPTIONS", 1, 1)); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "GET, POST, PUT, PATCH, DELETE, OPTIONS", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    char *sql = "SELECT info_value FROM SystemInfo WHERE info_key='default_repo_id'";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:              "INSERT INTO SystemInfo (info_key, info_value) VALUES ('default_repo_id', '%s')",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    const char *sql = "DELETE FROM SystemInfo WHERE info_key='default_repo_id'";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-perm.c:    g_string_printf (sql, "SELECT permission FROM RepoGroup WHERE repo_id = ? AND group_id IN (");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c: * 3. Read the GC ID again with `SELECT ... FOR UPDATE`;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c:            seaf_db_trans_query(data->trans, "SELECT 1;", 0);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c:    sql = "SELECT 1 FROM GCID WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c:        sql = "UPDATE GCID SET gc_id = ? WHERE repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c:        sql = "INSERT INTO GCID (repo_id, gc_id) VALUES (?, ?)";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    template = "SELECT u.token FROM RepoUserToken as u WHERE u.repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    g_string_printf (sql, "DELETE FROM RepoUserToken WHERE token in (%s)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    g_string_printf (sql, "DELETE FROM RepoTokenPeerInfo WHERE token in (%s)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:    snprintf (sql, sizeof(sql), "SELECT repo_id FROM Repo WHERE repo_id = '%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:    snprintf (sql, sizeof(sql), "SELECT repo_id FROM Repo WHERE repo_id = '%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:    snprintf (sql, 256, "SELECT repo_id FROM Repo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:    snprintf (sql, 256, "SELECT repo_id FROM Repo WHERE repo_id LIKE '%s%%'", prefix);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:        snprintf (sql, 256, "SELECT repo_id FROM Repo");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:        snprintf (sql, 256, "SELECT repo_id FROM Repo LIMIT %d, %d", start, limit);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                 "SELECT repo_id FROM RepoHistoryLimit "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                     "UPDATE RepoHistoryLimit SET days=%d"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                     "INSERT INTO RepoHistoryLimit (repo_id, days) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:              "SELECT days FROM RepoHistoryLimit WHERE repo_id='%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                 "SELECT repo_id FROM RepoValidSince WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                     "UPDATE RepoValidSince SET timestamp=%"G_GINT64_FORMAT
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                     "INSERT INTO RepoValidSince (repo_id, timestamp) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:              "SELECT timestamp FROM RepoValidSince WHERE repo_id='%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:              "SELECT origin_repo, path, base_commit FROM VirtualRepo "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:              "SELECT repo_id FROM VirtualRepo WHERE origin_repo='%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:                                  "SELECT repo_id FROM GarbageRepos",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:    snprintf (sql, sizeof(sql), "DELETE FROM GarbageRepos WHERE repo_id='%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-status-codes.h:#define SEAF_HTTP_RES_REPO_DELETED 444
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                           "SELECT 1 FROM UserQuota WHERE \"user\"=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                          "UPDATE UserQuota SET quota=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                          "INSERT INTO UserQuota (\"user\", quota) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:        sql = "SELECT quota FROM UserQuota WHERE user=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:        sql = "SELECT quota FROM UserQuota WHERE \"user\"=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                           "SELECT 1 FROM OrgQuota WHERE org_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                          "UPDATE OrgQuota SET quota=? WHERE org_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                          "INSERT INTO OrgQuota (org_id, quota) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:    sql = "SELECT quota FROM OrgQuota WHERE org_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                           "SELECT 1 FROM OrgUserQuota "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                          "UPDATE OrgUserQuota SET quota=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:                                          "INSERT INTO OrgUserQuota (org_id, \"user\", quota) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:        sql = "SELECT quota FROM OrgUserQuota WHERE org_id=? AND user=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:        sql = "SELECT quota FROM OrgUserQuota WHERE org_id=? AND \"user\"=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:    sql = "SELECT SUM(size) FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:    /* sql = "SELECT size FROM RepoTrash WHERE owner_id = ?"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:    sql = "SELECT SUM(size) FROM OrgRepo, RepoSize WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:    sql = "SELECT SUM(size) FROM OrgRepo, RepoSize WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.c:    sql = "SELECT owner_id,SUM(size) FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *sql = "SELECT repo_id, origin_repo FROM VirtualRepo where repo_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, SEAF_HTTP_RES_REPO_DELETED);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    sql = "SELECT 1 FROM Repo WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, SEAF_HTTP_RES_REPO_DELETED);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    sql = "SELECT commit_id FROM Branch WHERE name='master' AND repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, SEAF_HTTP_RES_REPO_DELETED);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        sql = g_strdup_printf ("SELECT repo_id, commit_id FROM Branch WHERE name='master' AND repo_id IN (%s) LOCK IN SHARE MODE",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        sql = g_strdup_printf ("SELECT repo_id, commit_id FROM Branch WHERE name='master' AND repo_id IN (%s)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:         status == DIFF_STATUS_DIR_DELETED)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        de = diff_entry_new_from_dirent (DIFF_TYPE_COMMITS, DIFF_STATUS_DELETED,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:                                         DIFF_STATUS_DIR_DELETED,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        de = diff_entry_new_from_dirent (DIFF_TYPE_COMMITS, DIFF_STATUS_DELETED,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:            if (de->status == DIFF_STATUS_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:            if (de->status == DIFF_STATUS_DIR_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        if (de->status == DIFF_STATUS_DELETED) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        if (de->status == DIFF_STATUS_DIR_DELETED) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:            if (de_del->status == DIFF_STATUS_DIR_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        de_file->status == DIFF_STATUS_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:    if (de_dir->status == DIFF_STATUS_DIR_DELETED &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:            de->status == DIFF_STATUS_DIR_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        case DIFF_STATUS_DELETED:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.c:        case DIFF_STATUS_DIR_DELETED:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "INSERT INTO \"%s\"(group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "INSERT INTO `%s`(group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT group_id FROM \"%s\" WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT group_id FROM `%s` WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "INSERT INTO GroupUser (group_id, user_name, is_staff) VALUES (?, ?, ?)");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "INSERT INTO GroupStructure (group_id, path) VALUES (?,'%d')", group_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT path FROM GroupStructure WHERE group_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "INSERT INTO GroupStructure (group_id, path) VALUES (?, '%s, %d')", path, group_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        exists = seaf_db_statement_exists (db, "SELECT group_id FROM GroupUser WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    g_string_printf (sql, "SELECT path FROM GroupStructure WHERE group_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        exists = seaf_db_statement_exists (db, "SELECT group_id FROM GroupUser WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT group_id FROM GroupUser WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT 1 FROM \"%s\" WHERE parent_group_id=?", table_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT 1 FROM `%s` WHERE parent_group_id=?", table_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "DELETE FROM \"%s\" WHERE group_id=?", table_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "DELETE FROM `%s` WHERE group_id=?", table_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    g_string_printf (sql, "DELETE FROM GroupUser WHERE group_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    g_string_printf (sql, "DELETE FROM GroupStructure WHERE group_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT group_id FROM \"%s\" WHERE group_id=?", table_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT group_id FROM `%s` WHERE group_id=?", table_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    int rc = seaf_db_statement_query (db, "INSERT INTO GroupUser (group_id, user_name, is_staff) VALUES (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    sql = "DELETE FROM GroupUser WHERE group_id=? AND user_name=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                              "UPDATE GroupUser SET is_staff = 1 "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                              "UPDATE GroupUser SET is_staff = 0 "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "UPDATE \"%s\" SET group_name = ? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "UPDATE `%s` SET group_name = ? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                              "DELETE FROM GroupUser WHERE group_id=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    g_string_printf (sql, "SELECT path FROM GroupStructure WHERE group_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                g_string_append_printf (sql, "SELECT path FROM GroupStructure WHERE group_id IN (%d", group_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT g.group_id, group_name, creator_name, timestamp, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT g.group_id, group_name, creator_name, timestamp, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            "SELECT group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        sql = "SELECT group_id, user_name, is_staff FROM GroupUser WHERE group_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        sql = "SELECT group_id, user_name, is_staff FROM GroupUser WHERE group_id = ? LIMIT ? OFFSET ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    g_string_printf(sql, "SELECT group_id, user_name, is_staff FROM GroupUser "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                              "DELETE FROM GroupUser "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    exists = seaf_db_statement_exists (db, "SELECT group_id FROM GroupUser "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT g.group_id, g.group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT g.group_id, g.group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "SELECT `group_id`, `group_name`, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT `group_id`, `group_name`, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:            g_string_printf (sql, "SELECT `group_id`, `group_name`, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "UPDATE \"%s\" SET creator_name = ? WHERE group_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        g_string_printf (sql, "UPDATE `%s` SET creator_name = ? WHERE group_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                             "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                             "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                             "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                             "SELECT group_id, group_name, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    g_string_printf (sql, "SELECT DISTINCT user_name FROM GroupUser WHERE group_id IN (");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    sql = "SELECT DISTINCT user_name FROM GroupUser "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:                                  "UPDATE GroupUser SET user_name=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:                                   "INSERT INTO Organization(org_name, url_prefix,"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:                                             "SELECT org_id FROM Organization WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    rc = seaf_db_statement_query (db, "INSERT INTO OrgUser (org_id, email, is_staff) values (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        seaf_db_statement_query (db, "DELETE FROM Organization WHERE org_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    seaf_db_statement_query (db, "DELETE FROM Organization WHERE org_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    seaf_db_statement_query (db, "DELETE FROM OrgUser WHERE org_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    seaf_db_statement_query (db, "DELETE FROM OrgGroup WHERE org_id = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        sql = "SELECT * FROM Organization ORDER BY org_id";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        sql = "SELECT * FROM Organization ORDER BY org_id LIMIT ? OFFSET ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT count(*) FROM Organization";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT org_id, org_name, url_prefix, creator,"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT org_id, org_name, url_prefix, creator,"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    return seaf_db_statement_query (db, "INSERT INTO OrgUser (org_id, email, is_staff) values (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    return seaf_db_statement_query (db, "DELETE FROM OrgUser WHERE org_id=? AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT t1.org_id, email, is_staff, org_name,"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        sql = "SELECT u.email FROM OrgUser u, Organization o "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        sql = "SELECT u.email FROM OrgUser u, Organization o "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    return seaf_db_statement_query (db, "INSERT INTO OrgGroup (org_id, group_id) VALUES (?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    return seaf_db_statement_query (db, "DELETE FROM OrgGroup WHERE org_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    exists = seaf_db_statement_exists (db, "SELECT group_id FROM OrgGroup "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT org_id FROM OrgGroup WHERE group_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:                                             "SELECT group_id FROM OrgGroup WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:                                             "SELECT group_id FROM OrgGroup WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        sql = "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:        sql = "SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT g.group_id, group_name, creator_name, timestamp FROM "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    exists = seaf_db_statement_exists (db, "SELECT org_id FROM OrgUser WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT url_prefix FROM Organization WHERE org_id = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    sql = "SELECT is_staff FROM OrgUser WHERE org_id=? AND email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    return seaf_db_statement_query (db, "UPDATE OrgUser SET is_staff = 1 "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:    return seaf_db_statement_query (db, "UPDATE OrgUser SET is_staff = 0 "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/org-mgr.c:                                     "UPDATE `Organization` set org_name = ? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    char *sql = "SELECT 1;";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (status == DIFF_STATUS_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (status == DIFF_STATUS_DIR_DELETED)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                      "SELECT 1 FROM Branch WHERE name=%Q and repo_id=%Q",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                          "UPDATE Branch SET commit_id=%Q WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                          "INSERT INTO Branch (name, repo_id, commit_id) VALUES (%Q, %Q, %Q)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:        sql = "SELECT repo_id FROM Branch WHERE name=? AND repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                                          "UPDATE Branch SET commit_id=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                                          "INSERT INTO Branch (name, repo_id, commit_id) VALUES (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = sqlite3_mprintf ("DELETE FROM Branch WHERE name = %Q AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                                      "DELETE FROM Branch WHERE name=? AND repo_id=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = sqlite3_mprintf ("UPDATE Branch SET commit_id = %Q "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                                      "UPDATE Branch SET commit_id = ? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:        sql = "SELECT gc_id FROM GCID WHERE repo_id = ? FOR UPDATE";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:        sql = "SELECT commit_id FROM Branch WHERE name=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:            "AND repo_id=? FOR UPDATE";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:        sql = "SELECT commit_id FROM Branch WHERE name=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = "UPDATE Branch SET commit_id = ? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = sqlite3_mprintf ("SELECT commit_id FROM Branch "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = "SELECT commit_id FROM Branch WHERE name=? AND repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = sqlite3_mprintf ("SELECT name FROM Branch WHERE name = %Q "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:                                     "SELECT name FROM Branch WHERE name=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    snprintf (sql, 256, "SELECT name, commit_id FROM branch WHERE repo_id ='%s'",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/branch-mgr.c:    sql = "SELECT name, repo_id, commit_id FROM Branch WHERE repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.h:#define DIFF_STATUS_DELETED             'D'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/diff-simple.h:#define DIFF_STATUS_DIR_DELETED         'C'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/config-mgr.c:    char *sql = "SELECT 1 FROM SeafileConf WHERE cfg_group=? AND cfg_key=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/config-mgr.c:        sql = "UPDATE SeafileConf SET value=? WHERE cfg_group=? AND cfg_key=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/config-mgr.c:        sql = "INSERT INTO SeafileConf (value, cfg_group, cfg_key, property) VALUES "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/config-mgr.c:    char *sql = "SELECT value FROM SeafileConf WHERE cfg_group=? AND cfg_key=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                         "SELECT id FROM LDAPUsers WHERE email = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "INSERT INTO LDAPUsers (email, password, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "INSERT INTO LDAPUsers (email, password, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                    "SELECT id FROM LDAPUsers WHERE email = ?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                    "UPDATE EmailUser SET passwd=? WHERE email=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                    "INSERT INTO EmailUser(email, passwd, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                              "DELETE FROM UserRole WHERE email=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        "DELETE FROM EmailUser WHERE email=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        "DELETE FROM LDAPUsers WHERE email=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    sql = "SELECT passwd FROM EmailUser WHERE email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    sql = "SELECT e.id, e.email, is_staff, is_active, ctime, passwd, reference_id, role "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                                  "SELECT l.id, l.email, is_staff, is_active, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    sql = "SELECT e.id, e.email, is_staff, is_active, ctime, passwd, reference_id, role "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                sql = g_strdup_printf ("SELECT t1.id, t1.email, t1.is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                sql = g_strdup_printf ("SELECT t1.id, t1.email, t1.is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        sql = g_strdup_printf ("SELECT t1.id, t1.email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        sql = g_strdup_printf ("SELECT t1.id, t1.email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                                     "SELECT t1.id, t1.email, t1.is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                                     "SELECT t1.id, t1.email, t1.is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                             "SELECT t1.id, t1.email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                             "SELECT t1.id, t1.email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        gint64 ret = seaf_db_get_int64 (db, "SELECT COUNT(id) FROM LDAPUsers WHERE is_active = 1");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    snprintf (sql, 512, "SELECT COUNT(id) FROM EmailUser WHERE is_active = 1");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        gint64 ret = seaf_db_get_int64 (db, "SELECT COUNT(id) FROM LDAPUsers WHERE is_active = 0");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    snprintf (sql, 512, "SELECT COUNT(id) FROM EmailUser WHERE is_active = 0");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_append (sql, "SELECT * FROM EmailUser WHERE Email IN (");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            return seaf_db_statement_query (db, "UPDATE EmailUser SET is_staff=?, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            return seaf_db_statement_query (db, "UPDATE EmailUser SET passwd=?, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        return seaf_db_statement_query (db, "UPDATE LDAPUsers SET is_staff=?, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    sql = "SELECT role FROM UserRole WHERE email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        return seaf_db_statement_query (db, "UPDATE UserRole SET role=? "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        return seaf_db_statement_query (db, "INSERT INTO UserRole(role, email)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:              "SELECT t1.id, t1.email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "SELECT t1.id, t1.email, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        sql = "SELECT email FROM LDAPUsers WHERE email = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            sql = "SELECT 1 FROM EmailUser e, LDAPUsers l "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            sql = "UPDATE LDAPUsers SET reference_id=? WHERE email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    sql = "SELECT email FROM EmailUser WHERE email = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        sql = "SELECT 1 FROM EmailUser e, LDAPUsers l "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        sql = "UPDATE EmailUser SET reference_id=? WHERE email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        sql = "SELECT email FROM LDAPUsers WHERE reference_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    sql = "SELECT email FROM EmailUser WHERE reference_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        char *sql = "SELECT reference_id FROM LDAPUsers WHERE email=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            g_string_printf (sql, "SELECT l.id, l.email, is_staff, is_active, role "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "SELECT e.id, e.email, is_staff, is_active, ctime, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE RepoOwner SET owner_id=? WHERE owner_id=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE SharedRepo SET from_email=? WHERE from_email=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE SharedRepo SET to_email=? WHERE to_email=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE RepoUserToken SET email=? WHERE email=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE FolderUserPerm SET user=? WHERE user=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE EmailUser SET email=? WHERE email=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE LDAPUsers SET email=? WHERE email=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_string_printf (sql, "UPDATE UserQuota SET user=? WHERE user=?");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:	sqlStr := "SELECT head_id FROM RepoSize WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:		sqlStr := "INSERT INTO RepoSize (repo_id, size, head_id) VALUES (?, ?, ?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:		sqlStr = "UPDATE RepoSize SET size = ?, head_id = ? WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:	sqlStr = "SELECT 1 FROM RepoFileCount WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:		sqlStr := "UPDATE RepoFileCount SET file_count=? WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:		sqlStr := "INSERT INTO RepoFileCount (repo_id,file_count) VALUES (?,?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	rsp.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		sqlStr = "SELECT gc_id FROM GCID WHERE repo_id = ? FOR UPDATE"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	sqlStr = "SELECT commit_id FROM Branch WHERE name = ? AND repo_id = ? FOR UPDATE"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	sqlStr = "UPDATE Branch SET commit_id = ? WHERE name = ? AND repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	query := `SELECT r.repo_id, b.commit_id, v.origin_repo, v.path, v.base_commit FROM ` +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	query := `SELECT r.repo_id, b.commit_id, v.origin_repo, v.path, v.base_commit FROM ` +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT repo_id, origin_repo, path, base_commit FROM VirtualRepo WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT repo_id, origin_repo, path, base_commit " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT email FROM RepoUserToken WHERE repo_id = ? AND token = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT status FROM RepoInfo WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT token FROM RepoTokenPeerInfo WHERE token=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "INSERT INTO RepoTokenPeerInfo (token, peer_id, peer_ip, peer_name, sync_time, client_ver)" +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "UPDATE RepoTokenPeerInfo SET " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT tmp_file_path FROM WebUploadTempFiles WHERE repo_id = ? AND file_path = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "INSERT INTO WebUploadTempFiles (repo_id, file_path, tmp_file_path) VALUES (?, ?, ?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "DELETE FROM WebUploadTempFiles WHERE repo_id = ? AND file_path IN (?, ?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT 1 FROM RepoInfo WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr := "UPDATE RepoInfo SET name=?, update_time=?, version=?, is_encrypted=?, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr := "INSERT INTO RepoInfo (repo_id, name, update_time, version, is_encrypted, last_modifier) " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "UPDATE VirtualRepo SET base_commit=?, path=? WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT repo_id FROM VirtualRepo WHERE origin_repo=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "DELETE FROM VirtualRepo WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "DELETE FROM Repo WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "SELECT name, repo_id, commit_id FROM Branch WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr := "DELETE FROM RepoHead WHERE branch_name = ? AND repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr = "DELETE FROM Branch WHERE name=? AND repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "DELETE FROM RepoOwner WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "DELETE FROM SharedRepo WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "DELETE FROM RepoGroup WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr = "DELETE FROM InnerPubRepo WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "DELETE FROM RepoUserToken WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "DELETE FROM RepoValidSince WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "DELETE FROM RepoSize WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr = "SELECT 1 FROM GarbageRepos WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr = "INSERT INTO GarbageRepos (repo_id) VALUES (?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT 1 FROM VirtualRepo WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT owner_id FROM RepoOwner WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT 1 FROM LastGCID WHERE repo_id = ? AND client_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT gc_id FROM LastGCID WHERE repo_id = ? AND client_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT gc_id FROM GCID WHERE repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "DELETE FROM LastGCID WHERE repo_id = ? AND client_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr := "UPDATE LastGCID SET gc_id = ? WHERE repo_id = ? AND client_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		sqlStr := "INSERT INTO LastGCID (repo_id, client_id, gc_id) VALUES (?, ?, ?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/quota.go:	sqlStr := "SELECT quota FROM UserQuota WHERE user=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/quota.go:	sqlStr := "SELECT SUM(size) FROM " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		"SELECT repo_id, commit_id FROM Branch WHERE name='master' AND "+
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	sqlStr := "SELECT repo_id, origin_repo FROM VirtualRepo where repo_id = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	sqlStr := "SELECT EXISTS(SELECT 1 FROM Repo WHERE repo_id=?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	sqlStr = "SELECT commit_id FROM Branch WHERE name='master' AND repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := fmt.Sprintf("SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "+
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:				sqlStr = fmt.Sprintf("SELECT path FROM GroupStructure WHERE group_id IN (%d",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		sqlStr = fmt.Sprintf("SELECT g.group_id, group_name, creator_name, timestamp, parent_group_id FROM "+
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlBuilder.WriteString("SELECT permission FROM RepoGroup WHERE repo_id = ? AND group_id IN (")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := "SELECT permission FROM SharedRepo WHERE repo_id=? AND to_email=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := "SELECT permission FROM InnerPubRepo WHERE repo_id=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := "SELECT v.path, s.permission FROM SharedRepo s, VirtualRepo v WHERE " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	sqlStr := fmt.Sprintf("SELECT v.path, s.permission "+
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	query := "SELECT o.repo_id, b.commit_id, i.name, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:	query := "SELECT InnerPubRepo.repo_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		query = "SELECT sh.repo_id, to_email, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		query = "SELECT sh.repo_id, from_email, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		sqlBuilder.WriteString("SELECT g.repo_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/share/share.go:		sqlBuilder.WriteString("SELECT g.repo_id, " +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/repo-mgr.c" line="2968" column="58" info="Assignment &apos;ret=seaf_db_trans_query(trans,&quot;INSERT INTO Repo(repo_id) VALUES (?)&quot;,1,&quot;string&quot;,repo_id)&lt;0&apos;, assigned value is greater than -1"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:                          FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:                          FILE_SHARE_DELETE | FILE_SHARE_READ | FILE_SHARE_WRITE,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:                          FILE_SHARE_DELETE | FILE_SHARE_READ | FILE_SHARE_WRITE,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(SELECT|INSERT|UPDATE|DELETE)" $SOURCE_DIR > $OUTPUT_DIR/cwe-89.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/event.go:	query := `SELECT user_name FROM GroupUser WHERE group_id = ?`

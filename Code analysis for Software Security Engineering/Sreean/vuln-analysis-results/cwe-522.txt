@@ -1,0 +1,127 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure.ac:AC_CHECK_LIB(crypto, SHA1_Init, [echo "found library crypto"], AC_MSG_ERROR([*** Unable to find openssl crypto library]), )
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure.ac:PKG_CHECK_MODULES(SSL, [openssl])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:accesslog = os.path.join(runtime_dir, 'access.log')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:  e) as_fn_error $? "*** Unable to find openssl crypto library" "$LINENO" 5 ;;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:PKG_CHECK_MODULES(SSL, openssl)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      unless required by applicable law (such as deliberate and grossly
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:  e) as_fn_error $? "*** Unable to find openssl crypto library" "$LINENO" 5 ;;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:PKG_CHECK_MODULES(SSL, openssl)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:  e) as_fn_error $? "*** Unable to find openssl crypto library" "$LINENO" 5 ;;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:PKG_CHECK_MODULES(SSL, openssl)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ci/install-deps.sh:sudo apt-get install -y intltool libarchive-dev libcurl4-openssl-dev libevent-dev \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        /* This may call write_data_cb() recursively (by libevent_openssl).
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:#include <openssl/rand.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "Unsupported encryption version");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                         "Unsupported encryption algothrims");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                         "Library encryption version must be higher than 2");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                     "Unsupported encryption version");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/cdc/cdc.h:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.h:    gboolean        use_ssl;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:              gboolean use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:                   gboolean use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    db = mysql_db_new (host, port, user, passwd, db_name, unix_socket, use_ssl, skip_verify, ca_path, charset);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    gboolean use_ssl;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:              gboolean use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    db->use_ssl = use_ssl;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    int ssl_mode;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    if (db->use_ssl && !db->skip_verify) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        // Set ssl_mode to SSL_MODE_VERIFY_IDENTITY to verify server cert.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        // When ssl_mode is set to SSL_MODE_VERIFY_IDENTITY, MYSQL_OPT_SSL_CA is required to verify server cert.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        ssl_mode = SSL_MODE_VERIFY_IDENTITY;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        mysql_options(db_conn, MYSQL_OPT_SSL_MODE, &ssl_mode);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    } else if (db->use_ssl && db->skip_verify) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        // Set ssl_mode to SSL_MODE_PREFERRED to skip verify server cert.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        ssl_mode = SSL_MODE_PREFERRED;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:        mysql_options(db_conn, MYSQL_OPT_SSL_MODE, &ssl_mode);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-tx-utils.c:    /* Prepare CTX for encryption. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-tx-utils.c:    /* Compute data size after encryption.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    gboolean use_ssl;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    option->use_ssl = g_key_file_get_boolean (session->config,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:                                      "database", "use_ssl", NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    if (option->use_ssl && !option->skip_verify) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:            seaf_warning ("ca_path is required if use ssl and don't skip verify.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:                                     NULL, option->use_ssl, option->skip_verify, option->ca_path, option->charset, option->max_connections);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:                                           NULL, option->use_ssl, option->skip_verify, option->ca_path, option->charset, option->max_connections);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:#include <openssl/rand.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:        seaf_warning ("Failed to generate salt for repo encryption.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:        seaf_warning ("Failed to generate secret key for repo encryption.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    /* Prepare CTX for encryption. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:      For EVP symmetric encryption, padding is always used __even if__
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    /* Do the encryption. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/password-hash.c:#include <openssl/rand.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.h:                   gboolean use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:        seaf_warning ("Unknown encryption version %d.\n", enc_version);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:#include <openssl/rand.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:#include <openssl/evp.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    manager->use_ssl = g_key_file_get_boolean (config, "LDAP", "USE_SSL", NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 gboolean use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    if (!use_ssl)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        ld = ldap_sslinit (host_copy, LDAP_SSL_PORT, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->use_ssl,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.h:  algorithm provided by openssl.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.h:#include <openssl/aes.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.h:#include <openssl/evp.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.h:  Derive key and iv used by AES encryption from @data_in.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-tx-utils.h:#include <openssl/evp.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-tx-utils.h:/* Utility functions for encryption. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-tx-utils.h: * length of data in the frame after encryption + encrypted data.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr_test.go:	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=%t", user, password, host, port, dbName, useTLS)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	"crypto/tls"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=skip-verify%s", dbOpt.User, dbOpt.Password, dbOpt.Host, dbOpt.Port, dbOpt.CcnetDbName, timeout)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=custom%s", dbOpt.User, dbOpt.Password, dbOpt.Host, dbOpt.Port, dbOpt.CcnetDbName, timeout)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=%t%s", dbOpt.User, dbOpt.Password, dbOpt.Host, dbOpt.Port, dbOpt.CcnetDbName, dbOpt.UseTLS, timeout)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if key, err = section.GetKey("use_ssl"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	mysql.RegisterTLSConfig("custom", &tls.Config{
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=skip-verify%s", dbOpt.User, dbOpt.Password, dbOpt.Host, dbOpt.Port, dbOpt.SeafileDbName, timeout)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=custom%s", dbOpt.User, dbOpt.Password, dbOpt.Host, dbOpt.Port, dbOpt.SeafileDbName, timeout)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=%t%s", dbOpt.User, dbOpt.Password, dbOpt.Host, dbOpt.Port, dbOpt.SeafileDbName, dbOpt.UseTLS, timeout)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/aes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/aes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedVariable" severity="style" msg="Unused variable: ssl_mode" verbose="Unused variable: ssl_mode" cwe="563" file0="common/seaf-db.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>ssl_mode</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/hmac.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/hmac.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/bio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/bio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/buffer.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/buffer.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/aes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/aes.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/evp.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/rand.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;openssl/sha.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/bloom-filter.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/sha.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/hmac.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/evp.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/bio.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/buffer.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/aes.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:#include <openssl/evp.h>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    /* Prepare CTX for encryption. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:      For EVP symmetric encryption, padding is always used __even if__
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    /* Do the encryption. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/net.c:		if (ioctlsocket(fd, FIONBIO, &nonblocking) == SOCKET_ERROR) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:dnl pulling things in needlessly.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for credentials being transmitted or stored without encryption
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(ssl|tls|encryption|plaintext)" $SOURCE_DIR > $OUTPUT_DIR/cwe-522.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:You may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:		dsn = fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=%t&readTimeout=60s&writeTimeout=60s", option.User, option.Password, option.Host, option.Port, option.CcnetDbName, option.UseTLS)

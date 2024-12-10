@@ -1,0 +1,10 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    { "docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document" },
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    { "pptx", "application/vnd.openxmlformats-officedocument.presentationml.presentation" },
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    { "xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" },
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    { "svg", "image/svg+xml" },
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    { "SVG", "image/svg+xml" },
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			contentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			contentType = "image/svg+xml"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:<?xml version="1.0" encoding="UTF-8"?>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(xml|XMLReader|SAXParser)" $SOURCE_DIR > $OUTPUT_DIR/cwe-611.txt

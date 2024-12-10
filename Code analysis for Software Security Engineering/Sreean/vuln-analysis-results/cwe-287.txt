@@ -1,0 +1,78 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Verify user's password on login. Can be used to verify DB and LDAP users.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      "Licensor" shall mean the copyright owner or entity authorized by
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      "Work" shall mean the work of authorship, whether in Source or
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      represent, as a whole, an original work of authorship. For the purposes
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      "Contribution" shall mean any work of authorship, including
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/LICENSE.txt:      or by an individual or Legal Entity authorized to submit on behalf of
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	url := fmt.Sprintf("%s:8000/api2/auth-token/", options.server)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    const char *auth_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    auth_token = evhtp_kv_find (req->headers_in, "Authorization");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = seaf_parse_auth_token (auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "x-requested-with, content-type, content-range, content-disposition, accept, origin, authorization", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/*                                                "x-requested-with, content-type, accept, origin, authorization", 1, 1)); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "x-requested-with, content-type, content-range, content-disposition, accept, origin, authorization", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "x-requested-with, content-type, content-range, content-disposition, accept, origin, authorization", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/*                                                "x-requested-with, content-type, accept, origin, authorization", 1, 1)); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                               "x-requested-with, content-type, accept, origin, authorization", 1, 1));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h: * @user:           author of this operation
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        const char *auth_token = evhtp_kv_find (req->headers_in, "Authorization");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        tmp_token = seaf_parse_auth_token (auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:get_auth_token (evhtp_request_t *req)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *auth_token = evhtp_kv_find (req->headers_in, "Authorization");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    tmp_token = seaf_parse_auth_token (auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token = get_auth_token (req);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        char *token = get_auth_token (req);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.h:    char           *login_attr;  /* attribute name used for login */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.h:ccnet_user_manager_get_login_id (CcnetUserManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.h:                 const char *author_name,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/merge-new.c:                /* We use remote head commit author name as conflict
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:seaf_parse_auth_token (const char *auth_token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    if (!auth_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    parts = g_strsplit (auth_token, " ", 2);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    manager->login_attr = ccnet_key_file_get_string (config, "LDAP", "LOGIN_ATTR");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    if (!manager->login_attr)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        manager->login_attr = g_strdup("mail");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        g_string_printf (filter, "(%s=%s)", manager->login_attr, uid);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                         manager->login_attr, uid, manager->filter);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    attrs[0] = manager->login_attr;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                           manager->login_attr, uid, *base, ldap_err2string(res));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        g_string_printf (filter, "(%s=%s)", manager->login_attr, uid);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                         manager->login_attr, uid, manager->filter);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    attrs[0] = manager->login_attr;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                           manager->login_attr, uid, *base, ldap_err2string(res));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    char *login_id;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    login_id = ccnet_user_manager_get_login_id (manager, email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    if (!login_id) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        ccnet_warning ("Failed to get login_id for %s\n", email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (ldap_verify_user_password (manager, login_id, passwd) == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        1, "string", login_id) > 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                update_user_passwd (manager, login_id, passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    email_down = g_ascii_strdown (email, strlen(login_id));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                update_user_passwd (manager, login_id, passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_free (login_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                /* Only print warning if this function is called in login. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:ccnet_user_manager_get_login_id (CcnetUserManager *manager, const char *primary_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        char *ldap_login_id = seaf_db_statement_get_string (manager->priv->db, sql, 1, "string", primary_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (ldap_login_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            return ldap_login_id;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.h:seaf_parse_auth_token (const char *auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	rsp.Header().Set("Access-Control-Allow-Headers", "x-requested-with, content-type, content-range, content-disposition, accept, origin, authorization")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		http.Error(w, "", http.StatusUnauthorized)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		http.Error(w, "", http.StatusUnauthorized)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/http.go:	auth := h.Get("Authorization")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/http.go:	splitResult := strings.Split(auth, " ")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# 1. CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for improperly configured authentication methods, weak checks
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(auth|login|authenticate)" $SOURCE_DIR > $OUTPUT_DIR/cwe-287.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:"Installation Information" for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Notwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:b) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:d) Limiting the use for publicity purposes of names of licensors or authors of the material; or
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:f) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:A "contributor" is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor's "contributor version".
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:If, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:If the Program specifies that a proxy can decide which future versions of the GNU Affero General Public License can be used, that proxy's public statement of acceptance of a version permanently authorizes you to choose that version for the Program.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:    Copyright (C) <year>  <name of author>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	auth := h.Get("Authorization")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	splitResult := strings.Split(auth, " ")

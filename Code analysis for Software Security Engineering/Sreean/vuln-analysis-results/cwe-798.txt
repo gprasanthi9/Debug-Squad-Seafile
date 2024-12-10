@@ -1,0 +1,378 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:CONF_ADMIN_PASSWORD = 'admin_password'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def check_group_staff(group_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        ret = ccnet_threaded_rpc.check_group_staff(group_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def create_org(org_name, url_prefix, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    ccnet_threaded_rpc.create_org(org_name, url_prefix, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def get_repo_token_nonnull(repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    return seafserv_threaded_rpc.get_repo_token_nonnull (repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def list_inner_pub_repos(username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        repo.user_perm = check_permission(repo.props.repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def list_org_inner_pub_repos(org_id, username, start=None, limit=None):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        repo.user_perm = check_permission(repo.props.repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def web_get_access_token(repo_id, obj_id, op, username, use_onetime=1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        ret = seafserv_rpc.web_get_access_token(repo_id, obj_id, op, username, use_onetime)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:# password management
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    Remove user password of a encrypt repo.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    - `user`: username
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_fileserver_access_token(self, repo_id, obj_id, op, username, use_onetime=True):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.web_get_access_token(repo_id, obj_id, op, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    # password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def is_password_set(self, repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.is_passwd_set(repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_decrypt_key(self, repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.get_decrypt_key(repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def generate_magic_and_random_key(self, enc_version, repo_id, password):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.generate_magic_and_random_key(enc_version, repo_id, password)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def create_repo(self, name, desc, username, passwd=None, enc_version=2, storage_id=None, pwd_hash_algo=None, pwd_hash_params=None):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.create_repo(name, desc, username, passwd, enc_version, pwd_hash_algo, pwd_hash_params)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def create_enc_repo(self, repo_id, name, desc, username, magic, random_key, salt, enc_version, pwd_hash=None, pwd_hash_algo=None, pwd_hash_params=None):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.create_enc_repo(repo_id, name, desc, username, magic, random_key, salt, enc_version, pwd_hash, pwd_hash_algo, pwd_hash_params)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def edit_repo(self, repo_id, name, description, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.edit_repo(repo_id, name, description, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def is_repo_owner(self, username, repo_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.is_repo_owner(username, repo_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_owned_repo_list(self, username, ret_corrupted=False, start=-1, limit=-1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.list_owned_repos(username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def revert_repo(self, repo_id, commit_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.revert_on_server(repo_id, commit_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def mkdir_with_parents (self, repo_id, parent_dir, relative_path, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.mkdir_with_parents(repo_id, parent_dir, relative_path, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def post_file(self, repo_id, tmp_file_path, parent_dir, filename, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                               filename, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def post_empty_file(self, repo_id, parent_dir, filename, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                     filename, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                 username, head_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                              filename, username, head_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def del_file(self, repo_id, parent_dir, filename, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.del_file(repo_id, parent_dir, filename, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def batch_del_files(self, repo_id, filepaths, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.batch_del_files(repo_id, filepaths, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                  dst_dir, dst_filename, username, need_progress, synchronous=0):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                               username, need_progress, synchronous)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                  dst_filename, replace, username, need_progress, synchronous=0):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                               replace, username, need_progress, synchronous)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def rename_file(self, repo_id, parent_dir, oldname, newname, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                 oldname, newname, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def post_dir(self, repo_id, parent_dir, dirname, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.post_dir(repo_id, parent_dir, dirname, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def revert_file(self, repo_id, commit_id, path, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.revert_file(repo_id, commit_id, path, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def revert_dir(self, repo_id, commit_id, path, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.revert_dir(repo_id, commit_id, path, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def share_repo(self, repo_id, from_username, to_username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.add_share(repo_id, from_username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                               to_username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def remove_share(self, repo_id, from_username, to_username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.remove_share(repo_id, from_username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                  to_username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_share_permission(self, repo_id, from_username, to_username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.set_share_permission(repo_id, from_username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                          to_username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_share_out_repo_list(self, username, start, limit):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.list_share_repos(username, "from_email",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_share_in_repo_list(self, username, start, limit):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.list_share_repos(username, "to_email",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def group_share_repo(self, repo_id, group_id, username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                      username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_group_repo(self, repo_id, group_id, username, permission):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                                                      username, permission)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def group_unshare_repo(self, repo_id, group_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.group_unshare_repo(repo_id, group_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def unset_group_repo(self, repo_id, group_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.group_unshare_repo(repo_id, group_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_group_repos_by_owner(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.get_group_repos_by_owner(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def remove_group_repos_by_owner(self, group_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.remove_repo_group(group_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def generate_repo_token(self, repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.generate_repo_token(repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def list_repo_tokens_by_email(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.list_repo_tokens_by_email(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_user_self_usage(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.get_user_quota_usage(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_user_share_usage(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.get_user_share_usage(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_user_quota(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.get_user_quota(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_user_quota(self, username, quota):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.set_user_quota(username, quota)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_user_share_quota(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def set_user_share_quota(self, username, quota):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Verify user's password on login. Can be used to verify DB and LDAP users.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        The function first verify password with LDAP, then local database.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def update_emailuser(self, source, user_id, password, is_staff, is_active):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        password: new password in plain text. Only effective for DB users.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                  If '!' is passed, the password won't be updated.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return ccnet_threaded_rpc.update_emailuser(source, user_id, password, is_staff, is_active)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def check_group_staff(self, group_id, username, in_structure=False):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return ccnet_threaded_rpc.check_group_staff(group_id, username, 1 if in_structure else 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def remove_group_user(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return ccnet_threaded_rpc.remove_group_user(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # password management
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # Change password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def generate_magic_and_random_key(enc_version, repo_id, password):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_mkdir_with_parents (repo_id, parent_dir, relative_path, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_web_get_access_token(repo_id, obj_id, op, username, use_onetime=1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # password management
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def update_emailuser(self, source, user_id, password, is_staff, is_active):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def check_group_staff(self, group_id, username, in_structure):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def remove_group_user(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ci/serverctl.py:password = seafile
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                              const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_remove_repo_group(int group_id, const char *username, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:ccnet_rpc_get_groups (const char *username, int return_ancestors, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/Makefile.am:                    ../common/password-hash.c
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    new_passwd = 'new password'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER) == 0
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    new_passwd = 'new password'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER) == 0
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	username  string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	password  string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	key, err = section.GetKey("username")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:		options.username = key.String()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	key, err = section.GetKey("password")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:		options.password = key.String()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	token, err := rpcclient.Call("seafile_web_get_access_token", options.repoID, objID, "upload", options.username, false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	data := []byte(fmt.Sprintf("username=%s&password=%s", options.username, options.password))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/account.conf:username = 123456@qq.com
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/account.conf:password = 123456
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_object_get (info, "username", &user, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    user = seafile_web_access_get_username (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error_str = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    user = seafile_web_access_get_username (webaccess);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error_str = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error_str = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Check password @magic to access contents of @repo_id.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Returns 0 if password @magic is correct, -1 otherwise.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Returns 0 if successfully unset user password, -1 otherwise.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    obj->user = g_strdup (seafile_web_access_get_username (info));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h:                                      const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:#include "password-hash.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "CREATE INDEX IF NOT EXISTS repogroup_username_indx on "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*     if (!pgsql_index_exists (db, "repogroup_username_idx")) { */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         sql = "CREATE INDEX repogroup_username_idx ON RepoGroup (user_name)"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                 const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "string", username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The source repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The destination repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The source repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The destination repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                             "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                             "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    *user = g_strdup (seafile_web_access_get_username (webaccess));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	../common/password-hash.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                     "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                         "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                         "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                     "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to start password manager.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    char *username;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    g_free (info->username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                                      const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    info->username = g_strdup (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                                      "username", info->username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                                      "username", info->username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* password management */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/Makefile.am:	../../common/password-hash.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                                 const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_t token_cache_lock; /* token -> username */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_t perm_cache_lock; /* repo_id:username -> permission */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:// They're cached in a hash table having "repo_Id:username:op" as key.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                const char *repo_id, char **username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            if (username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                *username = g_strdup(token_info->email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        *username = g_strdup(email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:lookup_perm_cache (HttpServer *htp_server, const char *repo_id, const char *username, const char *op)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *key = g_strdup_printf ("%s:%s:%s", repo_id, username, op);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                   const char *repo_id, const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *key = g_strdup_printf ("%s:%s:%s", repo_id, username, op);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                   const char *repo_id, const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *key = g_strdup_printf ("%s:%s:%s", repo_id, username, op);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:check_permission (HttpServer *htp_server, const char *repo_id, const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        perm_info = lookup_perm_cache (htp_server, repo_id, username, op);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    remove_perm_cache (htp_server, repo_id, username, op);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                                     repo_id, username, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        insert_perm_cache (htp_server, repo_id, username, op, perm_info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, TRUE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username, op, TRUE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        on_repo_oper (htp_server, "repo-download-sync", repo_id, username, ip, client_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /*     on_repo_oper (htp_server, "repo-upload-sync", repo_id, username, ip, client_name); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    send_statistic_msg (store_id, username, "sync-file-download", (guint64)rsize);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    send_statistic_msg (store_id, username, "sync-file-upload", (guint64)blk_len);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                          repo_id, username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int perm_status = check_permission (htp_server, repo_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *username = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    jwt_token = seaf_gen_notif_server_jwt (repo_id, username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        sql = "CREATE UNIQUE INDEX IF NOT EXISTS groupid_username_indx on "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        sql = "CREATE INDEX IF NOT EXISTS username_indx on "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        //if (!pgsql_index_exists (db, "groupuser_username_idx")) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:        //    sql = "CREATE INDEX groupuser_username_idx ON GroupUser (user_name)";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.h:    char           *password;   /* password for admin user */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:              const char *password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    char *password;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:              const char *password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    db->password = g_strdup (password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    if (!mysql_real_connect(db_conn, db->host, db->user, db->password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:            g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_BAD_ARGS, "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:            g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_BAD_ARGS, "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                              "Changed library password",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                              const char *username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!repo_id || !obj_id || !op || !username) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                  username, use_onetime, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_remove_repo_group(int group_id, const char *username, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                 group_id, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:ccnet_rpc_get_groups (const char *username, int return_ancestors, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!username) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    ret = ccnet_group_manager_get_groups_by_user (group_mgr, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    option->passwd = seaf_key_file_get_string (session->config, "database", "password", NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    passwd = seaf_key_file_get_string (session->config, "database", "password", &error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:seaf_gen_notif_server_jwt (const char *repo_id, const char *username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    ret = jwt_add_grant (jwt, "username", username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:        seaf_warning ("Failed to add username to jwt\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:#include "password-hash.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:     * This is used to verify the password given by user before decrypting
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:     * This is used to verify the password given by user before decrypting
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/password-hash.c:#include "password-hash.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/password-hash.c:    seaf_message ("password hash algorithms: %s, params: %s\n ", params->algo, params->params_str);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/Makefile.am:	password-hash.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        manager->password = ccnet_key_file_get_string (config, "LDAP", "PASSWORD");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (!manager->password) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 const char *password)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        res = ldap_bind_s (ld, user_dn, password, LDAP_AUTH_SIMPLE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        char *password_copy = g_strdup(password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        res = ldap_bind_s (ld, dn_copy, password_copy, LDAP_AUTH_SIMPLE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        g_free (password_copy);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:              const char *password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "INSERT INTO LDAPUsers (email, password, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       5, "string", email, "string", password, "int",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "INSERT INTO LDAPUsers (email, password, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "string", password, "int", is_staff, "int", is_active);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:static int ldap_verify_user_password (CcnetUserManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                      const char *password)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* Then bind the DN with password. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             dn, password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 "password", "!",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:          "email VARCHAR(255) NOT NULL, password varchar(255) NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:          "email TEXT NOT NULL, password TEXT NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:          "email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c: * For the current password hashing algorithm, please see hash_password_pbkdf2_sha256()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:hash_password (const char *passwd, char *hashed_passwd)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:hash_password_salted (const char *passwd, char *hashed_passwd)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:hash_password_pbkdf2_sha256 (const char *passwd,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* Encode password hash related information into one string, similar to Django. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        hash_password_salted (passwd, hashed_passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        hash_password (passwd, hashed_passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    hash_password_pbkdf2_sha256 (passwd, manager->passwd_hash_iter,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* A user with unhashed "!" as password cannot be logged in.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        hash_password_pbkdf2_sha256 (passwd, manager->passwd_hash_iter,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:get_password (CcnetDBRow *row, void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* Users with password "!" are for internal book keeping only. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (ldap_verify_user_password (manager, login_id, passwd) == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        get_password, &stored_passwd,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        get_password, &stored_passwd,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    const char *password = seaf_db_row_get_column_text (row, 5);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 "password", password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 "password", "!",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    const char *password = seaf_db_row_get_column_text (row, 6);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                              "password", password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                              "password", "!",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            hash_password_pbkdf2_sha256 (passwd, manager->passwd_hash_iter, &db_passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    const char *username;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            username = json_string_value(j_obj);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            args[i] = username;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.h:seaf_gen_notif_server_jwt (const char *repo_id, const char *username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		errMessage := "Repo is encrypted. Please provide password to view it."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user, ok := webaccessMap["username"].(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr_test.go:	password        = "seafile"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr_test.go:	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=%t", user, password, host, port, dbName, useTLS)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		return nil, fmt.Errorf("no database password in seafile.conf.")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	password := os.Getenv("SEAFILE_MYSQL_DB_PASSWORD")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if password != "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dbOpt.Password = password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if key, err = section.GetKey("password"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	password := queries.Get("password")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if !option.EnableProfiling || password != option.ProfilePassword {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	password := queries.Get("password")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if !option.EnableProfiling || password != option.ProfilePassword {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	UserName string `json:"username"`
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	// Profile password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:		if key, err := section.GetKey("profile_password"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:			log.Fatal("password of profiling must be specified.")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/README.markdown:Seafile is an open source cloud storage system with features on privacy protection and teamwork. Collections of files are called libraries, and each library can be synced separately. A library can also be encrypted with a user chosen password. Seafile also allows users to create groups and easily sharing files into groups.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="3" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="4" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="8" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="10" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constParameterPointer" severity="style" msg="Parameter &apos;params&apos; can be declared as pointer to const" verbose="Parameter &apos;params&apos; can be declared as pointer to const" cwe="398" file0="common/password-hash.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="41" column="41" info="Parameter &apos;params&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constVariablePointer" severity="style" msg="Variable &apos;p&apos; can be declared as pointer to const" verbose="Variable &apos;p&apos; can be declared as pointer to const" cwe="398" file0="common/password-hash.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="84" column="11" info="Variable &apos;p&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingInclude" severity="information" msg="Include file: &quot;password-hash.h&quot; not found." verbose="Include file: &quot;password-hash.h&quot; not found.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="126" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/groupmgr.sql:CREATE UNIQUE INDEX IF NOT EXISTS groupid_username_indx on `GroupUser` (`group_id`, `user_name`);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/groupmgr.sql:CREATE INDEX IF NOT EXISTS username_indx on `GroupUser` (`user_name`);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/user.sql:CREATE TABLE IF NOT EXISTS LDAPUsers (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT NOT NULL, password TEXT NOT NULL, is_staff BOOL NOT NULL, is_active BOOL NOT NULL, extra_attrs TEXT, reference_id TEXT);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE INDEX IF NOT EXISTS repogroup_username_indx on RepoGroup (user_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/ccnet.sql:  password varchar(255) NOT NULL,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/ccnetobj.vala:    public string password { get; set; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/webaccess.vala:       public string username { set; get; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(password|secret|credential|token)" $SOURCE_DIR > $OUTPUT_DIR/cwe-200.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for hard-coded usernames, passwords
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(username|password)" $SOURCE_DIR > $OUTPUT_DIR/cwe-798.txt
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/index matches
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/packed-refs:80656b9eb1f68220b218bfabf8e7f93306d9d83d refs/remotes/origin/add_username
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	password := os.Getenv("SEAFILE_MYSQL_DB_PASSWORD")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	if password == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	option.Password = password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/client.go:	UserName string `json:"username"`

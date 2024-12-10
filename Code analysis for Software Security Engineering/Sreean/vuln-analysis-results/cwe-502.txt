@@ -1,0 +1,1148 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:SEAHUB_DOWNLOAD_URL = 'https://seafile.com.cn/downloads/seahub-latest.tar.gz'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:            '"seafile-server/seahub/" not found. \nPlease download seahub first.')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:  -dlpreopen FILE   link in FILE and add its symbols to lt_preloaded_symbols
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:If OUTPUT-FILE ends in '.lo' or '.$objext', then a reloadable object file
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:lt_${my_prefix}_LTX_preloaded_symbols[];\
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:  LT_DLSYM_CONST lt_dlsymlist *symbol = lt_${my_prefix}_LTX_preloaded_symbols;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:lt_${my_prefix}_LTX_preloaded_symbols[] =
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:static const void *lt_preloaded_setup() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:  return lt_${my_prefix}_LTX_preloaded_symbols;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      # lt_preloaded_symbols.  The linker will fail if global_symbol_pipe
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:    preload=false
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	  $preload || {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	    preload=:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		      # If libtool objects are unsupported, then we need to preload.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    # Preload the old-style object.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	  # and Darwin in order for the loader to find any dlls it needs.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		# If libtool objects are unsupported, then we need to preload.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      # Preload the old-style object.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      # we need to preload.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	    # statically, we need to preload.  We also need to preload any
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	    # dependent libraries so libltdl's deplib preloader doesn't
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	    # bomb out in the load deplibs phase.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      func_warning "Linking the executable $output against the loadable module"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      func_warning "Linking the shared library $output against the loadable module"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		func_verbose "using reloadable object file for export list..."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	  # Clear the reloadable object creation command queue and
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      func_verbose "creating reloadable object files..."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      eval test_cmds=\"$reload_cmds\"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    reload_objs=$objlist
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    eval concat_cmds=\"$reload_cmds\"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    # All subsequent reloadable object files will link in
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    reload_objs="$objlist $last_robj"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:		    eval concat_cmds=\"\$concat_cmds~$reload_cmds~\$RM $last_robj\"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      # reloadable object file.  All subsequent reloadable object
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      reload_objs="$objlist $last_robj"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      eval concat_cmds=\"\$concat_cmds$reload_cmds\"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      func_verbose "creating a temporary reloadable object file: $output"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	# Add any objects from preloaded convenience libraries
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      reload_conv_objs=
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      # if reload_cmds runs $LD directly, get rid of -Wl from
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      case $reload_cmds in
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	  reload_conv_objs=$reload_objs\ $tmp_whole_archive_flags
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	  reload_conv_objs="$reload_objs $func_extract_archives_result"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      reload_objs=$objs$old_deplibs' '`$ECHO "$libobjs" | $SP2NL | $SED "/\.$libext$/d; /\.lib$/d; $lo2o" | $NL2SP`' '$reload_conv_objs
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      func_execute_cmds "$reload_cmds" 'exit $?'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	reload_objs="$libobjs $reload_conv_objs"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	func_execute_cmds "$reload_cmds" 'exit $?'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:      $preload \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      func_append compile_command " $wl-bind_at_load"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	      func_append finalize_command " $wl-bind_at_load"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	  $preload && test -f "$symfileobj" \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ltmain.sh:	# Add any objects from preloaded convenience libraries
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: loading site script $ac_site_file" >&5
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:printf "%s\n" "$as_me: loading site script $ac_site_file" >&6;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:as_fn_error $? "failed to load site script $ac_site_file
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: loading cache $cache_file" >&5
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:printf "%s\n" "$as_me: loading cache $cache_file" >&6;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:# loading this file, other *unset* 'ac_cv_foo' will be assigned the
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def _load_path_from_env(key, check=True):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:CCNET_CONF_PATH = _load_path_from_env('CCNET_CONF_DIR')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:SEAFILE_CONF_DIR = _load_path_from_env('SEAFILE_CONF_DIR')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:SEAFILE_CENTRAL_CONF_DIR = _load_path_from_env('SEAFILE_CENTRAL_CONF_DIR', check=False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:SEAFILE_RPC_PIPE_PATH = _load_path_from_env ("SEAFILE_RPC_PIPE_PATH", check=False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:# load ccnet server addr and port from ccnet.conf.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:# 'addr:port' is used when downloading a repo
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    max_upload_size_mb = int(get_fileserver_option('max_upload_size', 0))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    if max_upload_size_mb > 0:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        MAX_UPLOAD_FILE_SIZE = max_upload_size_mb * (2 ** 20)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:MAX_DOWNLOAD_DIR_SIZE = 100 * (2 ** 20) # Default max size of a downloadable dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    max_download_dir_size_mb = int(get_fileserver_option('max_download_dir_size', 0))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    if max_download_dir_size_mb > 0:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        MAX_DOWNLOAD_DIR_SIZE = max_download_dir_size_mb * (2 ** 20)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        op: the operation, can be 'view', 'download', 'download-dir', 'downloadblks',
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:            'upload', 'update', 'upload-blks-api', 'upload-blks-aj',
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        """Query zip progress for download-dir, download-multi
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_upload_tmp_file_offset (self, repo_id, file_path):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.get_upload_tmp_file_offset (repo_id, file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def is_dir_downloadable(self, repo_id, dir_path, user, repo_perm):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Check if the permission of the dir is downloadable.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        {"is_downloadable": false, "undownloadable_path":"path"}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        - is_downloadable: true if the dir is downloadable, false if not.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        - undownloadable_path: the undownloadable path of the repo if the path is not downloadable.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return '{"is_downloadable":true}'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_get_upload_tmp_file_offset(repo_id, file_path):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    get_upload_tmp_file_offset = seafile_get_upload_tmp_file_offset
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: loading site script $ac_site_file" >&5
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:printf "%s\n" "$as_me: loading site script $ac_site_file" >&6;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:as_fn_error $? "failed to load site script $ac_site_file
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: loading cache $cache_file" >&5
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:printf "%s\n" "$as_me: loading cache $cache_file" >&6;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:# loading this file, other *unset* 'ac_cv_foo' will be assigned the
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: loading site script $ac_site_file" >&5
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:printf "%s\n" "$as_me: loading site script $ac_site_file" >&6;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:as_fn_error $? "failed to load site script $ac_site_file
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: loading cache $cache_file" >&5
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:printf "%s\n" "$as_me: loading cache $cache_file" >&6;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:# loading this file, other *unset* 'ac_cv_foo' will be assigned the
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_set_upload_rate_limit (int limit, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_set_download_rate_limit (int limit, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_get_download_rate(GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_get_upload_rate(GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_download (const char *repo_id, 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h: * Remove finished upload task
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h: * @temp_file_path: local file path, should be a temp file just uploaded.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h: * @user: the email of the user who uploaded the file.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h: * @user: the email of the user who uploaded the file.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_get_upload_tmp_file_offset (const char *repo_id, const char *file_path,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.h:    /* Config that's only loaded on start */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:load_repo (SeafRepoManager *manager, const char *repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:        SeafRepo *ret = load_repo (manager, id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:load_repo_commit (SeafRepoManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:load_virtual_info (SeafDBRow *row, void *vrepo_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:    seaf_db_foreach_selected_row (seaf->db, sql, load_virtual_info, origin_repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:load_repo (SeafRepoManager *manager, const char *repo_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/repo-mgr.c:        load_repo_commit (manager, repo, branch);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:    if (!g_key_file_load_from_file (config, config_file_path, 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:        seaf_warning ("Failed to load config file.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:    if (load_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:        seaf_warning ("Failed to load database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:    if (load_ccnet_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:        seaf_warning ("Failed to load ccnet database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seafile-session.c:        seaf_warning ("Failed to load excluded users.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:download_dir_path = os.getcwd() + '/download_dir'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.mkdir(download_dir_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.rmdir(download_dir_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:def test_zip_download():
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    t_repo_id = api.create_repo('test_zip_download', '', USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    #test zip download dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:                                            'download-dir', USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_zipfile_path = download_dir_path + '/dir.zip'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_zipfile_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    zipFile = zipfile.ZipFile(download_zipfile_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:        zipFile.extract(name, download_dir_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/dir.zip')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/dir')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/dir' + '/file1.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/dir' + '/file2.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_dir_path + '/dir' + '/file1.txt', 'r') as fp1:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_dir_path + '/dir' + '/file2.txt', 'r') as fp2:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/dir' + '/file1.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/dir' + '/file2.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.rmdir(download_dir_path + '/dir')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/dir.zip')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    #test zip download empty dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:                                            'download-dir', USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_zipfile_path = download_dir_path + '/empty_dir.zip'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_zipfile_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    zipFile = zipfile.ZipFile(download_zipfile_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:        zipFile.extract(name, download_dir_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/empty_dir')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert not os.listdir(download_dir_path + '/empty_dir')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.rmdir(download_dir_path + '/empty_dir')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/empty_dir.zip')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    #test zip download mutliple files
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:                                            'download-multi', USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_zipfile_path = download_dir_path + '/multi_files.zip'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_zipfile_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    zipFile = zipfile.ZipFile(download_zipfile_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:        zipFile.extract(name, download_dir_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/file1.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/file2.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_dir_path + '/file1.txt', 'r') as fp1:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_dir_path + '/file2.txt', 'r') as fp2:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/file1.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/file2.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/multi_files.zip')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    #test zip download mutliple files in multi-level
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:                                            'download-multi', USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_zipfile_path = download_dir_path + '/multi_files.zip'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_zipfile_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    zipFile = zipfile.ZipFile(download_zipfile_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:        zipFile.extract(name, download_dir_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/file1.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    assert os.path.exists(download_dir_path + '/file2.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_dir_path + '/file1.txt', 'r') as fp1:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    with open(download_dir_path + '/file2.txt', 'r') as fp2:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/file1.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/file2.txt')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    os.remove(download_dir_path + '/multi_files.zip')
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:download_file_name = 'download_file.txt'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:download_file_path = os.getcwd() + '/' + download_file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:resumable_download_file_name = 'resumable_download_file.txt'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:resumable_download_file_path = os.getcwd() + '/' + resumable_download_file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:#File_id is not used when upload files, but
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:def assert_upload_response(response):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:def assert_resumable_upload_response(response, repo_id, file_name, upload_complete):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    if not upload_complete:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:        offset = api.get_upload_tmp_file_offset(repo_id, '/' + file_name)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:def request_resumable_upload(filepath, headers,upload_url_base,parent_dir,is_ajax):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:        response = requests.post(upload_url_base, headers = headers,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:        response = requests.post(upload_url_base, headers = headers,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    os.remove(download_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    os.remove(resumable_download_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    # upload large file by upload-aj
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    assert_upload_response(response)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    # download file and check sha1
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    with open(download_file_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    file_id2 = sha1sum(download_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = request_resumable_upload(chunked_part1_path, headers, upload_url_base, parent_dir, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    # download file and check sha1
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + resumable_file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    with open(resumable_download_file_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    file_id2 = sha1sum(resumable_download_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    #test upload file to root dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    assert_upload_response(response)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    # download file and check sha1
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    with open(download_file_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    file_id2 = sha1sum(download_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    #test resumable upload file to test
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = request_resumable_upload(chunked_part1_path, headers, upload_url_base, parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + resumable_file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    response = requests.get(download_url)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    with open(resumable_download_file_path, 'wb') as fp:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    file_id2 = sha1sum(resumable_download_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:#File_id is not used when upload files, but
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:def assert_upload_response(response, replace, file_exist):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:def assert_resumable_upload_response(response, repo_id, file_name, upload_complete):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    if not upload_complete:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:        offset = api.get_upload_tmp_file_offset(repo_id, '/' + file_name)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:def request_resumable_upload(filepath, headers,upload_url_base,parent_dir,is_ajax):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:        response = requests.post(upload_url_base, headers = headers,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:        response = requests.post(upload_url_base, headers = headers,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to test dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to root dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to test dir when file already exists.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to root dir when file already exists.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to subdir whose parent is test dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to subdir whose parent is root dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to subdir whose parent is test dir when file already exists.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to subdir whose parent is root dir when file already exists.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test resumable upload file to test dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part1_path, headers, upload_url_base, parent_dir, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test resumable upload file to root dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part1_path, headers, upload_url_base, parent_dir, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to test dir instead of  root dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to root dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to test dir instead of root dir when file already exists and replace is set.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to root dir when file already exists and replace is set.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, True, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to test dir instead of root dir when file already exists and replace is unset.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload file to root dir when file already exists and replace is unset.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload the file to subdir whose parent is test.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload the file to subdir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload the file to subdir whose parent is test when file already exists and replace is set.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test upload the file to subdir when file already exists and replace is set.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, True, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #unset test upload the file to subdir whose parent is test dir when file already exists and replace is unset.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #unset test upload the file to subdir when file already exists and replace is unset.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, True)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test resumable upload file to test
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part1_path, headers, upload_url_base, parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    #test resumable upload file to root dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part1_path,headers, upload_url_base,parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_resumable_upload_response(response, repo.id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:#File_id is not used when upload files, but
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:def assert_upload_response(response, replace, file_exist):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:def assert_resumable_upload_response(response, repo_id, file_name, upload_complete):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    if not upload_complete:
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:        offset = api.get_upload_tmp_file_offset(repo_id, '/' + file_name)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:def request_resumable_upload(filepath, headers,upload_url_base,parent_dir,is_ajax):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:        response = requests.post(upload_url_base, headers = headers,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:        response = requests.post(upload_url_base, headers = headers,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    #test upload file to vritual repo root dir.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    token = api.get_fileserver_access_token(v_repo_id, obj_id, 'upload', USER2, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    response = requests.post(upload_url_base, params = params,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    assert_upload_response(response, False, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    #test resumable upload file to virtual repo root dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    response = request_resumable_upload(chunked_part1_path,headers, upload_url_base,parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    assert_resumable_upload_response(response, v_repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    response = request_resumable_upload(chunked_part2_path, headers, upload_url_base, parent_dir, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    assert_resumable_upload_response(response, v_repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/go.mod:module test_upload
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/readme.md:go run test_upload.go -c accont.conf -p runtime
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:		log.Fatalf("Failed to load config file: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	token, err := rpcclient.Call("seafile_web_get_access_token", options.repoID, objID, "upload", options.username, false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	url := fmt.Sprintf("%s:8082/upload-api/%s", options.server, accessToken)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:			log.Printf("[%d]upload status: %d return body: %s error: %v\n", i, status, string(body), err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.h:#include "zip-download-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.h:    /* Config that's only loaded on start */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.h:    ZipDownloadMgr      *zip_download_mgr;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:#include "zip-download-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    zip_download_mgr_del_zip_progress (seaf->zip_download_mgr, data->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        send_statistic_msg (data->store_id, data->user, "web-file-download", (guint64)data->bsize);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                char *oper = "web-file-download";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                if (g_strcmp0(data->token_type, "download-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                    oper = "link-file-download";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            char *oper = "web-file-download";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            if (g_strcmp0(data->token_type, "download-dir-link") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                g_strcmp0(data->token_type, "download-multi-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                oper = "link-file-download";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (strcmp(operation, "download") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        strcmp(operation, "download-link") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            char *oper = "web-file-download";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            if (g_strcmp0(data->token_type, "download-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                oper = "link-file-download";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (strcmp(operation, "download") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:start_download_zip_file (evhtp_request_t *req, const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    info_obj = json_loadb (info_str, strlen(info_str), 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        // Download dir
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        // Download multi
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    zip_file_path = zip_download_mgr_get_zip_file_path (seaf->zip_download_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        zip_download_mgr_del_zip_progress (seaf->zip_download_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    int ret = start_download_zip_file (req, token, filename, zip_file_path, repo_id, user, token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to start download zip file: %s for token: %s", filename, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    zip_file_path = zip_download_mgr_get_zip_file_path (seaf->zip_download_mgr, task_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    zip_file_name = zip_download_mgr_get_zip_file_name (seaf->zip_download_mgr, task_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        zip_download_mgr_del_zip_progress (seaf->zip_download_mgr, task_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    int ret = start_download_zip_file (req, task_id, zip_file_name, zip_file_path, repo_id, user, "download-multi-link");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to start download zip file: %s for task: %s", zip_file_name, task_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        strcmp(operation, "download") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        strcmp(operation, "download-link") != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        strcmp(operation, "download") != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error_str = "Operation is neither view or download\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (http_tx_manager_check_file_access (repo_id, token, cookie, dec_path, "download", ip_addr, user_agent, &user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (strcmp(operation, "downloadblks") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            seaf_warning ("Failed to download blocks for token: %s\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        if (do_file_range (req, repo, file_id, filename, "download-link", byte_ranges, user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    } else if (do_file(req, repo, file_id, filename, "download-link", key, user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    array = json_loadb (dirents, strlen(dirents), 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to parse download data: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Invalid download data, miss download file name.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            seaf_warning ("Invalid download file name: %s.\n", file_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        char *progress = zip_download_mgr_query_zip_progress (seaf->zip_download_mgr, task_id, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            task_id = zip_download_mgr_start_zip_task_v2 (seaf->zip_download_mgr, repo_id, "download-dir-link", user, dirent_list);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            task_id = zip_download_mgr_start_zip_task_v2 (seaf->zip_download_mgr, repo_id, "download-multi-link", user, dirent_list);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        if (do_file_range (req, repo, file_id, filename, "download-link", byte_ranges, user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    } else if (do_file(req, repo, file_id, filename, "download-link", key, user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:#include "zip-download-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:typedef struct ZipDownloadMgrPriv {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    // Abnormal behavior lead to no download request for the zip finished progress,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:} ZipDownloadMgrPriv;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:typedef enum DownloadType {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:} DownloadType;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:typedef struct DownloadObj {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    DownloadType type;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    // download-dir: top dir name; download-multi: ""
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    // download-dir: obj_id; download-multi: dirent list
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:} DownloadObj;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:free_download_obj (DownloadObj *obj)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:get_download_file_count (DownloadObj *obj, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:validate_download_size (DownloadObj *obj, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:ZipDownloadMgr *
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_new ()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    ZipDownloadMgr *mgr = g_new0 (ZipDownloadMgr, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    ZipDownloadMgrPriv *priv = g_new0 (ZipDownloadMgrPriv, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:remove_progress_by_token (ZipDownloadMgrPriv *priv, const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    ZipDownloadMgrPriv *priv = data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    DownloadObj *obj = data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    ZipDownloadMgrPriv *priv = user_data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    if (!validate_download_size (obj, NULL)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    int file_count = get_download_file_count (obj, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    free_download_obj (obj);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:parse_download_dir_data (DownloadObj *obj, const char *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    jobj = json_loadb (data, strlen(data), 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Failed to parse download dir data: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Invalid download dir data: miss dir_name filed.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Invalid download dir data: miss obj_id filed.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:parse_download_multi_data (DownloadObj *obj, const char *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    jobj = json_loadb (data, strlen(data), 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Failed to parse download multi data: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Invalid download multi data, miss parent_dir field.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Invalid download multi data, miss file_list field.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Invalid download multi data, miss download file name.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:            seaf_warning ("Invalid download file name: %s.\n", file_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:calcuate_download_multi_size (SeafRepo *repo, GList *dirent_list)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:calcuate_download_multi_file_count (SeafRepo *repo, GList *dirent_list)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:validate_download_size (DownloadObj *obj, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    gint64 download_size;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    gint64 max_download_dir_size;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        download_size = seaf_fs_manager_get_fs_size (seaf->fs_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        download_size = calcuate_download_multi_size (repo, (GList *)obj->internal);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    max_download_dir_size = seaf_cfg_manager_get_config_int64 (seaf->cfg_mgr, "fileserver",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                                               "max_download_dir_size");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    if (max_download_dir_size > 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        max_download_dir_size = max_download_dir_size * ((gint64)1 << 20);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        max_download_dir_size = DEFAULT_MAX_DOWNLOAD_DIR_SIZE;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    if (download_size < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Failed to get download size.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                     "Failed to get download size.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    } else if (download_size > max_download_dir_size) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Total download size %"G_GINT64_FORMAT
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                      ", exceed max download dir size %"G_GINT64_FORMAT".\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                      download_size, max_download_dir_size);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                     "Download size exceed max download dir size.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:get_download_file_count (DownloadObj *obj, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        file_count = calcuate_download_multi_file_count (repo, (GList *)obj->internal);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        seaf_warning ("Failed to get download file count.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                     "Failed to get download file count.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_start_zip_task (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    DownloadObj *obj;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    ZipDownloadMgrPriv *priv = mgr->priv;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    obj = g_new0 (DownloadObj, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    if (strcmp (operation, "download-dir") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        strcmp (operation, "download-dir-link") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        ret = parse_download_dir_data (obj, data);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                         "Failed to parse download dir data.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        ret = parse_download_multi_data (obj, data);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                         "Failed to parse download multi data.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        free_download_obj (obj);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_start_zip_task_v2 (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    DownloadObj *obj;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    ZipDownloadMgrPriv *priv = mgr->priv;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    obj = g_new0 (DownloadObj, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    if (strcmp (operation, "download-dir") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        strcmp (operation, "download-dir-link") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:get_progress_obj (ZipDownloadMgrPriv *priv, const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_query_zip_progress (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_get_zip_file_path (struct ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_get_zip_file_name (struct ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_del_zip_progress (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:zip_download_mgr_cancel_zip_task (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/pack-dir.c:    /* FIXME: 0644 should be set when upload files in repo-mgr.c */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:load_repo (SeafRepoManager *manager, SeafRepo *repo);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    /* On the server, we load repos into memory on-demand, because
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        load_repo (manager, repo);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        load_repo (manager, ret);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:load_repo_commit (SeafRepoManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:load_repo (SeafRepoManager *manager, SeafRepo *repo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    load_repo_commit (manager, repo);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:load_mini_repo (SeafRepoManager *manager, SeafRepo *repo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "CREATE TABLE IF NOT EXISTS WebUploadTempFiles ( "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "CREATE TABLE IF NOT EXISTS WebUploadTempFiles (repo_id CHAR(40) NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "CREATE INDEX IF NOT EXISTS webuploadtempfiles_repo_id_idx ON WebUploadTempFiles(repo_id)";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*     sql = "CREATE TABLE IF NOT EXISTS WebUploadTempFiles (repo_id CHAR(40) NOT NULL, " */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                load_mini_repo (mgr, repo);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                load_mini_repo (mgr, repo);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_add_upload_tmp_file (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       "INSERT INTO WebUploadTempFiles "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "Failed to add upload tmp file record to db.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_del_upload_tmp_file (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       "DELETE FROM WebUploadTempFiles WHERE "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "Failed to delete upload tmp file record from db.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_get_upload_tmp_file (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                             "SELECT tmp_file_path FROM WebUploadTempFiles "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                     "Failed to get upload temp file path from db.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                 "SELECT tmp_file_path FROM WebUploadTempFiles "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                         "Failed to get upload temp file path from db.");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_get_upload_tmp_file_offset (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    tmp_file_path = seaf_repo_manager_get_upload_tmp_file (mgr, repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            if (seaf_repo_manager_del_upload_tmp_file (mgr, repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_CONCURRENT_UPLOAD, "Concurrent upload");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_CONCURRENT_UPLOAD, "Concurrent upload");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:        seaf_debug ("[post file] Concurrent upload retry :%d\n", retry_cnt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:    array = json_loadb (files_json, strlen(files_json), 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:        seaf_warning ("Failed to load json file list: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:        seaf_debug ("[post multi-file] Concurrent upload retry :%d\n", retry_cnt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:    commit_array = json_loadb (scan_stat, strlen(scan_stat), 0, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.h:    char *http_temp_dir;        /* temp dir for file upload */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:load_virtual_info (SeafDBRow *row, void *p_vinfo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:    seaf_db_statement_foreach_row (seaf->db, sql, load_virtual_info, &vinfo,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:#include "upload-file.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:enum UploadError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    gint64 uploaded;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    GList *filenames;           /* uploaded file names */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    GList *files;               /* paths for completely uploaded tmp files. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *tmp_file; /* tmp file path for the currently uploading file */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *resumable_tmp_file;        /* resumable upload tmp file path. In resumable uploads, contents of the chunks are appended to this tmp file. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* For upload progress. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:static GHashTable *upload_progress;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/* IE8 will set filename to the full path of the uploaded file.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    gint64 max_upload_size;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_warning ("[upload] Failed to stat temp file %s.\n", tmp_file);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    max_upload_size = seaf_cfg_manager_get_config_int64 (seaf->cfg_mgr, "fileserver",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                                                         "max_upload_size");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (max_upload_size > 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        max_upload_size = max_upload_size * ((gint64)1 << 20);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        max_upload_size = -1;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (max_upload_size > 0 && total_size > max_upload_size) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] File size is too large.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_warning ("[upload] Failed to get repo %.8s.\n", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_warning ("[upload] Failed to get head commit for repo %.8s.\n", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:is_parent_matched (const char *upload_dir,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *upload_dir_canon = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    upload_dir_canon = get_canonical_path (upload_dir);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (strcmp (upload_dir_canon,parent_dir_canon) != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    g_free (upload_dir_canon);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_warning ("[upload folder] %s.", error->message);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    array = json_loadb (ret_json, strlen(ret_json), 0, &err);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_warning ("Failed to load ret_json: %s.\n", err.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_api_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* After upload_headers_cb() returns an error, libevhtp may still
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[Upload] Invalid argument replace: %s.\n", replace_str);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No parent dir given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] Breakpoint transfer only support one file in one request.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] Invalid parent dir, should start with /.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *oper = "web-file-upload";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (g_strcmp0(fsm->token_type, "upload-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        oper = "link-file-upload";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_raw_blks_api_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* After upload_headers_cb() returns an error, libevhtp may still
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    send_statistic_msg(fsm->repo_id, fsm->user, "web-file-upload", content_len);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_blks_api_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* After upload_headers_cb() returns an error, libevhtp may still
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[Upload-blks] Invalid argument replace: %s.\n", replace_str);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload-blks] No parent dir or file name given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload-blks] No blockids given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/* upload_blks_ajax_cb(evhtp_request_t *req, void *arg) */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/*     /\* After upload_headers_cb() returns an error, libevhtp may still */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:/*         seaf_debug ("[upload-blks] No parent dir or file name given.\n"); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_warning ("Failed to rewind web upload temp file write position: %s\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    temp_file = seaf_repo_manager_get_upload_tmp_file (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_warning ("Failed to create upload temp file: %s.\n", strerror(errno));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        if (seaf_repo_manager_add_upload_tmp_file (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_warning ("Failed to open upload temp file: %s.\n", strerror(errno));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_message ("Upload temp file %s doesn't exist, remove record from db.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_repo_manager_del_upload_tmp_file (seaf->repo_mgr, fsm->repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        // For the last block, record tmp_files for upload to seafile and remove
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:  Handle AJAX file upload.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_ajax_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* After upload_headers_cb() returns an error, libevhtp may still
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No parent dir given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] Breakpoint transfer only support one file in one request.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] Invalid parent dir, should start with /.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *oper = "web-file-upload";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (g_strcmp0(fsm->token_type, "upload-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        oper = "link-file-upload";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[Update] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[Update] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        // File upload success, try to remove tmp file from WebUploadTmpFile table
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_repo_manager_del_upload_tmp_file (seaf->repo_mgr, fsm->repo_id, abs_path, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload-blks] No blockids given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[update] No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        send_error_reply (req, EVHTP_RES_BADREQ, "No file uploaded.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    send_statistic_msg(fsm->repo_id, fsm->user, "web-file-upload", (guint64)content_len);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_link_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    return upload_api_cb (req, arg);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_finish_cb (evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* Clean up FSM struct no matter upload succeed or not. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        // For resumable upload, in case tmp file not be deleted
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_repo_manager_del_upload_tmp_file (seaf->repo_mgr, fsm->repo_id, fsm->resumable_tmp_file, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        g_hash_table_remove (upload_progress, fsm->progress_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] Invalid mime param %s.\n", param);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_warning ("[upload] Invalid Content-Disposition header.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] bad mime header format.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] Too little params for mime header.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] Invalid Content-Disposition\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] No input-name given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_debug ("[upload] No filename given.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_warning("[upload] Failed to open temp file: %s.\n", strerror(errno));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] form field ends.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_debug ("[upload] form field is %s.\n", line);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_debug ("[upload] form field ends.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:add_uploaded_file (RecvFSM *fsm)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_warning ("[upload] Failed to close temp file: %s\n", strerror(errno));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_debug ("[upload] file data ends.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                evhtp_res res = add_uploaded_file (fsm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_debug ("[upload] recv file data %d bytes.\n", size);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                        seaf_warning ("[upload] Failed to write temp file: %s.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                    seaf_warning ("[upload] Failed to write temp file: %s.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] file data ends.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        evhtp_res res = add_uploaded_file (fsm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] recv file data %d bytes.\n", len + 2);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_warning ("[upload] Failed to write temp file: %s.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:            seaf_warning ("[upload] Failed to write temp file: %s.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_read_cb (evhtp_request_t *req, evbuf_t *buf, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* Update upload progress. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        fsm->progress->uploaded += (gint64)evbuffer_get_length(buf);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                    fsm->progress->uploaded, fsm->progress->size);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_debug ("[upload] boundary line: %s.\n", line);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                    seaf_debug ("[upload] no boundary found in the first line.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                seaf_debug ("[upload] mime header line: %s.\n", line);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                            seaf_warning ("[upload] Failed open temp file, errno:[%d]\n", errno);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                    seaf_debug ("[upload] Start to recv %s.\n", fsm->input_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] Invalid http header param %s.\n", param);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] Missing Content-Type header\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] Too little params Content-Type header\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] Invalid Content-Type\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] boundary not given\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* token with op = "upload" can only be used for "upload-*" operations;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (g_strcmp0(op, "upload-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        op = "upload";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    parent_dir_json = json_loadb (_obj_id, strlen (_obj_id), 0, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] Content-Length not found.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_headers_cb (evhtp_request_t *req, evhtp_headers_t *hdr, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* URL format: http://host:port/[upload|update]/<token>?X-Progress-ID=<uuid> */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No token in url.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        if (g_hash_table_lookup (upload_progress, progress_id)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        g_hash_table_insert (upload_progress, g_strdup(progress_id), progress);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook (&req->hooks, evhtp_hook_on_read, upload_read_cb, fsm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook (&req->hooks, evhtp_hook_on_request_fini, upload_finish_cb, fsm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* Set arg for upload_cb or update_cb. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_link_headers_cb (evhtp_request_t *req, evhtp_headers_t *hdr, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No token in url.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    info = http_tx_manager_query_access_token (token, "upload");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        if (g_hash_table_lookup (upload_progress, progress_id)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    fsm->token_type = "upload-link";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        g_hash_table_insert (upload_progress, g_strdup(progress_id), progress);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook (&req->hooks, evhtp_hook_on_read, upload_read_cb, fsm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook (&req->hooks, evhtp_hook_on_request_fini, upload_finish_cb, fsm);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    // Set arg for upload_cb or update_cb.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_progress_cb(evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    progress = g_hash_table_lookup (upload_progress, progress_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                            "%s({\"uploaded\": %"G_GINT64_FORMAT", \"length\": %"G_GINT64_FORMAT"});",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                            callback, progress->uploaded, progress->size);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:upload_file_init (evhtp_t *htp, const char *http_temp_dir)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    cb = evhtp_set_regex_cb (htp, "^/upload-api/.*", upload_api_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    cb = evhtp_set_regex_cb (htp, "^/upload-raw-blks-api/.*",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                             upload_raw_blks_api_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    cb = evhtp_set_regex_cb (htp, "^/upload-blks-api/.*", upload_blks_api_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* cb = evhtp_set_regex_cb (htp, "^/upload-blks-aj/.*", upload_blks_ajax_cb, NULL); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    cb = evhtp_set_regex_cb (htp, "^/upload-aj/.*", upload_ajax_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    // upload links
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    // cb = evhtp_set_regex_cb (htp, "^/u/.*", upload_link_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    //evhtp_set_hook(&cb->hooks, evhtp_hook_on_headers, upload_link_headers_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    evhtp_set_regex_cb (htp, "^/upload_progress.*", upload_progress_cb, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    upload_progress = g_hash_table_new_full (g_str_hash, g_str_equal,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/quota-mgr.h: * Check if @repo_id still has free space for upload.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	upload-file.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	zip-download-mgr.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	zip-download-mgr.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	upload-file.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:struct ZipDownloadMgrPriv;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:typedef struct ZipDownloadMgr {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:    struct ZipDownloadMgrPriv *priv;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:} ZipDownloadMgr;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:ZipDownloadMgr *
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_new ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_start_zip_task (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_start_zip_task_v2 (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_query_zip_progress (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_get_zip_file_path (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_get_zip_file_name (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_del_zip_progress (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:zip_download_mgr_cancel_zip_task (ZipDownloadMgr *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:load_fileserver_config (SeafileSession *session)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:load_config (SeafileSession *session, const char *config_file_path)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (!g_key_file_load_from_file (config, config_file_path,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to load config file.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (load_config (session, config_file_path) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    load_fileserver_config (session);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (load_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to load database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (load_ccnet_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to load ccnet database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    session->zip_download_mgr = zip_download_mgr_new ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (!session->zip_download_mgr)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (!g_key_file_load_from_file (config, config_file_path, 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to load config file.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (load_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to load database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (load_ccnet_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to load ccnet database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    object = json_loadb (rsp_content, rsp_size, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    object = json_loadb (rsp_content, rsp_size, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    object = json_loadb (rsp_content, rsp_size, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    object = json_loadb (rsp_content, rsp_size, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "download") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "downloadblks") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "download-dir") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "download-multi") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "download-link") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "download-dir-link") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "download-multi-link") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "upload") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "upload-link") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "upload-blks-api") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        strcmp(op, "upload-blks-aj") != 0 &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        if (strcmp(op, "download-dir") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            strcmp(op, "download-multi") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            strcmp(op, "download-dir-link") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            strcmp(op, "download-multi-link") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            if (zip_download_mgr_start_zip_task (seaf->zip_download_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/permission-mgr.c:static int load_db (SeafPermManager *mgr);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/permission-mgr.c:    return load_db (mgr);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/permission-mgr.c:load_db (SeafPermManager *mgr)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_get_upload_tmp_file_offset,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_get_upload_tmp_file_offset",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/seafile-session.h:    /* Config that's only loaded on start */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:        seaf_warning ("Failed to load commit %s of repo %s\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:load_repo (SeafRepoManager *manager, const char *repo_id, gboolean ret_corrupt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:        SeafRepo *ret = load_repo (manager, id, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:        ret = load_repo (manager, id, TRUE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:load_repo_commit (SeafRepoManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:load_repo (SeafRepoManager *manager, const char *repo_id, gboolean ret_corrupt)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:        load_repo_commit (manager, repo, branch);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:load_virtual_info (SeafDBRow *row, void *p_vinfo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/repo-mgr.c:    seaf_db_foreach_selected_row (seaf->db, sql, load_virtual_info, &vinfo);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/seafile-session.c:    if (!g_key_file_load_from_file (config, config_file_path, 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/seafile-session.c:        seaf_warning ("Failed to load config file.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/seafile-session.c:        if (load_database_config (session) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/seafile-session.c:            seaf_warning ("Failed to load database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_add_upload_tmp_file (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_del_upload_tmp_file (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_get_upload_tmp_file (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_get_upload_tmp_file_offset (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.h:upload_file_init (evhtp_t *evhtp, const char *http_temp_dir);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/change-set.c:                    seaf_warning ("Failed to load seafdir %s:%s\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:#include "upload-file.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:load_http_config (HttpServerStruct *htp_server, SeafileSession *session)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (strcmp(op, "upload") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        if ((strcmp (perm, "r") == 0 && strcmp (op, "upload") == 0)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (op == NULL || (strcmp (op, "upload") != 0 && strcmp (op, "download") != 0)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (strcmp (op, "download") == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        on_repo_oper (htp_server, "repo-download-sync", repo_id, username, ip, client_name);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /* else if (strcmp (op, "upload") == 0) { */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /*     on_repo_oper (htp_server, "repo-upload-sync", repo_id, username, ip, client_name); */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /* In some uploads, no blocks need to be uploaded. For example, deleting
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:     * check gc for these cases since no new blocks are uploaded.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:     * a last gc id record. The former one indicates that, before block upload,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "upload", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /* Since this is the last step of upload procedure, commit should exist. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    repo_id_array = json_loadb (repo_id_list_con, list_len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        seaf_warning ("load repo_id_list to json failed, error: %s\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "download", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "upload", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:         * So we set the last GCID just before replying to upload commit
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:         * request. One consequence is that even if the following upload
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:         * doesn't upload new blocks, we still need to check gc conflict in
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "download", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "download", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    send_statistic_msg (store_id, username, "sync-file-download", (guint64)rsize);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "upload", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    send_statistic_msg (store_id, username, "sync-file-upload", (guint64)blk_len);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "download", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    json_t *obj_array = json_loadb (obj_list_con, list_len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "upload", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "download", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    json_t *fs_id_array = json_loadb (fs_id_list, fs_id_list_len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                        "download", FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    /* Web upload file */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (upload_file_init (priv->evhtp, server->http_temp_dir) < 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    load_http_config (server, session);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:    if (!g_key_file_load_from_file (key_file, seafile_conf,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:        seaf_warning("Failed to load seafile.conf.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:    if (!g_key_file_load_from_file (key_file, seafdav_conf,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:        seaf_warning("Failed to load seafdav.conf\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:        seaf_warning("Failed to load seafdav config: invalid port %d\n", ctl->seafdav_config.port);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:    if (!g_key_file_load_from_file (key_file, seafile_conf,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/controller/seafile-controller.c:        seaf_warning("Failed to load seafile.conf.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/group-mgr.c:    j_array = json_loadb (group_ids, strlen(group_ids), 0, &j_error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/cdc/cdc.c:     * tail: length of data loaded into memory. buf[tail] is invalid.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.h: * This is useful for loading a repo. In that case, we don't know the version
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.h: * of the repo before loading its head commit.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-backend.h:BlockBackend* load_block_backend (GKeyFile *config);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return zip_download_mgr_query_zip_progress (seaf->zip_download_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return zip_download_mgr_cancel_zip_task (seaf->zip_download_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    array = json_loadb (blockids_json, strlen(blockids_json), 0, &err);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:/* Resumable file upload. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_get_upload_tmp_file_offset (const char *repo_id, const char *file_path,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    gint64 ret = seaf_repo_manager_get_upload_tmp_file_offset (seaf->repo_mgr, repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/obj-store.c:        seaf_warning ("[Object store] Failed to load backend.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:load_db_option_from_env (DBOption *option)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:load_db_option (SeafileSession *session)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    load_db_option_from_env (option);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    option = load_db_option (session);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:        seaf_warning ("Failed to load database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:load_database_config (SeafileSession *session)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    option = load_db_option (session);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:        seaf_warning ("Failed to load database config.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:load_ccnet_database_config (SeafileSession *session)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/vc-common.c:        g_warning ("Failed to load commit hash.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:load_commit (SeafCommitManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:    object = json_loadb (data, len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:        object = json_loadb (data, len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:                seaf_warning ("Failed to load commit json: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:                seaf_warning ("Failed to load commit json.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:    commit = load_commit (mgr, repo_id, version, id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:load_commit (SeafCommitManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:    object = json_loadb (data, len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:        object = json_loadb (data, len, 0, &jerror);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:                seaf_warning ("Failed to load commit json object: %s.\n", jerror.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/commit-mgr.c:                seaf_warning ("Failed to load commit json object.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-backend.c:load_filesystem_block_backend(GKeyFile *config)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-backend.c:load_block_backend (GKeyFile *config)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-backend.c:        bend = load_filesystem_block_backend(config);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:static int try_load_ldap_settings (CcnetUserManager *manager);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    if (try_load_ldap_settings (manager) < 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:static int try_load_ldap_settings (CcnetUserManager *manager)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    j_array = json_loadb (user_list, strlen(user_list), 0, &j_error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/block-mgr.c:        seaf_warning ("[Block mgr] Failed to load backend.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.h:load_database_config (struct _SeafileSession *session);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.h:load_ccnet_database_config (struct _SeafileSession *session);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:    object = json_loadb ((const char *)decompressed, outlen, 0, &error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load seafile json object: %s.\n", error.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load seafile json object.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:    object = json_loadb ((const char *)decompressed, outlen, 0, &error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load seafdir json object: %s.\n", error.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load seafdir json object.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:    object = json_loadb ((const char *)decompressed, outlen, 0, &error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load fs json object: %s.\n", error.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load fs json object.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:    object = json_loadb ((const char *)decompressed, outlen, 0, &error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load fs json object: %s.\n", error.text);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/fs-mgr.c:            seaf_warning ("Failed to load fs json object.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/size_sched.go:		log.Fatalf("Failed to load seafile.conf: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func initUpload() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if op != "view" && op != "download" && op != "download-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if op != "view" && op != "download" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation is neither view or download\n"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user, appErr := checkFileAccess(repoID, token, cookie, filePath, "download", ipAddr, userAgent)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		oper := "web-file-download"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		if operation == "download-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			oper = "link-file-download"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	oper := "web-file-download"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if operation == "download-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		oper = "link-file-download"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if operation == "download" || operation == "download-link" ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		operation == "downloadblks" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		// Since the file name downloaded by safari will be garbled, we need to encode the filename.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if op != "downloadblks" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	setCommonHeaders(rsp, r, "downloadblks", blkID)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	sendStatisticMsg(repo.StoreID, user, "web-file-download", uint64(size))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if op != "download-dir" && op != "download-dir-link" &&
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		op != "download-multi" && op != "download-multi-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if err := downloadZipFile(rsp, r, data, repoID, user, op); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func downloadZipFile(rsp http.ResponseWriter, r *http.Request, data, repoID, user, op string) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if op == "download-dir" || op == "download-dir-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("invalid download dir data: miss dir_name field")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("invalid download dir data: miss obj_id field")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		setCommonHeaders(rsp, r, "download", zipName)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		// The zip name downloaded by safari will be garbled if we encode the zip name,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		// because we download zip file using chunk encoding.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		setCommonHeaders(rsp, r, "download", zipName)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("invalid download multi data, miss parent_dir field")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("invalid download multi data, miss file_list field")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("invalid download multi data")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("invalid download file name")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:				err := fmt.Errorf("invalid download multi data")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func uploadAPICB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if err := doUpload(rsp, r, fsm, false); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func uploadAjaxCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if err := doUpload(rsp, r, fsm, true); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func doUpload(rsp http.ResponseWriter, r *http.Request, fsm *recvData, isAjax bool) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "No file uploaded.\n"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	oper := "web-file-upload"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if fsm.tokenType == "upload-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		oper = "link-file-upload"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	tmpFile, err := repomgr.GetUploadTmpFile(repoID, filePath)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		repomgr.AddUploadTmpFile(repoID, filePath, f.Name())
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		tmpFile, err := repomgr.GetUploadTmpFile(fsm.repoID, filePath)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		repomgr.DelUploadTmpFile(fsm.repoID, filePath)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func parseUploadHeaders(r *http.Request) (*recvData, *appError) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if op == "upload-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		op = "upload"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		log.Debugf("concurrent upload retry :%d", retryCnt)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:var ErrConflict = fmt.Errorf("Concurent upload conflict")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:				err := fmt.Errorf("[upload] Failed to stat temp file %s", tmpFile)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if option.MaxUploadSize > 0 && uint64(totalSize) > option.MaxUploadSize {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func isParentMatched(uploadDir, parentDir string) bool {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	uploadCanon := filepath.Join("/", uploadDir)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	return uploadCanon == parentCanon
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	oper := "web-file-upload"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func uploadBlksAPICB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if err := doUploadBlks(rsp, r, fsm); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func doUploadBlks(rsp http.ResponseWriter, r *http.Request, fsm *recvData) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func uploadRawBlksAPICB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if err := doUploadRawBlks(rsp, r, fsm); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func doUploadRawBlks(rsp http.ResponseWriter, r *http.Request, fsm *recvData) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	oper := "web-file-upload"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func uploadLinkCB(rsp http.ResponseWriter, r *http.Request) *appError {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm, err := parseUploadLinkHeaders(r)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if err := doUpload(rsp, r, fsm, false); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func parseUploadLinkHeaders(r *http.Request) (*recvData, *appError) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	info, appErr := queryShareLinkInfo(token, "upload")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm.tokenType = "upload-link"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op := "download-link"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	op := "download-link"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			op = "download-dir-link"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			op = "download-multi-link"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		if err := downloadZipFile(rsp, r, string(data), repoID, user, op); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			return nil, fmt.Errorf("Invalid download file name: %s\n", normPath)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge_test.go:		t.Errorf("failed to load commit.\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		log.Errorf("failed to load commit %s/%s : %v", repo.ID, repo.HeadCommitID, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		log.Errorf("failed to load commit %s/%s : %v", repo.ID, repo.HeadCommitID, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// GetUploadTmpFile gets the timp file path of upload file.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func GetUploadTmpFile(repoID, filePath string) (string, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT tmp_file_path FROM WebUploadTempFiles WHERE repo_id = ? AND file_path = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// AddUploadTmpFile adds the tmp file path of upload file.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func AddUploadTmpFile(repoID, filePath, tmpFile string) error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "INSERT INTO WebUploadTempFiles (repo_id, file_path, tmp_file_path) VALUES (?, ?, ?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// DelUploadTmpFile deletes the tmp file path of upload file.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func DelUploadTmpFile(repoID, filePath string) error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "DELETE FROM WebUploadTempFiles WHERE repo_id = ? AND file_path IN (?, ?)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:func loadCcnetDB() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	dbOpt, err := loadDBOption()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		log.Fatalf("Failed to load database: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:func loadDBOption() (*DBOption, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	dbOpt, err := loadDBOptionFromFile()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		log.Warnf("failed to load database config: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	dbOpt = loadDBOptionFromEnv(dbOpt)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:func loadDBOptionFromEnv(dbOpt *DBOption) *DBOption {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:func loadDBOptionFromFile() (*DBOption, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		return nil, fmt.Errorf("failed to load seafile.conf: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:func loadSeafileDB() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	dbOpt, err := loadDBOption()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		log.Fatalf("Failed to load database: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	loadCcnetDB()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	loadSeafileDB()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	initUpload()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/upload-api/{.*}", appHandler(uploadAPICB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/upload-aj/{.*}", appHandler(uploadAjaxCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/upload-blks-api/{.*}", appHandler(uploadBlksAPICB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/upload-raw-blks-api/{.*}", appHandler(uploadRawBlksAPICB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	//r.Handle("/u/{.*}", appHandler(uploadLinkCB))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	MaxUploadSize          uint64
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	MaxDownloadDirSize     uint64
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	// Block size for indexing uploaded files
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	// Maximum number of goroutines to index uploaded files
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	MaxDownloadDirSize = 100 * (1 << 20)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:		log.Fatalf("Failed to load seafile.conf: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	if key, err := section.GetKey("max_upload_size"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:			MaxUploadSize = uint64(size) * (1 << 20)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/virtual_repo.go:		err := fmt.Errorf("failed to load commit %s/%s : %v", repo.ID, repo.HeadCommitID, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/virtual_repo.go:		err := fmt.Errorf("failed to load commit %s/%s : %v", head.RepoID, head.ParentID.String, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "download", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if op != "download" && op != "upload" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if op == "download" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		onRepoOper("repo-download-sync", repoID, user, ip, clientName)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "download", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "upload", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "download", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "download", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "upload", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	sendStatisticMsg(storeID, user, "sync-file-upload", uint64(r.ContentLength))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "download", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	sendStatisticMsg(storeID, user, "sync-file-download", uint64(blockSize))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "upload", true)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "download", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	appErr = checkPermission(repoID, user, "upload", false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if op == "upload" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		if perm == "r" && op == "upload" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		err := fmt.Errorf("Failed to load server head commit %s:%s: %v", repo.ID, serverHead, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:			err := fmt.Errorf("Failed to load remote head commit %s:%s: %v", repo.ID, clientHead, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/commitmgr/commitmgr_test.go:		t.Errorf("Failed to load commit: %v.\n", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.h" line="6" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="1" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="7" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="8" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="13" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="16" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="18" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="20" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="22" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="24" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="31" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_GINT64_FORMAT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_GINT64_FORMAT is a macro then please configure it." file0="server/upload-file.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="2859" column="50"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/upload-file.c" line="11" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="1" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="4" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="7" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="8" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="9" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="10" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If G_GINT64_FORMAT is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If G_GINT64_FORMAT is a macro then please configure it." file0="server/zip-download-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/zip-download-mgr.c" line="484" column="46"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;load_block_backend&apos; is never used." verbose="The function &apos;load_block_backend&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>load_block_backend</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;seaf_repo_manager_add_upload_tmp_file&apos; is never used." verbose="The function &apos;seaf_repo_manager_add_upload_tmp_file&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>seaf_repo_manager_add_upload_tmp_file</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS WebUploadTempFiles (repo_id CHAR(40) NOT NULL, file_path TEXT NOT NULL, tmp_file_path TEXT NOT NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:CREATE TABLE IF NOT EXISTS WebUploadTempFiles (
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/repo.vala:    public bool need_upload { get; set; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/repo.vala:    public bool force_upload { get; set; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    AC_CACHE_CHECK([for -force_load linker flag],[lt_cv_ld_force_load],
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      [lt_cv_ld_force_load=no
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:int forced_loaded() { return 2;}
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      echo "$LTCC $LTCFLAGS $LDFLAGS -o conftest conftest.c -Wl,-force_load,./libconftest.a" >&AS_MESSAGE_LOG_FD
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      $LTCC $LTCFLAGS $LDFLAGS -o conftest conftest.c -Wl,-force_load,./libconftest.a 2>conftest.err
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      if test -s conftest.err && $GREP force_load conftest.err; then
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      elif test -f conftest && test 0 = "$_lt_result" && $GREP forced_load conftest >/dev/null 2>&1; then
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	lt_cv_ld_force_load=yes
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    if test : != "$DSYMUTIL" && test no = "$lt_cv_ld_force_load"; then
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  if test yes = "$lt_cv_ld_force_load"; then
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    _LT_TAGVAR(whole_archive_flag_spec, $1)='`for conv in $convenience\"\"; do test  -n \"$conv\" && new_convenience=\"$new_convenience $wl-force_load,$conv\"; done; func_echo_all \"$new_convenience\"`'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    lt_cv_dlopen=load_add_on
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    AC_CHECK_FUNC([shl_load],
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	  [lt_cv_dlopen=shl_load],
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      [AC_CHECK_LIB([dld], [shl_load],
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	    [lt_cv_dlopen=shl_load lt_cv_dlopen_libs=-ldld],
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  dynamic_linker="$host_os runtime_loader"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  # OS/2 can only load a DLL with a base name of 8 characters or less.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:# find reload flag for linker
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:#   -- PORTME Some linkers may need a different reload flag.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:[AC_CACHE_CHECK([for $LD option to reload object files],
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  lt_cv_ld_reload_flag,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  [lt_cv_ld_reload_flag='-r'])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:reload_flag=$lt_cv_ld_reload_flag
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:case $reload_flag in
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:*) reload_flag=" $reload_flag" ;;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:reload_cmds='$LD$reload_flag -o $output$reload_objs'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      reload_cmds=false
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      reload_cmds='$LTCC $LTCFLAGS -nostdlib $wl-r -o $output$reload_objs'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      reload_cmds='$LD$reload_flag -o $output$reload_objs'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGDECL([], [reload_flag], [1], [How to create reloadable object files])dnl
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGDECL([], [reload_cmds], [2])dnl
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:lt__PROGRAM__LTX_preloaded_symbols[[]] =
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:static const void *lt_preloaded_setup() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  return lt__PROGRAM__LTX_preloaded_symbols;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:  # preloaded symbol tables.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:      # Instead, shared libraries are loaded at an image base (0x10000000 by
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	# Warning - without using the other runtime loading flags (-brtl),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	  # Warning - without using the other run time loading flags,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	  _LT_TAGVAR(reload_cmds, $1)='$CC -r -o $output$reload_objs'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    [Commands used to build a loadable module if different from building
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:    [Symbols that should not be listed in the preloaded symbols])
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_flag, $1)=$reload_flag
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_cmds, $1)=$reload_cmds
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:          # Warning - without using the other runtime loading flags (-brtl),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	    # Warning - without using the other run time loading flags,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	# Instead, shared libraries are loaded at an image base (0x10000000 by
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:	    _LT_TAGVAR(reload_cmds, $1)='$CC -Tprelink_objects $reload_objs~
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:              '"$_LT_TAGVAR(reload_cmds, $1)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_flag, $1)=$reload_flag
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_cmds, $1)=$reload_cmds
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_flag, $1)=$reload_flag
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_cmds, $1)=$reload_cmds
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_flag, $1)=$reload_flag
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_cmds, $1)=$reload_cmds
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_flag, $1)=$reload_flag
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/m4/libtool.m4:_LT_TAGVAR(reload_cmds, $1)=$reload_cmds
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for deserialization functions such as unserialize, pickle, etc.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(unserialize|pickle|load)" $SOURCE_DIR > $OUTPUT_DIR/cwe-502.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/build/config.log:PATH: /Users/shreeyanreddy/Downloads/google-cloud-sdk/bin/
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/build/config.log:PATH: /Users/shreeyanreddy/Downloads/google-cloud-sdk/bin/
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/build/config.log:PATH: /Users/shreeyanreddy/Downloads/google-cloud-sdk/bin/
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/objects/pack/pack-0922ffe849e753b938afc79b1de7b8e77095b6ce.pack matches
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/index matches
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:func loadNotifConfig() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:func loadCcnetDB() {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	option, err := loadDBOptionFromEnv()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:		log.Fatalf("Failed to load database from env: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:func loadDBOptionFromEnv() (*DBOption, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	if err := loadJwtPrivateKey(); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	loadNotifConfig()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	loadCcnetDB()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:func loadJwtPrivateKey() error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autogen.sh:	echo "Download the appropriate package for your distribution,"

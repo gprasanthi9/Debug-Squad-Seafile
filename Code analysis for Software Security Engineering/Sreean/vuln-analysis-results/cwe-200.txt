@@ -1,0 +1,1226 @@
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:CONF_ADMIN_PASSWORD = 'admin_password'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:def gen_seahub_secret_key():
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tools/seafile-admin:            line = "SECRET_KEY = '%s'" % gen_seahub_secret_key()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:const char *stringified = noexpand_stringify(arbitrary+token=sequence);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/configure:/* C89 style token pasting.  Exercises some of the corner cases that
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def get_repo_token_nonnull(repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    return seafserv_threaded_rpc.get_repo_token_nonnull (repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:# access token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:def web_get_access_token(repo_id, obj_id, op, username, use_onetime=1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:        ret = seafserv_rpc.web_get_access_token(repo_id, obj_id, op, username, use_onetime)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:# password management
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/service.py:    Remove user password of a encrypt repo.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/__init__.py:from .service import send_command, check_quota, web_get_access_token, \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/__init__.py:    list_personal_repos_by_owner, get_repo_token_nonnull, get_repo_owner, \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    # fileserver token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def get_fileserver_access_token(self, repo_id, obj_id, op, username, use_onetime=True):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        """Generate token for access file/dir in fileserver
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Return: the access token in string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.web_get_access_token(repo_id, obj_id, op, username,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def query_fileserver_access_token(self, token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        token: the access token in string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.web_query_access_token(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def query_zip_progress(self, token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        token: obtained by get_fileserver_access_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.query_zip_progress(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def cancel_zip_task(self, token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.cancel_zip_task(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    # password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def is_password_set(self, repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def generate_magic_and_random_key(self, enc_version, repo_id, password):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.generate_magic_and_random_key(enc_version, repo_id, password)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    # token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def generate_repo_token(self, repo_id, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        """Generate a token for sync a repo
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.generate_repo_token(repo_id, username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def delete_repo_token(self, repo_id, token, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.delete_repo_token(repo_id, token, user)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def list_repo_tokens(self, repo_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.list_repo_tokens(repo_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def list_repo_tokens_by_email(self, username):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.list_repo_tokens_by_email(username)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def delete_repo_tokens_by_peer_id(self, email, peer_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.delete_repo_tokens_by_peer_id(email, peer_id)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def delete_repo_tokens_by_email(self, email):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return seafserv_threaded_rpc.delete_repo_tokens_by_email(email)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        Verify user's password on login. Can be used to verify DB and LDAP users.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        The function first verify password with LDAP, then local database.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:    def update_emailuser(self, source, user_id, password, is_staff, is_active):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        password: new password in plain text. Only effective for DB users.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:                  If '!' is passed, the password won't be updated.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seaserv/api.py:        return ccnet_threaded_rpc.update_emailuser(source, user_id, password, is_staff, is_active)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_set_repo_token(repo_id, email, token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    set_repo_token = seafile_set_repo_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_get_repo_token_nonnull(repo_id, email):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:        """Get the token of the repo for the email user. If the token does not
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    get_repo_token_nonnull = seafile_get_repo_token_nonnull
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_generate_repo_token(repo_id, email):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    generate_repo_token = seafile_generate_repo_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_delete_repo_token(repo_id, token, user):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    delete_repo_token = seafile_delete_repo_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_list_repo_tokens(repo_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    list_repo_tokens = seafile_list_repo_tokens
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_list_repo_tokens_by_email(email):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    list_repo_tokens_by_email = seafile_list_repo_tokens_by_email
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_delete_repo_tokens_by_peer_id(email, user_id):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    delete_repo_tokens_by_peer_id = seafile_delete_repo_tokens_by_peer_id
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def delete_repo_tokens_by_email(email):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # password management
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # Change password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def generate_magic_and_random_key(enc_version, repo_id, password):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # token for web access to repo
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_web_get_access_token(repo_id, obj_id, op, username, use_onetime=1):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    web_get_access_token = seafile_web_get_access_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_web_query_access_token(token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    web_query_access_token = seafile_web_query_access_token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def seafile_query_zip_progress(token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def cancel_zip_task(token):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    # password management
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/python/seafile/rpcclient.py:    def update_emailuser(self, source, user_id, password, is_staff, is_active):
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:const char *stringified = noexpand_stringify(arbitrary+token=sequence);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.0:/* C89 style token pasting.  Exercises some of the corner cases that
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:const char *stringified = noexpand_stringify(arbitrary+token=sequence);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/autom4te.cache/output.1:/* C89 style token pasting.  Exercises some of the corner cases that
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/ci/serverctl.py:password = seafile
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_remove_repo_tokens_by_account (const char *server_addr, const char *email, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_set_repo_token (const char *repo_id, const char *token, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:int seafile_set_repo_lantoken (const gchar *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                               const gchar *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:gchar* seafile_get_repo_lantoken (const gchar *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:               const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                  const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_web_get_access_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_web_query_access_token (const char *token, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_query_zip_progress (const char *token, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_cancel_zip_task (const char *token, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h: * Generate a new token for (repo_id, email) and return it
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_generate_repo_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_delete_repo_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:                           const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_list_repo_tokens (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_list_repo_tokens_by_email (const char *email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_delete_repo_tokens_by_peer_id(const char *email, const char *peer_id, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/include/seafile-rpc.h:seafile_delete_repo_tokens_by_email (const char *email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/Makefile.am:                    ../common/password-hash.c
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:    char **tokens;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:    tokens = g_strsplit (path, "/", 3);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:    n = g_strv_length (tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:        *user = g_strdup(tokens[0]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:        *repo_id = parse_repo_id(tokens[1]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:        *user = g_strdup(tokens[0]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:        *repo_id = parse_repo_id(tokens[1]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:        *user = g_strdup(tokens[0]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:        *repo_path = g_strdup(tokens[2]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fuse/seaf-fuse.c:    g_strfreev (tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    token = api.get_fileserver_access_token(t_repo_id, obj_id_json_str,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_zip_download.py:    download_url = base_url + 'zip/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:#the argument obj_id of get_fileserver_access_token shouldn't be NULL.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + resumable_file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    token = api.get_fileserver_access_token (repo.id, obj_id, 'download', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_large_files.py:    download_url = 'http://127.0.0.1:8082/files/' + token + '/' + resumable_file_name
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:#the argument obj_id of get_fileserver_access_token shouldn't be NULL.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'update', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    update_url_base = 'http://127.0.0.1:8082/update-aj/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'update', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    update_url_base = 'http://127.0.0.1:8082/update-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-aj/'+ token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    token = api.get_fileserver_access_token(repo.id, obj_id, 'upload', USER, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_upload_and_update.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:#the argument obj_id of get_fileserver_access_token shouldn't be NULL.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    token = api.get_fileserver_access_token(v_repo_id, obj_id, 'upload', USER2, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    upload_url_base = 'http://127.0.0.1:8082/upload-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    token = api.get_fileserver_access_token(v_repo_id, obj_id, 'update', USER2, False)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_file_operation/test_merge_virtual_repo.py:    update_url_base = 'http://127.0.0.1:8082/update-api/' + token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    new_passwd = 'new password'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER) == 0
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    new_passwd = 'new password'
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_password/test_password.py:    assert api.is_password_set(repo.id, USER) == 0
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	password  string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	key, err = section.GetKey("password")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:		options.password = key.String()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	token, err := rpcclient.Call("seafile_web_get_access_token", options.repoID, objID, "upload", options.username, false)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:		log.Fatal("Failed to get web access token\n")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	accessToken, _ := token.(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	url := fmt.Sprintf("%s:8000/api2/auth-token/", options.server)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	data := []byte(fmt.Sprintf("username=%s&password=%s", options.username, options.password))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	tokenMap := make(map[string]interface{})
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	err = json.Unmarshal(body, &tokenMap)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	token, _ := tokenMap["token"].(string)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/test_upload.go:	return token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/tests/test_upload/account.conf:password = 123456
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.h:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.h:    int web_token_expire_time;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token_type;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token_type;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token_type;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_free (data->token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_free (data->token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    zip_download_mgr_del_zip_progress (seaf->zip_download_mgr, data->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_free (data->token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_free (data->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            if (g_strcmp0(data->token_type, "view") != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                if (g_strcmp0(data->token_type, "download-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            if (g_strcmp0(data->token_type, "download-dir-link") == 0 ||
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                g_strcmp0(data->token_type, "download-multi-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    data->token_type = g_strdup (operation);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            if (g_strcmp0(data->token_type, "download-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    data->token_type = g_strdup (operation);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:start_download_zip_file (evhtp_request_t *req, const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                         const char *repo_id, const char *user, const char *token_type)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    data->token = g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    data->token_type = g_strdup (token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token_type = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = parts[1];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    info = seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    // Here only check token exist, follow will get zip file path, if zip file path exist
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    // then the token is valid, because it pass some validations in zip stage
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error = "Access token not found\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Invalid obj_id for token: %s.\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to parse obj_id field: %s for token: %s.\n", jerror.text, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("No dir_name or file_list in obj_id for token: %s.\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    zip_file_path = zip_download_mgr_get_zip_file_path (seaf->zip_download_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to get zip file path for %s in repo %.8s, token:[%s].\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:                      filename, repo_id, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        zip_download_mgr_del_zip_progress (seaf->zip_download_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_object_get (info, "op", &token_type, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    int ret = start_download_zip_file (req, token, filename, zip_file_path, repo_id, user, token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to start download zip file: %s for token: %s", filename, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (token_type)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        g_free (token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = parts[1];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    info = http_tx_manager_query_share_link_info (token, "dir");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error = "Access token not found\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = parts[1];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    webaccess = seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error = "Access token not found";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error = "Operation does not match access token.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    const char *auth_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    auth_token = evhtp_kv_find (req->headers_in, "Authorization");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = seaf_parse_auth_token (auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (!token && !cookie) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error_str = "Both token and cookie are not set\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    if (http_tx_manager_check_file_access (repo_id, token, cookie, dec_path, "download", ip_addr, user_agent, &user) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error_str = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = parts[1];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    webaccess = seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error = "Access token not found";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            seaf_warning ("Failed to download blocks for token: %s\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = parts[1];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    info = http_tx_manager_query_share_link_info (token, cookie, "file", ip_addr, user_agent, &status, &err_msg);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        seaf_warning ("Failed to get file_path by token %s\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error_str = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    token = parts[1];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:    info = http_tx_manager_query_share_link_info (token, "dir");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:        error_str = "Link token not found\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/access-file.c:            error_str = "Repo is encrypted. Please provide password to view it.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Check password @magic to access contents of @repo_id.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Returns 0 if password @magic is correct, -1 otherwise.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.h: * Returns 0 if successfully unset user password, -1 otherwise.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.h:                                 const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    g_free (obj->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:remove_progress_by_token (ZipDownloadMgrPriv *priv, const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    g_hash_table_remove (priv->progress_store, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                 const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    obj->token = g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    g_hash_table_replace (priv->progress_store, g_strdup (token), progress);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:gen_new_token (GHashTable *token_hash)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        token = g_strndup(uuid, TOKEN_LEN);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        // Make sure the new token doesn't conflict with an existing one.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        if (g_hash_table_lookup (token_hash, token) != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:            g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:            return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    token = gen_new_token (priv->progress_store);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    g_hash_table_replace (priv->progress_store, token, progress);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    obj->token = g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    task_id = g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:get_progress_obj (ZipDownloadMgrPriv *priv, const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    progress = g_hash_table_lookup (priv->progress_store, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                     const char *token, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    progress = get_progress_obj (mgr->priv, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:        remove_progress_by_token(mgr->priv, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                    const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    progress = get_progress_obj (mgr->priv, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                    const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    progress = get_progress_obj (mgr->priv, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                   const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    remove_progress_by_token (mgr->priv, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:                                  const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.c:    Progress *progress = get_progress_obj (mgr->priv, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h: * Returns an access token for the given access info.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h: * If a token doesn't exist or has expired, generate and return a new one.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h:seaf_web_at_manager_get_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h: * Returns access info for the given token.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h:seaf_web_at_manager_query_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.h:                                        const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.h:http_get (Connection *conn, const char *url, const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.h:http_post (Connection *conn, const char *url, const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.h:http_tx_manager_query_share_link_info (const char *token, const char *cookie, const char *type,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.h:http_tx_manager_check_file_access (const char *repo_id, const char *token, const char *cookie,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:#include "password-hash.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    /* (encrypted_token, session_key) -> decrypted token */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    GHashTable *decrypted_tokens;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    CcnetTimer *reap_token_timer;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:static int reap_token (void *data);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:static void decrypted_token_free (DecryptedToken *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    mgr->priv->decrypted_tokens = g_hash_table_new_full (g_str_hash, g_str_equal,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                         (GDestroyNotify)decrypted_token_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    mgr->priv->reap_token_timer = ccnet_timer_new (reap_token, mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                             "RepoTokenPeerInfo i WHERE t.token=i.token AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "token CHAR(41), "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "UNIQUE INDEX(repo_id, token), INDEX(token), INDEX (email))"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "token CHAR(41), "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "client_ver VARCHAR(20), UNIQUE INDEX(token), INDEX(peer_id))"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "token CHAR(41))";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "CREATE UNIQUE INDEX IF NOT EXISTS repo_token_indx on "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "RepoUserToken (repo_id, token)";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "CREATE INDEX IF NOT EXISTS repo_token_email_indx on "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "token CHAR(41) PRIMARY KEY, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         "token CHAR(40), " */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         "UNIQUE (repo_id, token))"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*     if (!pgsql_index_exists (db, "repousertoken_email_idx")) { */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         sql = "CREATE INDEX repousertoken_email_idx ON RepoUserToken (email)"; */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:/*         "token CHAR(40) PRIMARY KEY, " */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:generate_repo_token ()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char token[41];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    rawdata_to_hex (sha1, token, 20);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    return g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:add_repo_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "INSERT INTO RepoUserToken (repo_id, email, token) VALUES (?, ?, ?)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "string", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_warning ("failed to add repo token. repo = %s, email = %s\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_generate_repo_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *token = generate_repo_token ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (add_repo_token (mgr, repo_id, email, token, error) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        g_free (token);        
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_add_token_peer_info (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "INSERT INTO RepoTokenPeerInfo (token, peer_id, peer_ip, peer_name, sync_time, client_ver)"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 6, "string", token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_update_token_peer_info (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "peer_ip=?, sync_time=?, client_ver=? WHERE token=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "string", token) < 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_token_peer_info_exists (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                          const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                     "SELECT token FROM RepoTokenPeerInfo WHERE token=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                     &db_error, 1, "string", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_delete_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    char *token_owner;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token_owner = seaf_repo_manager_get_email_by_token (mgr, repo_id, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (!token_owner || strcmp (user, token_owner) != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_warning ("Requesting user is %s, token owner is %s, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                      "refuse to delete token %.10s.\n", user, token_owner, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "RepoTokenPeerInfo i WHERE t.token=i.token AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 "t.token=?",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                 1, "string", token) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    GList *tokens = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    tokens = g_list_append (tokens, g_strdup(token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_http_server_invalidate_tokens (seaf->http_server, tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_list_free_full (tokens, (GDestroyNotify)g_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:collect_repo_token (SeafDBRow *row, void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    const char *repo_id, *repo_owner, *email, *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token = seaf_db_row_get_column_text (row, 3);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    SeafileRepoTokenInfo *repo_token_info;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    repo_token_info = g_object_new (SEAFILE_TYPE_REPO_TOKEN_INFO,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                    "token", token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    *ret_list = g_list_prepend (*ret_list, repo_token_info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:fill_in_token_info (GList *info_list)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                           seafile_repo_token_info_get_repo_id(info));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_list_repo_tokens (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT u.repo_id, o.owner_id, u.email, u.token, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "ON u.token = p.token, RepoOwner o "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                              collect_repo_token, &ret_list,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_warning ("DB error when get token info for repo %.10s.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    fill_in_token_info (ret_list);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_list_repo_tokens_by_email (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    sql = "SELECT u.repo_id, o.owner_id, u.email, u.token, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "ON u.token = p.token, RepoOwner o "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                              collect_repo_token, &ret_list,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        seaf_warning ("DB error when get token info for email %s.\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    fill_in_token_info (ret_list);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:collect_token_list (SeafDBRow *row, void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    GList **p_tokens = data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    const char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token = seaf_db_row_get_column_text (row, 0);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    *p_tokens = g_list_prepend (*p_tokens, g_strdup(token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c: * Delete all repo tokens for a given user on a given client
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_delete_repo_tokens_by_peer_id (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                                 GList **tokens,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    GList *token_list = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    template = "SELECT u.token "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "WHERE u.token = p.token "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                        collect_token_list, &token_list,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      "WHERE u.token=p.token AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        g_string_append_printf (sql, "DELETE FROM RepoUserToken WHERE email = '%s' AND token IN (", email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        for (iter = token_list; iter; iter = iter->next) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            token = iter->data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                g_string_append_printf (sql, "'%s'", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                g_string_append_printf (sql, ", '%s'", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        g_string_append_printf (sql, "DELETE FROM RepoTokenPeerInfo WHERE peer_id = '%s' AND token IN (", peer_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        for (iter = token_list; iter; iter = iter->next) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:            token = iter->data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                g_string_append_printf (sql, "'%s'", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                g_string_append_printf (sql, ", '%s'", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        g_list_free_full (token_list, (GDestroyNotify)g_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        *tokens = token_list;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_delete_repo_tokens_by_email (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    GList *token_list = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    template = "SELECT u.token "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "WHERE u.token = p.token "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                        collect_token_list, &token_list,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                  "WHERE u.token=p.token AND "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    seaf_http_server_invalidate_tokens (seaf->http_server, token_list);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_list_free_full (token_list, (GDestroyNotify)g_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:get_email_by_token_cb (SeafDBRow *row, void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_get_email_by_token (SeafRepoManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                      const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (!repo_id || !token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        "WHERE repo_id = ? AND token = ?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   get_email_by_token_cb, &email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                   2, "string", repo_id, "string", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:static int reap_token (void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_hash_table_iter_init (&iter, mgr->priv->decrypted_tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:static void decrypted_token_free (DecryptedToken *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (!token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_free (token->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_add_decrypted_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       const char *encrypted_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       const char *decrypted_token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    DecryptedToken *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    snprintf (key, sizeof(key), "%s%s", encrypted_token, session_key);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token = g_new0 (DecryptedToken, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token->token = g_strdup(decrypted_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token->reap_time = (gint64)time(NULL) + DECRYPTED_TOKEN_TTL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    g_hash_table_insert (mgr->priv->decrypted_tokens,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                         token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:seaf_repo_manager_get_decrypted_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:                                       const char *encrypted_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    DecryptedToken *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    snprintf (key, sizeof(key), "%s%s", encrypted_token, session_key);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    token = g_hash_table_lookup (mgr->priv->decrypted_tokens, key);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:    if (token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.c:        return g_strdup(token->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The source repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The destination repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The source repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-op.c:            seaf_warning ("The destination repo is encrypted. Please provide password to view it.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.h:seaf_http_server_invalidate_tokens (HttpServerStruct *htp_server,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.h:                                    const GList *tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                             "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/virtual-repo.c:                             "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *token_type; /* For sending statistic type */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (g_strcmp0(fsm->token_type, "upload-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (g_strcmp0(fsm->token_type, "upload-link") == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    g_free (fsm->token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:check_access_token (const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:                    char **token_type,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_web_at_manager_query_access_token (seaf->web_at_mgr, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        *err_msg = "Access token not found.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* token with op = "upload" can only be used for "upload-*" operations;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:     * token with op = "update" can only be used for "update-*" operations.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (token_type)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        *token_type = g_strdup (op);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        *err_msg = "Operation does not match access token.";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *token, *repo_id = NULL, *user = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *token_type = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    /* URL format: http://host:port/[upload|update]/<token>?X-Progress-ID=<uuid> */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    token = req->uri->path->file;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (!token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No token in url.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        err_msg = "No token in url";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (check_access_token (token, url_op, &repo_id, &parent_dir, &user, &token_type, &err_msg) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    fsm->token_type = token_type;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    g_free (token_type);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    token = req->uri->path->file;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    if (!token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        seaf_debug ("[upload] No token in url.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        err_msg = "No token in url";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    info = http_tx_manager_query_access_token (token, "upload");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:        err_msg = "Access token not found\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/upload-file.c:    fsm->token_type = "upload-link";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:gen_jwt_token ()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:        seaf_warning ("No private key is configured for generating jwt token\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    jwt_token = jwt_encode_str (jwt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    return jwt_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    jwt_token = gen_jwt_token ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    if (!jwt_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:        g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    ret = http_post (conn, req_url, jwt_token, event->msg, strlen (event->msg),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/notif-mgr.c:    g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:gen_new_token (GHashTable *token_hash);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:                                 const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    progress = g_hash_table_lookup (priv->progress_store, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:        seaf_warning ("Index progress not found for token %s\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:        g_hash_table_remove (priv->progress_store, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    char *path = NULL, *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    token = gen_new_token(priv->progress_store);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    if (!token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:        seaf_warning ("Failed to genarate index token for repo %.8s.\n", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    *task_id = g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    g_hash_table_replace (priv->progress_store, g_strdup (token), progress);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:gen_new_token (GHashTable *token_hash)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:        token = g_strndup(uuid, TOKEN_LEN);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:        /* Make sure the new token doesn't conflict with an existing one. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:        if (g_hash_table_lookup (token_hash, token) != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:            g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/index-blocks-mgr.c:            return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:noinst_HEADERS = web-accesstoken-mgr.h  seafile-session.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	web-accesstoken-mgr.c  seafile-session.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/Makefile.am:	../common/password-hash.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                     "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                         "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                         "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/passwd-mgr.c:                     "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:                                 const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:                                     const char *token, GError **error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:                                    const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:                                    const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:                                   const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/zip-download-mgr.h:                                  const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    int web_token_expire_time;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    web_token_expire_time = g_key_file_get_integer (session->config,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:                                                    "fileserver", "web_token_expire_time",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    if (web_token_expire_time <= 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        session->web_token_expire_time = 3600;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        session->web_token_expire_time = web_token_expire_time;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:    seaf_message ("fileserver: web_token_expire_time = %d\n",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:                  session->web_token_expire_time);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seafile-session.c:        seaf_warning ("Failed to start password manager.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:                 const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    if (token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        char *token_header = g_strdup_printf ("Authorization: Token %s", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        *headers = curl_slist_append (*headers, token_header);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        g_free (token_header);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:                  const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    if (token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        char *token_header = g_strdup_printf ("Authorization: Token %s", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        *headers = curl_slist_append (*headers, token_header);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        g_free (token_header);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:http_post (Connection *conn, const char *url, const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    ret = http_post_common (curl, url, &headers, token, req_content, req_size,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:gen_jwt_token ()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    jwt_token = jwt_encode_str (jwt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    return jwt_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    jwt_token = gen_jwt_token ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    if (!jwt_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    ret = http_post_common (curl, url, &headers, jwt_token, req_content, strlen(req_content),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:http_tx_manager_query_share_link_info (const char *token, const char *cookie, const char *type,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    jwt_token = gen_jwt_token ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    if (!jwt_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    json_object_set_new (content, "token", json_string(token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    ret = http_post_common (curl, url, &headers, jwt_token, req_content, strlen(req_content),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:http_tx_manager_check_file_access (const char *repo_id, const char *token, const char *cookie,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    jwt_token = gen_jwt_token ();
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    if (!jwt_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    if (token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:        json_object_set_new (content, "token", json_string(token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    ret = http_post_common (curl, url, &headers, jwt_token, req_content, strlen(req_content),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-tx-mgr.c:    g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    GHashTable		*access_token_hash; /* token -> access info */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    mgr->priv->access_token_hash = g_hash_table_new_full (g_str_hash, g_str_equal,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    g_hash_table_foreach_remove (manager->priv->access_token_hash,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:gen_new_token (GHashTable *token_hash)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        token = g_strndup(uuid, TOKEN_LEN);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        /* Make sure the new token doesn't conflict with an existing one. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:        if (g_hash_table_lookup (token_hash, token) != NULL)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:            return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:seaf_web_at_manager_get_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    t = gen_new_token (mgr->priv->access_token_hash);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    expire = now + seaf->web_token_expire_time;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    g_hash_table_insert (mgr->priv->access_token_hash, g_strdup(t), info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                g_hash_table_remove (mgr->priv->access_token_hash, t);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:seaf_web_at_manager_query_access_token (SeafWebAccessTokenManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                                        const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:    info = g_hash_table_lookup (mgr->priv->access_token_hash, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/web-accesstoken-mgr.c:                g_hash_table_remove (mgr->priv->access_token_hash, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* token */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_generate_repo_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_generate_repo_token",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_delete_repo_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_delete_repo_token",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_list_repo_tokens,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_list_repo_tokens",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_list_repo_tokens_by_email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_list_repo_tokens_by_email",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_delete_repo_tokens_by_peer_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_delete_repo_tokens_by_peer_id",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_delete_repo_tokens_by_email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "delete_repo_tokens_by_email",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* token for web access to repo */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_web_get_access_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_web_get_access_token",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     seafile_web_query_access_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:                                     "seafile_web_query_access_token",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/seaf-server.c:    /* password management */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/gc-core.c: * has to be stored into a database table `LastGCID (client_token, gc_id)`.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:collect_token_list (SeafDBRow *row, void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    GList **p_tokens = data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    const char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    token = seaf_db_row_get_column_text (row, 0);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    *p_tokens = g_list_prepend (*p_tokens, g_strdup(token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:delete_repo_tokens (SeafRepo *repo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    GList *token_list = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    GString *token_list_str = g_string_new ("");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    template = "SELECT u.token FROM RepoUserToken as u WHERE u.repo_id=?";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:                                        collect_token_list, &token_list,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    for (ptr = token_list; ptr; ptr = ptr->next) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:        const char *token = (char *)ptr->data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:        if (token_list_str->len == 0)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:            g_string_append_printf (token_list_str, "'%s'", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:            g_string_append_printf (token_list_str, ",'%s'", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:     * Normally the token_list won't be that long.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    g_string_printf (sql, "DELETE FROM RepoUserToken WHERE token in (%s)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:                     token_list_str->str);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    g_string_printf (sql, "DELETE FROM RepoTokenPeerInfo WHERE token in (%s)",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:                     token_list_str->str);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    g_string_free (token_list_str, TRUE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    g_list_free_full (token_list, (GDestroyNotify)g_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:    if (delete_repo_tokens (repo) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/fsck.c:        seaf_warning ("Failed to delete repo sync tokens, abort repair.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/gc/Makefile.am:	../../common/password-hash.c \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_get_email_by_token (SeafRepoManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                      const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_generate_repo_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_add_token_peer_info (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                       const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_update_token_peer_info (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                          const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_token_peer_info_exists (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                          const char *token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_delete_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_list_repo_tokens (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_list_repo_tokens_by_email (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_delete_repo_tokens_by_peer_id (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                                 GList **tokens,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_delete_repo_tokens_by_email (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:/* Decrypted repo token cache. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_add_decrypted_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                       const char *encrypted_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                       const char *decrypted_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:seaf_repo_manager_get_decrypted_token (SeafRepoManager *mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/repo-mgr.h:                                       const char *encrypted_token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    GHashTable *token_cache;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_t token_cache_lock; /* token -> username */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:const char *GET_JWT_TOKEN_REGEX = "^/repo/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}/jwt-token";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:validate_token (HttpServer *htp_server, evhtp_request_t *req,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    TokenInfo *token_info;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *tmp_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *token = evhtp_kv_find (req->headers_in, "Seafile-Repo-Token");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token == NULL) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        const char *auth_token = evhtp_kv_find (req->headers_in, "Authorization");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        tmp_token = seaf_parse_auth_token (auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        if (tmp_token == NULL) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        token = tmp_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        pthread_mutex_lock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        token_info = g_hash_table_lookup (htp_server->token_cache, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        if (token_info) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            if (strcmp (token_info->repo_id, repo_id) != 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                pthread_mutex_unlock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                g_free (tmp_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                *username = g_strdup(token_info->email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            pthread_mutex_unlock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            g_free (tmp_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        pthread_mutex_unlock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    email = seaf_repo_manager_get_email_by_token (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                                  repo_id, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        pthread_mutex_lock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_hash_table_remove (htp_server->token_cache, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        pthread_mutex_unlock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free (tmp_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token_info = g_new0 (TokenInfo, 1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token_info->repo_id = g_strdup (repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token_info->expire_time = (gint64)time(NULL) + TOKEN_EXPIRE_TIME;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token_info->email = email;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_lock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_hash_table_insert (htp_server->token_cache, g_strdup (token), token_info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_unlock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (tmp_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:get_auth_token (evhtp_request_t *req)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *token = evhtp_kv_find (req->headers_in, "Seafile-Repo-Token");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        return g_strdup (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *tmp_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *auth_token = evhtp_kv_find (req->headers_in, "Authorization");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    tmp_token = seaf_parse_auth_token (auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    return tmp_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, TRUE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        token = evhtp_kv_find (req->headers_in, "Seafile-Repo-Token");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        seaf_warning ("[%s] Failed to get client ip.\n", token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        token = evhtp_kv_find (req->headers_in, "Seafile-Repo-Token");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        /* Record the (token, email, <peer info>) information, <peer info> may
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        if (!seaf_repo_manager_token_peer_info_exists (seaf->repo_mgr, token))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            seaf_repo_manager_add_token_peer_info (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                                   token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:            seaf_repo_manager_update_token_peer_info (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                                      token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, NULL, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token_status = validate_token (htp_server, req, repo_id, NULL, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                       const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        check_gc = seaf_repo_has_last_gc_id (repo, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        last_gc_id = seaf_repo_get_last_gc_id (repo, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        seaf_repo_remove_last_gc_id (repo, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token = get_auth_token (req);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (fast_forward_or_merge (repo_id, base, new_commit, token) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:save_last_gc_id (const char *repo_id, const char *token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    seaf_repo_set_last_gc_id (repo, token, gc_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        char *token = get_auth_token (req);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        if (save_last_gc_id (repo_id, token) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free (token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (task->token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free(task->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    result = g_hash_table_lookup (htp_server->fs_obj_ids, task->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_hash_table_remove (htp_server->fs_obj_ids, task->token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, NULL, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *new_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    new_token = g_strndup(uuid, FS_ID_LIST_TOKEN_LEN);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    task->token = new_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_hash_table_insert (htp_server->fs_obj_ids, g_strdup(task->token), result);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    json_object_set_new (obj, "token", json_string (new_token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, NULL, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token = evhtp_kv_find (req->uri->query, "token");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (!token || strlen(token)!=FS_ID_LIST_TOKEN_LEN) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    result = g_hash_table_lookup (htp_server->fs_obj_ids, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    json_object_set_new (obj, "token", json_string (token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    const char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, NULL, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    token = evhtp_kv_find (req->uri->query, "token");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (!token || strlen(token)!=FS_ID_LIST_TOKEN_LEN) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    result = g_hash_table_lookup (htp_server->fs_obj_ids, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_hash_table_remove (htp_server->fs_obj_ids, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:get_jwt_token_cb (evhtp_request_t *req, void *arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &username, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    jwt_token = seaf_gen_notif_server_jwt (repo_id, username);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (!jwt_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        seaf_warning ("Failed to gen jwt token for repo %s\n", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    json_object_set_new (obj, "jwt_token", json_string (jwt_token));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_free (jwt_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    int token_status = validate_token (htp_server, req, repo_id, &user, FALSE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_status != EVHTP_RES_OK) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        evhtp_send_reply (req, token_status);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                        GET_JWT_TOKEN_REGEX, get_jwt_token_cb,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:token_cache_value_free (gpointer data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    TokenInfo *token_info = (TokenInfo *)data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if (token_info != NULL) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free (token_info->repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free (token_info->email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_free (token_info);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:is_token_expire (gpointer key, gpointer value, gpointer arg)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    TokenInfo *token_info = (TokenInfo *)value;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    if(token_info && token_info->expire_time <= (gint64)time(NULL)) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_lock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    g_hash_table_foreach_remove (htp_server->token_cache, is_token_expire, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_unlock (&htp_server->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    priv->token_cache = g_hash_table_new_full (g_str_hash, g_str_equal,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                               g_free, token_cache_value_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_init (&priv->token_cache_lock, NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:seaf_http_server_invalidate_tokens (HttpServerStruct *htp_server,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:                                    const GList *tokens)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_lock (&htp_server->priv->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    for (p = tokens; p; p = p->next) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        const char *token = (char *)p->data;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:        g_hash_table_remove (htp_server->priv->token_cache, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/server/http-server.c:    pthread_mutex_unlock (&htp_server->priv->token_cache_lock);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.h:    char           *password;   /* password for admin user */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:              const char *password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    char *password;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:              const char *password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    db->password = g_strdup (password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-db.c:    if (!mysql_real_connect(db_conn, db->host, db->user, db->password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:#include "web-accesstoken-mgr.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_remove_repo_tokens_by_account (const char *server_addr, const char *email, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:            if (seaf_repo_manager_remove_repo_token(seaf->repo_mgr, repo) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_set_repo_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                        const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (repo_id == NULL || token == NULL) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    ret = seaf_repo_manager_set_repo_token (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                            repo, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                     "Failed to set token for repo %s", repo_id);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:            g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_BAD_ARGS, "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:            g_set_error (error, SEAFILE_DOMAIN, SEAF_ERR_BAD_ARGS, "Incorrect password");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                              "Changed library password",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_web_get_access_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    token = seaf_web_at_manager_get_access_token (seaf->web_at_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_web_query_access_token (const char *token, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    webaccess = seaf_web_at_manager_query_access_token (seaf->web_at_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                        token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_query_zip_progress (const char *token, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                                token, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_cancel_zip_task (const char *token, GError **error)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                             token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_generate_repo_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    token = seaf_repo_manager_generate_repo_token (seaf->repo_mgr, repo_id, email, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_delete_repo_token (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                           const char *token,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (!repo_id || !token || !user) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return seaf_repo_manager_delete_token (seaf->repo_mgr,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:                                           repo_id, token, user, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_list_repo_tokens (const char *repo_id,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    ret_list = seaf_repo_manager_list_repo_tokens (seaf->repo_mgr, repo_id, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_list_repo_tokens_by_email (const char *email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    ret_list = seaf_repo_manager_list_repo_tokens_by_email (seaf->repo_mgr, email, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_delete_repo_tokens_by_peer_id(const char *email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    GList *tokens = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    if (seaf_repo_manager_delete_repo_tokens_by_peer_id (seaf->repo_mgr, email, peer_id, &tokens, error) < 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:        g_list_free_full (tokens, (GDestroyNotify)g_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    seaf_http_server_invalidate_tokens(seaf->http_server, tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    g_list_free_full (tokens, (GDestroyNotify)g_free);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:seafile_delete_repo_tokens_by_email (const char *email,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/rpc-service.c:    return seaf_repo_manager_delete_repo_tokens_by_email (seaf->repo_mgr, email, error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    option->passwd = seaf_key_file_get_string (session->config, "database", "password", NULL);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    passwd = seaf_key_file_get_string (session->config, "database", "password", &error);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    char *jwt_token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:        seaf_warning ("No private key is configured for generating jwt token\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    jwt_token = jwt_encode_str (jwt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    return jwt_token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:seaf_parse_auth_token (const char *auth_token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    char *token = NULL;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    if (!auth_token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    parts = g_strsplit (auth_token, " ", 2);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    token = g_strdup(parts[1]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.c:    return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:#include "password-hash.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    unsigned char secret_key[32], *rand_key;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    int rc = RAND_bytes (secret_key, sizeof(secret_key));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:        seaf_warning ("Failed to generate secret key for repo encryption.\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:                     (char *)secret_key, sizeof(secret_key), crypt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:     * This is used to verify the password given by user before decrypting
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:     * This is used to verify the password given by user before decrypting
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    unsigned char random_key_raw[48], *secret_key, *new_random_key_raw;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    int secret_key_len, random_key_len;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    /* First, use old_passwd to decrypt secret key from old_random_key. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    if (seafile_decrypt ((char **)&secret_key, &secret_key_len,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    /* Second, use new_passwd to encrypt secret key. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:                     (char *)secret_key, secret_key_len, crypt);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seafile-crypt.c:    g_free (secret_key);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/password-hash.c:#include "password-hash.h"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/password-hash.c:    seaf_message ("password hash algorithms: %s, params: %s\n ", params->algo, params->params_str);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/Makefile.am:	password-hash.h \
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/common.h: * receives this signature as "token".
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        manager->password = ccnet_key_file_get_string (config, "LDAP", "PASSWORD");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (!manager->password) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 const char *password)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        res = ldap_bind_s (ld, user_dn, password, LDAP_AUTH_SIMPLE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        char *password_copy = g_strdup(password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        res = ldap_bind_s (ld, dn_copy, password_copy, LDAP_AUTH_SIMPLE);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        g_free (password_copy);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:              const char *password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "INSERT INTO LDAPUsers (email, password, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       5, "string", email, "string", password, "int",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "INSERT INTO LDAPUsers (email, password, is_staff, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                       "string", password, "int", is_staff, "int", is_active);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:static int ldap_verify_user_password (CcnetUserManager *manager,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                      const char *password)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* Then bind the DN with password. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             dn, password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                             manager->password);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 "password", "!",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:          "email VARCHAR(255) NOT NULL, password varchar(255) NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:          "email TEXT NOT NULL, password TEXT NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:          "email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, "
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c: * For the current password hashing algorithm, please see hash_password_pbkdf2_sha256()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:hash_password (const char *passwd, char *hashed_passwd)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:hash_password_salted (const char *passwd, char *hashed_passwd)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:hash_password_pbkdf2_sha256 (const char *passwd,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* Encode password hash related information into one string, similar to Django. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    char **tokens;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    tokens = g_strsplit (db_passwd, "$", -1);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    if (!tokens || g_strv_length (tokens) != 4) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (tokens)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            g_strfreev (tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    iter = atoi (tokens[1]);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    salt_str = tokens[2];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    hash = tokens[3];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    g_strfreev (tokens);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        hash_password_salted (passwd, hashed_passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        hash_password (passwd, hashed_passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    hash_password_pbkdf2_sha256 (passwd, manager->passwd_hash_iter,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* A user with unhashed "!" as password cannot be logged in.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        hash_password_pbkdf2_sha256 (passwd, manager->passwd_hash_iter,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:get_password (CcnetDBRow *row, void *data)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    /* Users with password "!" are for internal book keeping only. */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        if (ldap_verify_user_password (manager, login_id, passwd) == 0) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        get_password, &stored_passwd,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                        get_password, &stored_passwd,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    const char *password = seaf_db_row_get_column_text (row, 5);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 "password", password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                                 "password", "!",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:    const char *password = seaf_db_row_get_column_text (row, 6);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                              "password", password,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:                              "password", "!",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:            hash_password_pbkdf2_sha256 (passwd, manager->passwd_hash_iter, &db_passwd);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/user-mgr.c:        ccnet_warning ("Failed to update repo user token\n");
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/common/seaf-utils.h:seaf_parse_auth_token (const char *auth_token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, err := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		errMessage := "Repo is encrypted. Please provide password to view it."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := utils.GetAuthorizationToken(r.Header)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if token == "" && cookie == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Both token and cookie are not set\n"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	user, appErr := checkFileAccess(repoID, token, cookie, filePath, "download", ipAddr, userAgent)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func checkFileAccess(repoID, token, cookie, filePath, op, ipAddr, userAgent string) (string, *appError) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	tokenString, err := utils.GenSeahubJWTToken()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to sign jwt token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		"Authorization": {"Token " + tokenString},
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if token != "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		req["token"] = token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to encode access token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("failed to get access token info: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to decode access token info: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, err := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, err := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	tokenType   string
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if fsm.tokenType == "upload-link" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	tokenLen := 36
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if len(parts[1]) < tokenLen {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1][:tokenLen]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	accessInfo, appErr := parseWebaccessInfo(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Operation does not match access token."
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:			err := fmt.Errorf("no parent_dir in access token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm.tokenType = accessInfo.op
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func fastForwardOrMerge(user, token string, repo *repomgr.Repo, base, newCommit *commitmgr.Commit) error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	checkGC, err := repomgr.HasLastGCID(repo.ID, token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		lastGCID, _ = repomgr.GetLastGCID(repo.ID, token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		repomgr.RemoveLastGCID(repo.ID, token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token, err := utils.GenNotifJWTToken(repoID, "", exp)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		log.Errorf("failed to generate jwt token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		"Authorization": {"Token " + token},
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func parseWebaccessInfo(token string) (*webaccessInfo, *appError) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	webaccess, err := rpcclient.Call("seafile_web_query_access_token", token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to get web access token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		msg := "Access token not found"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	tokenLen := 36
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	if len(parts[1]) < tokenLen {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1][:tokenLen]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	info, appErr := queryShareLinkInfo(token, "upload")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	fsm.tokenType = "upload-link"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:func queryShareLinkInfo(token, cookie, opType, ipAddr, userAgent string) (*ShareLinkInfo, *appError) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	tokenString, err := utils.GenSeahubJWTToken()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to sign jwt token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		"Authorization": {"Token " + tokenString},
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	req["token"] = token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to encode access token: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	info, appErr := queryShareLinkInfo(token, cookie, "file", ipAddr, userAgent)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:		err := fmt.Errorf("failed to get file_path by token %s", token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	token := parts[1]
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileop.go:	info, appErr := queryShareLinkInfo(token, "dir")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge.go:	tokenString, err := utils.GenSeahubJWTToken()
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/merge.go:		"Authorization": {"Token " + tokenString},
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr_test.go:	password        = "seafile"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr_test.go:	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?tls=%t", user, password, host, port, dbName, useTLS)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// GetEmailByToken return user's email by token.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func GetEmailByToken(repoID string, token string) (string, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT email FROM RepoUserToken WHERE repo_id = ? AND token = ?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	row := seafileDB.QueryRowContext(ctx, sqlStr, repoID, token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// TokenPeerInfoExists check if the token exists.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func TokenPeerInfoExists(token string) (bool, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "SELECT token FROM RepoTokenPeerInfo WHERE token=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	row := seafileDB.QueryRowContext(ctx, sqlStr, token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// AddTokenPeerInfo add token peer info to RepoTokenPeerInfo table.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func AddTokenPeerInfo(token, peerID, peerIP, peerName, clientVer string, syncTime int64) error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	sqlStr := "INSERT INTO RepoTokenPeerInfo (token, peer_id, peer_ip, peer_name, sync_time, client_ver)" +
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	if _, err := seafileDB.ExecContext(ctx, sqlStr, token, peerID, peerIP, peerName, syncTime, clientVer); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:// UpdateTokenPeerInfo update token peer info to RepoTokenPeerInfo table.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:func UpdateTokenPeerInfo(token, peerID, clientVer string, syncTime int64) error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:		"peer_ip=?, sync_time=?, client_ver=? WHERE token=?"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/repomgr/repomgr.go:	if _, err := seafileDB.ExecContext(ctx, sqlStr, peerID, syncTime, clientVer, token); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		return nil, fmt.Errorf("no database password in seafile.conf.")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	password := os.Getenv("SEAFILE_MYSQL_DB_PASSWORD")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if password != "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:		dbOpt.Password = password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if key, err = section.GetKey("password"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	r.Handle("/repo/{repoid:[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}}/jwt-token{slash:\\/?}",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	password := queries.Get("password")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if !option.EnableProfiling || password != option.ProfilePassword {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	password := queries.Get("password")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/fileserver.go:	if !option.EnableProfiling || password != option.ProfilePassword {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	token := jwt.NewWithClaims(jwt.GetSigningMethod("HS256"), claims)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	tokenString, err := token.SignedString([]byte(option.JWTPrivateKey))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:		err := fmt.Errorf("failed to gen seahub jwt token: %w", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	return tokenString, nil
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	token := jwt.NewWithClaims(jwt.GetSigningMethod("HS256"), claims)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	tokenString, err := token.SignedString([]byte(option.JWTPrivateKey))
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:		err := fmt.Errorf("failed to gen jwt token for repo %s: %w", repoID, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/utils/utils.go:	return tokenString, nil
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	// Profile password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:	if key, err := section.GetKey("web_token_expire_time"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:		if key, err := section.GetKey("profile_password"); err == nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/option/option.go:			log.Fatal("password of profiling must be specified.")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	tokenExpireTime            = 7200
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	tokenCache           sync.Map
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:type tokenInfo struct {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		token := r.Header.Get("Seafile-Repo-Token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		err := fmt.Errorf("%s failed to get client ip", token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		token := r.Header.Get("Seafile-Repo-Token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		exists, err := repomgr.TokenPeerInfoExists(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:			err := fmt.Errorf("Failed to check whether token %s peer info exist: %v", token, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:			if err := repomgr.AddTokenPeerInfo(token, clientID, ip, clientName, clientVer, int64(time.Now().Unix())); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:				err := fmt.Errorf("Failed to add token peer info: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:			if err := repomgr.UpdateTokenPeerInfo(token, clientID, clientVer, int64(time.Now().Unix())); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:				err := fmt.Errorf("Failed to update token peer info: %v", err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	tokenString, err := utils.GenNotifJWTToken(repoID, user, exp)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	data := fmt.Sprintf("{\"jwt_token\":\"%s\"}", tokenString)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:func saveLastGCID(repoID, token string) error {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	return repomgr.SetLastGCID(repoID, token, gcID)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		token := r.Header.Get("Seafile-Repo-Token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		if token == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:			token = utils.GetAuthorizationToken(r.Header)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		if err := saveLastGCID(repoID, token); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	token := r.Header.Get("Seafile-Repo-Token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if token == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		token = utils.GetAuthorizationToken(r.Header)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if err := fastForwardOrMerge(user, token, repo, base, newCommit); err != nil {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	token := r.Header.Get("Seafile-Repo-Token")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if token == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		token = utils.GetAuthorizationToken(r.Header)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		if token == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:			msg := "token is null"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	if value, ok := tokenCache.Load(token); ok {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		if info, ok := value.(*tokenInfo); ok {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:				msg := "Invalid token"
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	email, err := repomgr.GetEmailByToken(repoID, token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		log.Errorf("Failed to get email by token %s: %v", token, err)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		tokenCache.Delete(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		msg := fmt.Sprintf("Failed to get email by token %s", token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	info := new(tokenInfo)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	info.expireTime = time.Now().Unix() + tokenExpireTime
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	tokenCache.Store(token, info)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:		if info, ok := value.(*tokenInfo); ok {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:				tokenCache.Delete(key)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/fileserver/sync_api.go:	tokenCache.Range(deleteTokens)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/README.markdown:Seafile is an open source cloud storage system with features on privacy protection and teamwork. Collections of files are called libraries, and each library can be synced separately. A library can also be encrypted with a user chosen password. Seafile also allows users to create groups and easily sharing files into groups.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="3" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="4" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="8" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="10" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constParameterPointer" severity="style" msg="Parameter &apos;params&apos; can be declared as pointer to const" verbose="Parameter &apos;params&apos; can be declared as pointer to const" cwe="398" file0="common/password-hash.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="41" column="41" info="Parameter &apos;params&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constVariablePointer" severity="style" msg="Variable &apos;p&apos; can be declared as pointer to const" verbose="Variable &apos;p&apos; can be declared as pointer to const" cwe="398" file0="common/password-hash.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="84" column="11" info="Variable &apos;p&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingInclude" severity="information" msg="Include file: &quot;web-accesstoken-mgr.h&quot; not found." verbose="Include file: &quot;web-accesstoken-mgr.h&quot; not found.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constVariablePointer" severity="style" msg="Variable &apos;token_info&apos; can be declared as pointer to const" verbose="Variable &apos;token_info&apos; can be declared as pointer to const" cwe="398" file0="server/http-server.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/http-server.c" line="3075" column="16" info="Variable &apos;token_info&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>token_info</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="variableScope" severity="style" msg="The scope of the variable &apos;token&apos; can be reduced." verbose="The scope of the variable &apos;token&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="server/index-blocks-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>token</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="missingInclude" severity="information" msg="Include file: &quot;password-hash.h&quot; not found." verbose="Include file: &quot;password-hash.h&quot; not found.">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="3" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="5" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="7" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="11" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="13" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="15" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="variableScope" severity="style" msg="The scope of the variable &apos;token&apos; can be reduced." verbose="The scope of the variable &apos;token&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="111" column="11"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>token</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="variableScope" severity="style" msg="The scope of the variable &apos;webaccess&apos; can be reduced." verbose="The scope of the variable &apos;webaccess&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="215" column="23"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="constVariablePointer" severity="style" msg="Variable &apos;info&apos; can be declared as pointer to const" verbose="Variable &apos;info&apos; can be declared as pointer to const" cwe="398" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="73" column="17" info="Variable &apos;info&apos; can be declared as pointer to const"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedStructMember" severity="style" msg="struct member &apos;WebATPriv::cache&apos; is never used." verbose="struct member &apos;WebATPriv::cache&apos; is never used." cwe="563" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="26" column="22"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedVariable" severity="style" msg="Unused variable: webaccess" verbose="Unused variable: webaccess" cwe="563" file0="server/web-accesstoken-mgr.c">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="138" column="23"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="common/password-hash.c" line="126" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;seafile_remove_repo_tokens_by_account&apos; is never used." verbose="The function &apos;seafile_remove_repo_tokens_by_account&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>seafile_remove_repo_tokens_by_account</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;seafile_set_repo_token&apos; is never used." verbose="The function &apos;seafile_set_repo_token&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>seafile_set_repo_token</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;seaf_repo_manager_add_decrypted_token&apos; is never used." verbose="The function &apos;seaf_repo_manager_add_decrypted_token&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>seaf_repo_manager_add_decrypted_token</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:        <error id="unusedFunction" severity="style" msg="The function &apos;seaf_repo_manager_get_decrypted_token&apos; is never used." verbose="The function &apos;seaf_repo_manager_get_decrypted_token&apos; is never used." cwe="561">
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <symbol>seaf_repo_manager_get_decrypted_token</symbol>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="55" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/cppcheck-report.xml:            <location file="server/web-accesstoken-mgr.c" line="100" column="0"/>
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/user.sql:CREATE TABLE IF NOT EXISTS LDAPUsers (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT NOT NULL, password TEXT NOT NULL, is_staff BOOL NOT NULL, is_active BOOL NOT NULL, extra_attrs TEXT, reference_id TEXT);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS RepoUserToken (repo_id CHAR(37), email VARCHAR(255), token CHAR(41));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE UNIQUE INDEX IF NOT EXISTS repo_token_indx on RepoUserToken (repo_id, token);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE INDEX IF NOT EXISTS repo_token_email_indx on RepoUserToken (email);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS RepoTokenPeerInfo (token CHAR(41) PRIMARY KEY, peer_id CHAR(41), peer_ip VARCHAR(50), peer_name VARCHAR(255), sync_time BIGINT, client_ver VARCHAR(20));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/sqlite/seafile.sql:CREATE TABLE IF NOT EXISTS RepoSyncError (token CHAR(41) PRIMARY KEY, error_time BIGINT, error_con VARCHAR(1024));
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/ccnet.sql:  password varchar(255) NOT NULL,
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  token CHAR(41),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  UNIQUE INDEX(token)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  token CHAR(41),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  UNIQUE INDEX(token),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  token CHAR(41),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  UNIQUE INDEX(repo_id, token),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/scripts/sql/mysql/seafile.sql:  INDEX(token),
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/ccnetobj.vala:    public string password { get; set; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/repo.vala:    public string token { get; set; }
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    const char *next_in, *ntoken;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        /* move ntoken to the next not '/' char  */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        for (ntoken = next_in; *ntoken == '/'; ntoken++) ;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        for (next_in = ntoken; *next_in != '/' 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        len = next_in - ntoken;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        if (len == 2 && ntoken[0] == '.' && ntoken[1] == '.') 
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        } else if (ntoken[0] != '.' || len != 1) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:            memcpy (next_out, ntoken, len);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    char *token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    /* Find the end of the token.  */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    token = s;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    s = strpbrk(token, delim);
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        /* This token finishes the string.  */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        *save_ptr = strchr(token, '\0');
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:        /* Terminate the token and make *SAVE_PTR point past it.  */
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/lib/utils.c:    return token;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(password|secret|credential|token)" $SOURCE_DIR > $OUTPUT_DIR/cwe-200.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for hard-coded usernames, passwords
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:grep -r -E "(username|password)" $SOURCE_DIR > $OUTPUT_DIR/cwe-798.txt
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/vuln-analysis.sh:# Look for credentials being transmitted or stored without encryption
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/objects/pack/pack-0922ffe849e753b938afc79b1de7b8e77095b6ce.pack matches
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:# The hook is passed a version (currently 2) and last update token
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:# formatted as a string and outputs to stdout a new update token and
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:# all files that have been modified since the update token. Paths must
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:my ($version, $last_update_token) = @ARGV;
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:# print STDERR "$0 $version $last_update_token\n";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:	# changed since $last_update_token but not from the .git folder.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:	if (substr($last_update_token, 0, 1) eq "c") {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:		$last_update_token = "\"$last_update_token\"";
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:		$last_update_line = qq[\n"since": $last_update_token,];
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/hooks/fsmonitor-watchman.sample:		$last_update_token = $o->{clock};
+Binary file /Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/.git/index matches
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/LICENSE.txt:Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	password := os.Getenv("SEAFILE_MYSQL_DB_PASSWORD")
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	if password == "" {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	option.Password = password
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	token := getAuthorizationToken(r.Header)
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	if !checkAuthToken(token) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:			Message: "Notification token not match",
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:func checkAuthToken(tokenString string) bool {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	if len(tokenString) == 0 {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	token, err := jwt.ParseWithClaims(tokenString, claims, func(token *jwt.Token) (interface{}, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/server.go:	if !token.Valid {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/client.go:	Token  string `json:"jwt_token"`
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/client.go:func checkToken(tokenString, repoID string) (string, int64, bool) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/client.go:	if len(tokenString) == 0 {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/client.go:	token, err := jwt.ParseWithClaims(tokenString, claims, func(token *jwt.Token) (interface{}, error) {
+/Users/shreeyanreddy/IdeaProjects/seafile-server/seafile-server/notification-server/client.go:	if !token.Valid {
