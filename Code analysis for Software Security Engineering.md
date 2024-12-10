@@ -359,27 +359,27 @@ crypto_pwhash_str(*db_passwd, passwd, strlen(passwd), crypto_pwhash_OPSLIMIT_INT
 
 ## PART 2:
 
-### CWE-287: Improper Authentication  
+
+### **CWE-287: Improper Authentication**  
 Improper authentication in Seafile-server manifests in the `ldap_verify_user_password` function, which lacks mechanisms to protect against brute force attacks, uses weak LDAP authentication, and insufficiently validates sessions. The vulnerability opens the system to potential LDAP injection attacks, allowing unauthorized access to user accounts. By failing to encrypt LDAP communications or sanitize inputs, the system risks exposing user credentials and sensitive data. Mitigating these issues with robust encryption, input validation, and brute force defenses will help ensure that authentication processes are secure and resilient against threats.
 
 
 
-### CWE-89: SQL Injection  
+### **CWE-89: SQL Injection**  
 The Seafile-server codebase suffers from SQL injection vulnerabilities, as evidenced in functions that construct SQL queries through direct string concatenation. This allows attackers to manipulate SQL commands by injecting malicious inputs, potentially compromising the integrity and confidentiality of the database. Exploiting this weakness can result in unauthorized access, data theft, or destruction. The use of parameterized queries and prepared statements can neutralize these attacks by isolating user inputs from executable SQL commands, thereby fortifying database security.
 
 
 
-### CWE-798: Hard-Coded Credentials  
+### **CWE-798: Hard-Coded Credentials**  
 Hard-coded credentials in `seaf-db.c` present a high risk of exposing sensitive information such as database usernames and passwords. If attackers gain access to the source code, they can use these credentials to compromise the system’s backend. Storing credentials in a secrets manager or environment variables provides a more secure alternative. Additionally, implementing encrypted database connections and avoiding the logging of sensitive details can further protect against unauthorized access.
 
 
 
-### CWE-200: Information Exposure  
+### **CWE-200: Information Exposure**  
 Logging practices in `password-hash.c` inadvertently expose sensitive details, such as hash algorithms and their parameters, to unauthorized users. This information can be leveraged by attackers to reverse-engineer password hashes or exploit vulnerabilities in outdated algorithms. Restricting the logging of sensitive details and adhering to privacy standards will reduce the risk of information leakage. Enhancing log management processes ensures compliance with security regulations and minimizes the risk of exploitation.
 
 
-
-### CWE-522: Insufficient Credential Protection  
+### **CWE-522: Insufficient Credential Protection**  
 Insufficient credential protection arises from weak password hashing and storage mechanisms, which fail to utilize modern cryptographic standards like salting and iterative hashing. Without these measures, stored passwords are vulnerable to brute force and rainbow table attacks. By adopting robust cryptographic libraries and practices, such as securely erasing sensitive data from memory after use, Seafile-server can achieve stronger protection for user credentials, mitigating the risk of account compromise and unauthorized access.
 
 
