@@ -332,8 +332,7 @@ JETBRAINS SUITE
 
 GITHUB SECURITY
 ├── CodeQL Analysis
-├── Code Security Scan
-└── Automated Vulnerability Detection
+└── Code Security Scan
 ```
 
 
