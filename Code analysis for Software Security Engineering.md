@@ -383,6 +383,27 @@ Logging practices in `password-hash.c` inadvertently expose sensitive details, s
 Insufficient credential protection arises from weak password hashing and storage mechanisms, which fail to utilize modern cryptographic standards like salting and iterative hashing. Without these measures, stored passwords are vulnerable to brute force and rainbow table attacks. By adopting robust cryptographic libraries and practices, such as securely erasing sensitive data from memory after use, Seafile-server can achieve stronger protection for user credentials, mitigating the risk of account compromise and unauthorized access.
 
 
+### Planned Contributions to the Upstream Open-Source Project
+
+Our team has identified several areas where we plan to contribute to the Seafile open-source project. These contributions focus on improving security, documentation, and overall functionality. While we have not yet engaged directly with the Seafile community, the following outlines our planned contributions:
+
+#### 1. Documentation Enhancements
+- **Improve Clarity:** Enhance existing documentation, particularly sections on security configurations like two-factor authentication (2FA) and role-based access control (RBAC).
+- **Setup Guides:** Add detailed setup guides for enabling secure communication protocols (e.g., TLS/SSL) and audit logging.
+
+#### 2. Design Changes
+- **Authentication System Updates:** Propose updates to the authentication system, including brute-force protection mechanisms and improved input validation.
+- **File Transfer Security:** Suggest design improvements for securely handling file uploads and downloads, such as stronger encryption and validation checks.
+
+#### 3. Code Changes
+- **Credential Management:** Refactor vulnerable code segments to replace hardcoded credentials with secure configurations using environment variables.
+- **SQL Injection Mitigation:** Implement parameterized queries to address vulnerabilities in database interactions.
+- **Error Handling:** Develop additional error-handling mechanisms for secure synchronization and file version control.
+
+#### 4. Community Engagement (Planned)
+- **GitHub Issues:** Report vulnerabilities identified during our analysis, such as CWE-287 (Improper Authentication) and CWE-89 (SQL Injection).
+
+
 
 ### Lessons Learned
 
@@ -423,5 +444,6 @@ Given the broad scope of Seafile’s codebase, we focused on the **Seafile-serve
 
 Ultimately, the analysis highlighted the necessity of language familiarity, proper tool configuration, and adaptable coding practices. It provided key insights that helped us prioritize CWEs and plan security improvements for the Seafile-server codebase.
 
-
+#### GitHub Repository Link
+Our progress and task assignments are documented in our GitHub project repository, where we manage internal collaborations and task tracking. The repository can be accessed here: [Debug-Squad-Seafile GitHub Repository](https://github.com/gprasanthi9/Debug-Squad-Seafile/projects).
 
