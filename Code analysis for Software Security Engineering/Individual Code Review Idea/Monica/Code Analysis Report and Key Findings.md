@@ -6,7 +6,7 @@
 
 ## 5. ⁠INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
 **Location:** `server/user-mgr.c`  
-**Location Link:** [View Code](https://github.com/haiwen/seafile-server/blob/master/common/seaf-db.c#L864)  
+**Location Link:** [View Code](https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802)  
 **Risk Level:** High  
 **Found In Code:** `hash_password_pbkdf2_sha256 (const char *passwd, ...`  
 
