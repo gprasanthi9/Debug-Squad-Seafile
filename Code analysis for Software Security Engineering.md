@@ -13,7 +13,7 @@
 We implemented a thorough CPPCheck analysis with the following configuration:
 ```bash
 cppcheck --enable=all --xml --xml-version=2 /path/to/seafile-server 2> seafile_analysis.xml
-
+```
 
 ## 1. IMPROPER AUTHENTICATION (CWE-287)
 **Location:** `server/user-mgr.c`  
