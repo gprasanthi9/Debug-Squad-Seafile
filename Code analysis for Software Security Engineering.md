@@ -9,7 +9,7 @@
 ---
 ### Analysis Methodology
 
-## Initial Configuration
+#### Initial Configuration
 We implemented a thorough CPPCheck analysis with the following configuration:
 ```bash
 cppcheck --enable=all --xml --xml-version=2 /path/to/seafile-server 2> seafile_analysis.xml
@@ -102,7 +102,7 @@ ldap_simple_bind_s(ldap, ldap_escape(manager->user_dn), password);
 ```
 ldap_escape is a hypothetical function that escapes special characters in the user DN to prevent LDAP injection attacks. It is recommended that escaping should be implement or use an existing function that performs this escaping.
 
-## 2. SQL INJECTION (CWE-89)
+### 2. SQL INJECTION (CWE-89)
 
 - **Location:** `server/repo-mgr.c`, `server/share-mgr.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802)
@@ -146,7 +146,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
 - **Single-Line Simplification:**  
   The code refactor avoids manual string manipulation, directly utilizing the database library's secure API.
 
-## 3. HARD-CODED CREDENTIALS (CWE-798)
+### 3. HARD-CODED CREDENTIALS (CWE-798)
 
 - **Location:** `server/seaf-db.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/seaf-db.c#L864)
@@ -196,7 +196,7 @@ sqlite3_prepare_v2(db_conn, "SELECT repo_id FROM Repo WHERE repo_id = ?", -1, &s
 
 - Avoid logging or displaying database credentials (username/password) in any error messages, logs, or stack traces. Ensure that such information is not exposed to unauthorized users.
 
-## 4. INFORMATION EXPOSURE (CWE-200)
+### 4. INFORMATION EXPOSURE (CWE-200)
 
 - **Location:** `common/password-hash.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/password-hash.c#L144)
@@ -238,7 +238,7 @@ seaf_message("Password hash algorithm used.\n");
 ```
 A password hash algorithm can be used without exposing the specific details. If more detailed information needed to be logged for debugging purposes, a secure logging mechanism that ensures the logs are protected and access is restricted should be considered.
 
-## 5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
+### 5. INSUFFICIENT CREDENTIAL PROTECTION (CWE-522)
 
 - **Location:** `server/user-mgr.c`
 - **Location Link:** [Link to Code](https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L802)
