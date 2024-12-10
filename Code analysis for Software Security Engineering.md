@@ -1,6 +1,5 @@
 # Seafile Server Security Assessment
 
-## Document Information
 **Date:** December 7, 2024  
 **Project:** Seafile Server  
 **Focus:** Seafile-server  
