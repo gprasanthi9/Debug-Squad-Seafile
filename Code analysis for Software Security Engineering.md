@@ -384,21 +384,44 @@ Insufficient credential protection arises from weak password hashing and storage
 
 
 
-## REFLECTION
-Initially, our group believed that GitHub would have good modules for analyzing C code, which led to the first challenge: the default CodeQL module was not able to process the Seafile code effectively. This prompted us to explore other tools listed in the documentation to find a suitable, free solution. After some research, we identified DevSkim as a viable tool for the task. However, this introduced the second challenge: understanding how to install and run DevSkim properly.
+### Lessons Learned
 
-After successfully loading the DevSkim module and running it against the code, we encountered the third challenge. Initially, it seemed as though the scan had not run or produced any results. Through group discussions and by explaining my steps, we realized that either the scan had not completed or the results were in an unexpected location. After resolving this issue, we were able to retrieve the scan results.
+1. **Importance of Combining Analysis Techniques**  
+   - Effective code analysis requires a balanced use of both static and dynamic analysis techniques.  
+   - Static analysis helps identify issues at the code level without execution, while dynamic analysis provides insights during runtime.
 
-DevSkim identified 905 errors in total, but upon further inspection, there were only five unique errors, none of which were particularly significant. This outcome brought forth another challenge for me: understanding C at a deeper level to evaluate the security implications of the identified issues. It became clear that to assess the code effectively, a stronger grasp of C programming nuances is essential.
+2. **Tool Familiarity and Correct Application**  
+   - Understanding the strengths and limitations of tools is critical for selecting the right tool for specific code files.  
+   - Properly applying tools ensures accurate results and reduces false positives or missed vulnerabilities.
 
-We also considered utilizing tools such as FlawFinder and JetBrains for analyzing the Seafile source code. However, FlawFinder proved to be challenging when applied to the Seafile source code, as it generated numerous errors that were difficult for us to interpret. This difficulty likely stemmed from our limited experience with the tool.
+3. **Value of Using Multiple Tools**  
+   - Leveraging multiple code analysis tools offers diverse perspectives, uncovering issues that a single tool might miss.  
+   - This approach enhances the depth and reliability of the analysis.
 
-Seafile has diverse codebases, including those for Windows, Linux, mobile apps, client, and server components. To make efficient use of our limited time, we decided to focus specifically on the Seafile-server codebase, which serves as the foundation for Seafile's SeaHub.
 
-Jetbrains performed reasonably well, enabling us to map some of the reported issues to corresponding MITRE CWEs. To address the challenges faced during the analysis, the group employed a combination of automated tools like JetBrains and manual reviews conducted by team members with varying levels of expertise in Python and scripting. Additionally, we leveraged ChatGPT to assist in mapping identified vulnerabilities to their associated CWEs.
+### Future Improvements
 
-This process highlighted several key lessons: the importance of language familiarity, the challenges posed by decentralized infrastructure, and the persistence of coding practices that require adaptation. The analysis provided valuable insights into the limitations of automated tools, the necessity of proper configuration, and the critical need for in-depth programming knowledge to evaluate security vulnerabilities effectively.
+1. **Task Allocation Based on Expertise**  
+   - Assign tasks that align with each team member's skills to maximize efficiency and quality of work.
 
-Ultimately, the findings from this code review—including prioritized CWEs and their associated risks, which laid the groundwork for planning necessary improvements to the Seafile-server codebase to enhance its overall security posture.
+2. **Pre-Project Training**  
+   - Invest time in training on tools, techniques, and programming languages before the analysis begins to enhance readiness.
+
+3. **Strategic Tool Selection**  
+   - Evaluate and choose tools based on the specific requirements of the codebase to achieve optimal results.  
+
+4. **Integration of Analysis Techniques**  
+   - Use a mix of static and dynamic analysis methods to cover all aspects of the code comprehensively.
+
+## Reflection
+
+Initially, our group expected GitHub's modules, like CodeQL, to handle C code effectively, but it couldn’t process the Seafile code properly. This prompted us to explore other tools, such as **CPPCheck**, **DevSkim**, and **FlawFinder**, to conduct the analysis. Understanding and setting up these tools, particularly DevSkim, posed challenges initially, but group discussions and troubleshooting allowed us to retrieve meaningful results.
+
+**CPPCheck** provided a comprehensive overview of code issues, while **DevSkim** identified 905 errors, though only five were unique and significant. **FlawFinder** was difficult to interpret due to the volume of flagged errors, while **JetBrains** performed well in mapping vulnerabilities to MITRE CWEs. These tools complemented each other, providing diverse insights into the Seafile codebase.
+
+Given the broad scope of Seafile’s codebase, we focused on the **Seafile-server component** to maximize efficiency. Combining automated tools with manual reviews and leveraging **ChatGPT** for CWE mapping proved invaluable. This process underscored the importance of using a mix of tools, understanding their strengths, and applying them to the right files.
+
+Ultimately, the analysis highlighted the necessity of language familiarity, proper tool configuration, and adaptable coding practices. It provided key insights that helped us prioritize CWEs and plan security improvements for the Seafile-server codebase.
+
 
 
