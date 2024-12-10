@@ -37,11 +37,11 @@ Our configuration incorporated the following key elements:
 | --xml-version=2 | Enhanced detail level | Detailed vulnerability reporting |
 | --template | Custom output formatting | Specific issue tracking |
 
-## Automated Code Review Script
+### Automated Code Review Script
 
 To further streamline the process, we developed a custom script to identify vulnerabilities associated with critical CWEs. The script performed automated searches for specific patterns indicative of security weaknesses.
 
-### Script Highlights
+#### Script Highlights
 
 ```bash
 #!/bin/bash
