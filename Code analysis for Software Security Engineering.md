@@ -52,6 +52,28 @@ The execution process generated structured output files:
 * Detailed security analysis: Stored in designated output directory
 
 
+## Tool Arsenal
+```
+PRIMARY TOOLS
+├── CPPCheck
+└── DevSkim
+    ├── Static Analysis
+    └── Vulnerability Detection
+
+JETBRAINS SUITE
+├── IntelliJ IDEA
+│   ├── Checkstyle Plugin
+│   ├── SonarLint Integration
+│   └── Security Hotspots Detection
+│   
+├── Quodana Plugin
+└── Built-in Code Inspection
+
+GITHUB SECURITY
+├── CodeQL Analysis
+└── Code Security Scan
+```
+
 
 ## Identified Security Vulnerabilities
 
@@ -335,7 +357,7 @@ crypto_pwhash_str(*db_passwd, passwd, strlen(passwd), crypto_pwhash_OPSLIMIT_INT
         The function returns -1 on failure, allowing for error handling (not shown in this single-line refactor).
 
 
-# PART 2:
+## PART 2:
 
 ### CWE-287: Improper Authentication  
 Improper authentication in Seafile-server manifests in the `ldap_verify_user_password` function, which lacks mechanisms to protect against brute force attacks, uses weak LDAP authentication, and insufficiently validates sessions. The vulnerability opens the system to potential LDAP injection attacks, allowing unauthorized access to user accounts. By failing to encrypt LDAP communications or sanitize inputs, the system risks exposing user credentials and sensitive data. Mitigating these issues with robust encryption, input validation, and brute force defenses will help ensure that authentication processes are secure and resilient against threats.
@@ -360,28 +382,6 @@ Logging practices in `password-hash.c` inadvertently expose sensitive details, s
 ### CWE-522: Insufficient Credential Protection  
 Insufficient credential protection arises from weak password hashing and storage mechanisms, which fail to utilize modern cryptographic standards like salting and iterative hashing. Without these measures, stored passwords are vulnerable to brute force and rainbow table attacks. By adopting robust cryptographic libraries and practices, such as securely erasing sensitive data from memory after use, Seafile-server can achieve stronger protection for user credentials, mitigating the risk of account compromise and unauthorized access.
 
-
-## Tool Arsenal
-```
-PRIMARY TOOLS
-├── CPPCheck
-└── DevSkim
-    ├── Static Analysis
-    └── Vulnerability Detection
-
-JETBRAINS SUITE
-├── IntelliJ IDEA
-│   ├── Checkstyle Plugin
-│   ├── SonarLint Integration
-│   └── Security Hotspots Detection
-│   
-├── Quodana Plugin
-└── Built-in Code Inspection
-
-GITHUB SECURITY
-├── CodeQL Analysis
-└── Code Security Scan
-```
 
 
 ## REFLECTION
