@@ -1,11 +1,15 @@
-# PART 1: CODE REVIEW
+# Seafile Server Security Assessment
+**Project Documentation - December 2024**
 
-## SEAFILE CODE REVIEW FOR SECURITY RISKS ASSESSMENT
+## Document Information
 **Date:** December 7, 2024  
 **Project:** Seafile Server  
 **Focus:** Seafile-server  
 **Repository:** [Seafile-server GitHub](https://github.com/haiwen/seafile-server)  
 
+---
+
+## Part 1: Code Review
 ---
 ### Methodology
 
