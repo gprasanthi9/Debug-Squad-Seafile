@@ -317,6 +317,7 @@ Insufficient credential protection arises from weak password hashing and storage
 ## Tool Arsenal
 ```
 PRIMARY TOOLS
+├── CPPCheck
 └── DevSkim
     ├── Static Analysis
     └── Vulnerability Detection
@@ -325,8 +326,8 @@ JETBRAINS SUITE
 ├── IntelliJ IDEA
 │   ├── Checkstyle Plugin
 │   ├── SonarLint Integration
-│   ├── Security Hotspots Detection
-│   └── Taint Vulnerability Analysis
+│   └── Security Hotspots Detection
+│   
 ├── Quodana Plugin
 └── Built-in Code Inspection
 
