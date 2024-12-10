@@ -66,8 +66,8 @@ JETBRAINS SUITE
 │   ├── SonarLint Integration
 │   └── Security Hotspots Detection
 │   
-├── Quodana Plugin
-└── Built-in Code Inspection
+└── Quodana Plugin
+
 
 GITHUB SECURITY
 ├── CodeQL Analysis
