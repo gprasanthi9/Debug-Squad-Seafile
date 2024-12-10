@@ -43,12 +43,12 @@
        - Use a unique, randomly generated salt for each user.
    
 2. **Sample Updated Code:**
+   
+        hash_password_pbkdf2_sha256(const char *passwd, const char *salt, int iterations) {
+        // Use a strong salt and at least 100,000 iterations
+        PKCS5_PBKDF2_HMAC_SHA256(passwd, strlen(passwd), (unsigned char *)salt, strlen(salt), iterations, key_length, output);}
 
-    hash_password_pbkdf2_sha256(const char *passwd, const char *salt, int iterations) {
-    // Use a strong salt and at least 100,000 iterations
-    PKCS5_PBKDF2_HMAC_SHA256(passwd, strlen(passwd), (unsigned char *)salt, strlen(salt), iterations, key_length, output);}
-
-3. **Additional Steps:**
+4. **Additional Steps:**
 - Store only the hashed password and salt in the database, never the plaintext password.
 - Use a cryptographically secure random number generator for salt generation.
 
