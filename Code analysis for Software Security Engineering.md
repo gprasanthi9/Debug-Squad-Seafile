@@ -444,5 +444,5 @@ Given the broad scope of Seafile’s codebase, we focused on the **Seafile-serve
 
 Ultimately, the analysis highlighted the necessity of language familiarity, proper tool configuration, and adaptable coding practices. It provided key insights that helped us prioritize CWEs and plan security improvements for the Seafile-server codebase.
 
-The Project Board can be found here: Debug-Squad-Seafile [Debug-Squad-Seafile GitHub Repository](https://github.com/gprasanthi9/Debug-Squad-Seafile/projects).
+The Project Board can be found here: [Debug-Squad-Seafile GitHub Repository](https://github.com/gprasanthi9/Debug-Squad-Seafile/projects).
 
