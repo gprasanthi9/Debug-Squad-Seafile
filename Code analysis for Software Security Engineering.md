@@ -1,13 +1,13 @@
 # PART 1: CODE REVIEW
 
-# SEAFILE CODE REVIEW FOR SECURITY RISKS ASSESSMENT
+## SEAFILE CODE REVIEW FOR SECURITY RISKS ASSESSMENT
 **Date:** December 7, 2024  
 **Project:** Seafile Server  
 **Focus:** Seafile-server  
 **Repository:** [Seafile-server GitHub](https://github.com/haiwen/seafile-server)  
 
 ---
-# Analysis Methodology
+### Analysis Methodology
 
 ## Initial Configuration
 We implemented a thorough CPPCheck analysis with the following configuration:
@@ -15,7 +15,7 @@ We implemented a thorough CPPCheck analysis with the following configuration:
 cppcheck --enable=all --xml --xml-version=2 /path/to/seafile-server 2> seafile_analysis.xml
 ```
 
-## 1. IMPROPER AUTHENTICATION (CWE-287)
+### 1. IMPROPER AUTHENTICATION (CWE-287)
 **Location:** `server/user-mgr.c`  
 **Location Link:** [View Code](https://github.com/haiwen/seafile-server/blob/master/common/user-mgr.c#L355)  
 **Risk Level:** High  
