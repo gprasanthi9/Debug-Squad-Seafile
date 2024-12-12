@@ -107,7 +107,6 @@ sqlite3_bind_text(stmt, 1, prefix, -1, SQLITE_TRANSIENT);
   - **Quodana and IntelliJ**: Limited static analysis insights.
   - **Oculus**: Analyzed only `.py` files, which had minimal usage in the Seafile project.
 
-- **Manual Review**: Crucial for understanding the linkage between code components and identifying false positives (e.g., Hard-Coded Credentials).
 
 ### Summary of Vulnerabilities Detected
 
