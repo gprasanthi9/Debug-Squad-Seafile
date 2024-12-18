@@ -6,7 +6,8 @@ As a team, we analyzed the core data flows and interactions within the Seafile e
 
 The DFD we created:  
 ![Seafile DFD](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/Seafile-dfdv2.jpeg) 
-
+https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/Seafile-dfdv2.jpg 
+[Seafile DFD](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/Seafile-dfdv2.jpg)
 
 For details, check out the **Threat Modeling Report**:  [Seafile Threat Report](https://github.com/gprasanthi9/Debug-Squad-Seafile/blob/main/DFD%20for%20Seafile%20OS/SeafileDFDReport.htm)
 
